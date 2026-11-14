@@ -88,15 +88,94 @@ img {
   overflow: hidden;
 }
 
-/* Light rays over the gradient — reactbits port, rendered at 20% opacity */
+/* Light rays over the gradient — Magic UI "Light Rays" port (blurred beams,
+   screen blend, each pulsing on its own period). */
 .hero-rays {
+  --light-rays-color: rgba(255, 255, 255, 0.9);
+  --light-rays-blur: 30px;
+  --light-rays-length: 100%;
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  pointer-events: none;
   z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.hero-rays__layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-rays__glow {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hero-rays__glow--a {
+  background: radial-gradient(
+    circle at 20% 15%,
+    color-mix(in srgb, var(--light-rays-color) 45%, transparent),
+    transparent 70%
+  );
+}
+
+.hero-rays__glow--b {
+  background: radial-gradient(
+    circle at 80% 10%,
+    color-mix(in srgb, var(--light-rays-color) 35%, transparent),
+    transparent 75%
+  );
+}
+
+.hero-rays__ray {
+  position: absolute;
+  top: -12%;
+  left: var(--ray-left, 50%);
+  width: var(--ray-width, 200px);
+  height: var(--light-rays-length);
+  border-radius: 9999px;
+  /* holds its brightness halfway down, then fades: on our light hero a plain
+     linear fade reads as a blob at the top edge */
+  background: linear-gradient(
+    to bottom,
+    var(--light-rays-color) 0%,
+    color-mix(in srgb, var(--light-rays-color) 55%, transparent) 50%,
+    transparent 100%
+  );
+  filter: blur(var(--light-rays-blur));
+  mix-blend-mode: screen;
+  opacity: 0;
+  translate: -50% 0;
+  transform-origin: top center;
+  pointer-events: none;
+  animation: hero-ray-pulse var(--ray-duration, 14s) ease-in-out var(--ray-delay, 0s) infinite;
+}
+
+@keyframes hero-ray-pulse {
+  0% {
+    opacity: 0;
+    transform: rotate(calc(var(--ray-rotate, 0deg) - var(--ray-swing, 1deg)));
+  }
+  50% {
+    opacity: var(--ray-intensity, 0.7);
+    transform: rotate(calc(var(--ray-rotate, 0deg) + var(--ray-swing, 1deg)));
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(calc(var(--ray-rotate, 0deg) - var(--ray-swing, 1deg)));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rays__ray {
+    animation: none;
+    opacity: 0.25;
+    transform: rotate(var(--ray-rotate, 0deg));
+  }
 }
 
 .hero-container {
