@@ -35,13 +35,15 @@
 | Header Block | `50:4044` | 1280×158 | inside section | — | — | title + clinical direction tabs |
 | Section Title | `47:3626` | 326×46 | inside header | — | `#1e1e1e` | Manrope SemiBold 36px |
 | Clinical Tabs | `47:3633` | 603×60 | inside header | 999px | `#ffffff`, stroke `#ecf0ed` | 3 pills: Аденома простаты, МКБ, Нейрохирургия |
-| Models Grid (4) | `47:3919` | 842×255 | top of card | 28px | `#8fc2da` / active gradient | 4 cards of 200×255px (Cyber TM 200, Litho 35, Fiber Dust, Litho DK) |
-| Main Card Box | `49:4013` | 1360×1192 | inside section | 51px | `#ffffff`, stroke `#e8f2f4` | showcase container for selected laser |
-| Machine Photo | `47:3920` | 361×642 | left column | — | `assets/model-cyber-tm-large.webp` | 2x WebP export |
-| Model Title | `49:3921` | 413×35 | right column | — | `#1e1e1e` | Manrope SemiBold 36px |
-| Badges Row | `49:3933` | 413×38 | below title | 23px | `#d9f4fa`, text `#42859b` | Твердотельный, 2010 нм, 200 Вт |
-| Features Box | `49:4003` | 520.5×363 | right column | 34px | `#f8faf9` | 4 items with `assets/feature-diamond.svg` |
-| CTA Button | `49:4006` | 203.4×62.3| right column | 9999px | `#9b5094` | "ЗАПРОСИТЬ КП", text `#ffffff` |
+| Selector Cards Grid | `47:3919` (`Frame 81`) | 842×255 | x259, y0 (in F113) | 0 | `none` | `none` | `none` | flex row, gap: 14px, overlaps top of R20 by 52px |
+| Card 1 (Active Lilac) | `47:3915` (`Frame 77`) | 200×255 | inside F81 | 28px | `linear-gradient(180deg, rgba(139,67,202,0.14) 0%, rgba(162,205,222,0.14) 100%)` | `none` (NO BORDER) | `blur(6.7px)` | Title: Manrope 20px Medium, `#9b5094`; Price: Manrope 14px SemiBold, `#1e1e1e` |
+| Cards 2, 3, 4 (Inactive) | `47:3916..` | 200×255 | inside F81 | 28px | `rgba(143,194,218,0.14)` | `none` (NO BORDER) | `blur(6.7px)` | Machine thumb `opacity: 0.6`; Title: Manrope 20px Medium, `#1e1e1e`; Price: Manrope 14px SemiBold, `#1e1e1e` |
+| Main Showcase Card | `49:4013` (`Rectangle 20`) | 1360×1192 | x0, y203 (in F113) | 51px | `#ffffff` | `9px solid #E8F2F4` | `none` | 9px outer border, radius 51px, NO box-shadow |
+| Machine Photo | `47:3920` | 361×642 | left column | — | `assets/model-cyber-tm-large.webp` | 2x WebP export, horizontally centered in left column |
+| Model Title | `49:3921` | 413×35 | right column | — | `#1e1e1e` | — | Manrope SemiBold 36px |
+| Badges Row | `49:3933` | 413×38 | below title | 23px | `#d9f4fa`, text `#42859b` | — | Твердотельный, 2010 нм, 200 Вт |
+| Features Box | `49:4003` | 520.5×363 | right column | 34px | `#f8faf9` | — | 4 items with `assets/feature-diamond.svg` |
+| CTA Button | `49:4006` | 203.4×62.3| right column | 9999px | `#9b5094` | — | "ЗАПРОСИТЬ КП", text `#ffffff` |
 
 ## Section 3 — Bento Comparison + Directions + Why Surgeons (Figma Node `50:4040` Frame 112)
 

@@ -429,7 +429,7 @@ img {
   justify-content: center;
   gap: 14px;
   width: 842px;
-  margin: 0 auto -60px;
+  margin: 0 auto -52px;
   position: relative;
   z-index: 2;
 }
@@ -438,8 +438,11 @@ img {
   width: 200px;
   height: 255px;
   border-radius: 28px;
-  background: #8fc2da;
+  background: rgba(143, 194, 218, 0.14);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
   border: none;
+  box-shadow: none;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -450,9 +453,9 @@ img {
   box-sizing: border-box;
 }
 
-/* Active card: Lilac gradient, NO BORDER */
+/* Active card: Lilac gradient at 0.14 opacity, NO BORDER */
 .model-thumb-card.active {
-  background: linear-gradient(180deg, #8b43ca 0%, #a2cdde 100%);
+  background: linear-gradient(180deg, rgba(139, 67, 202, 0.14) 0%, rgba(162, 205, 222, 0.14) 100%);
   border: none;
   box-shadow: none;
 }
@@ -465,6 +468,12 @@ img {
   width: 74px;
   height: 131px;
   object-fit: contain;
+  opacity: 0.6;
+  transition: opacity 0.15s ease;
+}
+
+.model-thumb-card.active .model-thumb-img {
+  opacity: 1;
 }
 
 .model-thumb-info {
@@ -497,20 +506,20 @@ img {
   color: var(--color-text-dark);
 }
 
-/* Main Showcase Card: Rectangle 20 (1360x1192, stroke #e8f2f4, radius 51px) */
+/* Main Showcase Card: Rectangle 20 (1360x1192, stroke #E8F2F4 9px, radius 51px, NO box-shadow) */
 .equipment-showcase-card {
   position: relative;
   width: 100%;
   max-width: 1360px;
   min-height: 1192px;
-  border: 1px solid #e8f2f4;
+  border: 9px solid #E8F2F4;
   border-radius: 51px;
   background: #ffffff;
-  padding: 120px 60px 64px;
+  box-shadow: none;
+  padding: 92px 68px 68px;
   box-sizing: border-box;
   z-index: 1;
 }
-
 .model-detail-layout {
   display: grid;
   grid-template-columns: 1fr 533px;

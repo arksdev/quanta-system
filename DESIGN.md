@@ -3,107 +3,107 @@ version: alpha
 name: "Untitled"
 description: "Design tokens extracted by DesignAgent from 1 Figma frame."
 colors:
-  primary: "#4adafc"
+  primary: "#159ec1"
   surface: "#ffffff"
-  on-surface: "#149ec1"
-  accent: "#64e1ff"
+  on-surface: "#1e1e1e"
+  accent: "#9b5094"
   accent-3: "#0a84a2"
-  accent-4: "#9b5094"
-  accent-5: "#139ec1"
-  neutral-1: "#dcf5fb"
-  accent-6: "#00ccff"
-  neutral-2: "#eef2ef"
+  accent-4: "#a7deeb"
+  accent-5: "#149ec1"
+  accent-6: "#32abc9"
 typography:
   display:
     fontFamily: "Manrope"
-    fontSize: 96px
+    fontSize: 48px
     fontWeight: 400
     lineHeight: 0.96
-    letterSpacing: "-0.04"
+    letterSpacing: "-0.02"
   display-2:
     fontFamily: "Manrope"
-    fontSize: 36px
-    fontWeight: 600
-    lineHeight: 57.275360107421875px
-    letterSpacing: "-0.7159420251846313px"
+    fontSize: 40px
+    fontWeight: 500
+    lineHeight: 64px
+    letterSpacing: "-0.800000011920929px"
+  display-3:
+    fontFamily: "Manrope"
+    fontSize: 32px
+    fontWeight: 400
+    lineHeight: 0.96
+    letterSpacing: "-0.02"
   headline:
     fontFamily: "Manrope"
     fontSize: 24px
-    fontWeight: 500
+    fontWeight: 400
     lineHeight: 0.96
-    letterSpacing: "-0.04"
+    letterSpacing: "-0.02"
   title:
+    fontFamily: "Onest"
+    fontSize: 20px
+    fontWeight: 400
+    lineHeight: 32px
+    letterSpacing: "0px"
+  title-2:
     fontFamily: "Manrope"
     fontSize: 20px
     fontWeight: 500
     lineHeight: 26px
     letterSpacing: "0px"
+  title-3:
+    fontFamily: "Manrope"
+    fontSize: 20px
+    fontWeight: 400
+    lineHeight: 32px
+    letterSpacing: "0px"
   body-lg:
     fontFamily: "Manrope"
-    fontSize: 17px
-    fontWeight: 500
-    lineHeight: 26.72850227355957px
-    letterSpacing: "0px"
-  body:
-    fontFamily: "Manrope"
-    fontSize: 15px
-    fontWeight: 700
-    letterSpacing: "1px"
-  body-2:
-    fontFamily: "Manrope"
-    fontSize: 15px
-    fontWeight: 600
-    letterSpacing: "1px"
-  body-3:
-    fontFamily: "Manrope"
-    fontSize: 14px
-    fontWeight: 600
+    fontSize: 18px
+    fontWeight: 400
     lineHeight: 26px
     letterSpacing: "0px"
 spacing:
-  xs: 8px
-  sm: 10px
-  md: 12px
-  lg: 18px
+  xs: 10px
+  sm: 12px
+  md: 15px
+  lg: 19px
   xl: 24px
   xxl: 25px
-  xxxl: 32px
+  xxxl: 31px
 rounded:
   none: 0px
-  sm: 24px
-  md: 60px
+  sm: 55px
+  md: 56px
+  lg: 59px
+  xl: 64px
   full: 9999px
 ---
 
 ## Overview
 
-**Untitled** — tokens and guidance derived from 1 Figma frame: `Frame 8`.
+**Untitled** — tokens and guidance derived from 1 Figma frame: `Frame 112`.
 
 The YAML frontmatter above holds the normative token values; the prose below is context for applying them. Token values are inferred from the design, so verify names before relying on them as a formal system.
 
 ## Colors
 
-- `primary` — #4adafc
+- `primary` — #159ec1
 - `surface` — #ffffff
-- `on-surface` — #149ec1
-- `accent` — #64e1ff
+- `on-surface` — #1e1e1e
+- `accent` — #9b5094
 - `accent-3` — #0a84a2
-- `accent-4` — #9b5094
-- `accent-5` — #139ec1
-- `neutral-1` — #dcf5fb
-- `accent-6` — #00ccff
-- `neutral-2` — #eef2ef
+- `accent-4` — #a7deeb
+- `accent-5` — #149ec1
+- `accent-6` — #32abc9
 
 ## Typography
 
-- `display` — Manrope, 96px, weight 400
-- `display-2` — Manrope, 36px, weight 600
-- `headline` — Manrope, 24px, weight 500
-- `title` — Manrope, 20px, weight 500
-- `body-lg` — Manrope, 17px, weight 500
-- `body` — Manrope, 15px, weight 700
-- `body-2` — Manrope, 15px, weight 600
-- `body-3` — Manrope, 14px, weight 600
+- `display` — Manrope, 48px, weight 400
+- `display-2` — Manrope, 40px, weight 500
+- `display-3` — Manrope, 32px, weight 400
+- `headline` — Manrope, 24px, weight 400
+- `title` — Onest, 20px, weight 400
+- `title-2` — Manrope, 20px, weight 500
+- `title-3` — Manrope, 20px, weight 400
+- `body-lg` — Manrope, 18px, weight 400
 
 ## Layout
 
@@ -115,7 +115,7 @@ Flat — no drop shadows detected. Use borders and surface contrast for depth.
 
 ## Shapes
 
-Corner radii: `none` 0px, `sm` 24px, `md` 60px, `full` 9999px.
+Corner radii: `none` 0px, `sm` 55px, `md` 56px, `lg` 59px, `xl` 64px, `full` 9999px.
 
 ## Do's and Don'ts
 

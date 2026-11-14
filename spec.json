@@ -1,17 +1,17 @@
 {
   "selectedNode": {
-    "id": "50:4045",
-    "name": "Frame 116",
+    "id": "50:4046",
+    "name": "Frame 117",
     "type": "FRAME",
-    "width": 1360,
-    "height": 1594
+    "width": 1440,
+    "height": 1096
   },
   "intent": "section",
   "uiSpec": {
     "version": "1.1.0",
     "root": {
-      "id": "50:4045",
-      "name": "Frame 116",
+      "id": "50:4046",
+      "name": "Frame 117",
       "type": "FRAME",
       "tokenHints": {
         "styleRefs": 0,
@@ -20,8 +20,8 @@
       },
       "children": [
         {
-          "id": "50:4044",
-          "name": "Frame 115",
+          "id": "50:4024",
+          "name": "Frame 97",
           "type": "FRAME",
           "tokenHints": {
             "styleRefs": 0,
@@ -30,17 +30,17 @@
           },
           "children": [
             {
-              "id": "47:3626",
-              "name": "Оборудование",
-              "type": "TEXT",
+              "id": "47:3568",
+              "name": "Rectangle 18",
+              "type": "RECTANGLE",
               "tokenHints": {
                 "styleRefs": 0,
                 "variableRefs": 0,
-                "rawValueHints": 1
+                "rawValueHints": 0
               },
               "children": [],
-              "width": 326,
-              "height": 46,
+              "width": 1440,
+              "height": 540,
               "layout": {
                 "layoutPositioning": "AUTO",
                 "constraints": {
@@ -49,27 +49,23 @@
                 }
               },
               "visual": {
-                "fills": "solid",
+                "fills": "mixed",
                 "strokes": "none",
-                "cornerRadius": "undefined",
+                "cornerRadius": 0,
                 "effects": "none",
                 "fillColors": [
-                  "#1e1e1e"
+                  "#1b93b1",
+                  "#29a0bd",
+                  "#000000",
+                  "#29a0bd",
+                  "#000000",
+                  "#9b5094"
                 ]
-              },
-              "text": {
-                "characters": "Оборудование",
-                "lineHeight": "95.99999785423279%",
-                "letterSpacing": "-2%",
-                "textCase": "ORIGINAL",
-                "fontFamily": "Manrope",
-                "fontStyle": "Regular",
-                "fontSize": 48
               }
             },
             {
-              "id": "50:4042",
-              "name": "Frame 114",
+              "id": "47:3569",
+              "name": "Frame 75",
               "type": "FRAME",
               "tokenHints": {
                 "styleRefs": 0,
@@ -78,287 +74,18 @@
               },
               "children": [
                 {
-                  "id": "47:3627",
-                  "name": "Четыре системы под разные задачи операционной. Выб",
-                  "type": "TEXT",
-                  "tokenHints": {
-                    "styleRefs": 0,
-                    "variableRefs": 0,
-                    "rawValueHints": 1
-                  },
-                  "children": [],
-                  "width": 533,
-                  "height": 52,
-                  "layout": {
-                    "layoutPositioning": "AUTO",
-                    "constraints": {
-                      "horizontal": "MIN",
-                      "vertical": "MIN"
-                    }
-                  },
-                  "visual": {
-                    "fills": "solid",
-                    "strokes": "none",
-                    "cornerRadius": "undefined",
-                    "effects": "none",
-                    "fillColors": [
-                      "#1e1e1e"
-                    ]
-                  },
-                  "text": {
-                    "characters": "Четыре системы под разные задачи операционной. Выберите направление для работы",
-                    "lineHeight": "26px",
-                    "letterSpacing": "0px",
-                    "textCase": "ORIGINAL",
-                    "fontFamily": "Manrope",
-                    "fontStyle": "Medium",
-                    "fontSize": 20
-                  }
-                },
-                {
-                  "id": "47:3633",
-                  "name": "Tab List - Клиническая задача",
-                  "type": "FRAME",
+                  "id": "47:3570",
+                  "name": "123123123123145253 1",
+                  "type": "RECTANGLE",
                   "tokenHints": {
                     "styleRefs": 0,
                     "variableRefs": 0,
                     "rawValueHints": 0
                   },
-                  "children": [
-                    {
-                      "id": "47:3634",
-                      "name": "Tab",
-                      "type": "FRAME",
-                      "tokenHints": {
-                        "styleRefs": 0,
-                        "variableRefs": 0,
-                        "rawValueHints": 0
-                      },
-                      "children": [
-                        {
-                          "id": "47:3635",
-                          "name": "Аденома простаты",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 147,
-                          "height": 20,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#ffffff"
-                            ]
-                          },
-                          "text": {
-                            "characters": "Аденома простаты",
-                            "lineHeight": "AUTO",
-                            "letterSpacing": "0px",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Onest",
-                            "fontStyle": "Medium",
-                            "fontSize": 16
-                          }
-                        }
-                      ],
-                      "width": 187,
-                      "height": 44,
-                      "layout": {
-                        "layoutMode": "VERTICAL",
-                        "primaryAxisAlignItems": "CENTER",
-                        "counterAxisAlignItems": "CENTER",
-                        "itemSpacing": 0,
-                        "paddingTop": 0,
-                        "paddingRight": 20,
-                        "paddingBottom": 0,
-                        "paddingLeft": 20,
-                        "layoutPositioning": "AUTO",
-                        "constraints": {
-                          "horizontal": "MIN",
-                          "vertical": "MIN"
-                        }
-                      },
-                      "visual": {
-                        "fills": "solid",
-                        "strokes": "none",
-                        "cornerRadius": 999,
-                        "effects": "none",
-                        "fillColors": [
-                          "#9b5094"
-                        ]
-                      }
-                    },
-                    {
-                      "id": "47:3636",
-                      "name": "Tab",
-                      "type": "FRAME",
-                      "tokenHints": {
-                        "styleRefs": 0,
-                        "variableRefs": 0,
-                        "rawValueHints": 0
-                      },
-                      "children": [
-                        {
-                          "id": "47:3637",
-                          "name": "Мочекаменная болезнь",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 183,
-                          "height": 20,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#4a5450"
-                            ]
-                          },
-                          "text": {
-                            "characters": "Мочекаменная болезнь",
-                            "lineHeight": "AUTO",
-                            "letterSpacing": "0px",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Onest",
-                            "fontStyle": "Medium",
-                            "fontSize": 16
-                          }
-                        }
-                      ],
-                      "width": 223,
-                      "height": 44,
-                      "layout": {
-                        "layoutMode": "VERTICAL",
-                        "primaryAxisAlignItems": "CENTER",
-                        "counterAxisAlignItems": "CENTER",
-                        "itemSpacing": 0,
-                        "paddingTop": 0,
-                        "paddingRight": 20,
-                        "paddingBottom": 0,
-                        "paddingLeft": 20,
-                        "layoutPositioning": "AUTO",
-                        "constraints": {
-                          "horizontal": "MIN",
-                          "vertical": "MIN"
-                        }
-                      },
-                      "visual": {
-                        "fills": "none",
-                        "strokes": "none",
-                        "cornerRadius": 999,
-                        "effects": "none"
-                      }
-                    },
-                    {
-                      "id": "47:3638",
-                      "name": "Tab",
-                      "type": "FRAME",
-                      "tokenHints": {
-                        "styleRefs": 0,
-                        "variableRefs": 0,
-                        "rawValueHints": 0
-                      },
-                      "children": [
-                        {
-                          "id": "47:3639",
-                          "name": "Нейрохирургия",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 122,
-                          "height": 20,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#4a5450"
-                            ]
-                          },
-                          "text": {
-                            "characters": "Нейрохирургия",
-                            "lineHeight": "AUTO",
-                            "letterSpacing": "0px",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Onest",
-                            "fontStyle": "Medium",
-                            "fontSize": 16
-                          }
-                        }
-                      ],
-                      "width": 162,
-                      "height": 44,
-                      "layout": {
-                        "layoutMode": "VERTICAL",
-                        "primaryAxisAlignItems": "CENTER",
-                        "counterAxisAlignItems": "CENTER",
-                        "itemSpacing": 0,
-                        "paddingTop": 0,
-                        "paddingRight": 20,
-                        "paddingBottom": 0,
-                        "paddingLeft": 20,
-                        "layoutPositioning": "AUTO",
-                        "constraints": {
-                          "horizontal": "MIN",
-                          "vertical": "MIN"
-                        }
-                      },
-                      "visual": {
-                        "fills": "none",
-                        "strokes": "none",
-                        "cornerRadius": 999,
-                        "effects": "none"
-                      }
-                    }
-                  ],
-                  "width": 603,
-                  "height": 60,
+                  "children": [],
+                  "width": 631.4218139648438,
+                  "height": 1008.3016357421875,
                   "layout": {
-                    "layoutMode": "HORIZONTAL",
-                    "primaryAxisAlignItems": "MIN",
-                    "counterAxisAlignItems": "MIN",
-                    "itemSpacing": 6,
-                    "paddingTop": 6,
-                    "paddingRight": 6,
-                    "paddingBottom": 6,
-                    "paddingLeft": 6,
                     "layoutPositioning": "AUTO",
                     "constraints": {
                       "horizontal": "MIN",
@@ -366,24 +93,20 @@
                     }
                   },
                   "visual": {
-                    "fills": "solid",
-                    "strokes": "solid",
-                    "cornerRadius": 999,
-                    "effects": "none",
-                    "fillColors": [
-                      "#ffffff"
-                    ],
-                    "strokeColor": "#ecf0ed"
+                    "fills": "image",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none"
                   }
                 }
               ],
-              "width": 603,
-              "height": 151,
+              "width": 631,
+              "height": 476,
               "layout": {
-                "layoutMode": "VERTICAL",
+                "layoutMode": "NONE",
                 "primaryAxisAlignItems": "MIN",
                 "counterAxisAlignItems": "MIN",
-                "itemSpacing": 39,
+                "itemSpacing": 0,
                 "paddingTop": 0,
                 "paddingRight": 0,
                 "paddingBottom": 0,
@@ -400,10 +123,238 @@
                 "cornerRadius": 0,
                 "effects": "none"
               }
+            },
+            {
+              "id": "47:3852",
+              "name": "Коммерческое предложение",
+              "type": "TEXT",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 1
+              },
+              "children": [],
+              "width": 544,
+              "height": 92,
+              "layout": {
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "solid",
+                "strokes": "none",
+                "cornerRadius": "undefined",
+                "effects": "none",
+                "fillColors": [
+                  "#ffffff"
+                ]
+              },
+              "text": {
+                "characters": "Коммерческое предложение",
+                "lineHeight": "95.99999785423279%",
+                "letterSpacing": "-2%",
+                "textCase": "ORIGINAL",
+                "fontFamily": "Manrope",
+                "fontStyle": "Regular",
+                "fontSize": 48
+              }
+            },
+            {
+              "id": "47:3853",
+              "name": "КП на бланке, комплектация и проект ТЗ в течение р",
+              "type": "TEXT",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 1
+              },
+              "children": [],
+              "width": 348,
+              "height": 50,
+              "layout": {
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "solid",
+                "strokes": "none",
+                "cornerRadius": "undefined",
+                "effects": "none",
+                "fillColors": [
+                  "#ffffff"
+                ]
+              },
+              "text": {
+                "characters": "КП на бланке, комплектация и проект ТЗ в течение рабочего дня.",
+                "lineHeight": "25px",
+                "letterSpacing": "0px",
+                "textCase": "ORIGINAL",
+                "fontFamily": "Manrope",
+                "fontStyle": "Regular",
+                "fontSize": 20
+              }
+            },
+            {
+              "id": "47:3854",
+              "name": "Frame 76",
+              "type": "FRAME",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 0
+              },
+              "children": [
+                {
+                  "id": "47:3855",
+                  "name": "+7 495 109-90-60",
+                  "type": "TEXT",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 1
+                  },
+                  "children": [],
+                  "width": 349,
+                  "height": 44,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": "undefined",
+                    "effects": "none",
+                    "fillColors": [
+                      "#ffffff"
+                    ]
+                  },
+                  "text": {
+                    "characters": "+7 495 109-90-60",
+                    "lineHeight": "95.99999785423279%",
+                    "letterSpacing": "-4%",
+                    "textCase": "ORIGINAL",
+                    "fontFamily": "Manrope",
+                    "fontStyle": "Regular",
+                    "fontSize": 46.05812072753906
+                  }
+                }
+              ],
+              "width": 421,
+              "height": 75.66496276855469,
+              "layout": {
+                "layoutMode": "HORIZONTAL",
+                "primaryAxisAlignItems": "CENTER",
+                "counterAxisAlignItems": "CENTER",
+                "itemSpacing": 7.1965813636779785,
+                "paddingTop": 15.832479476928711,
+                "paddingRight": 7.1965813636779785,
+                "paddingBottom": 15.832479476928711,
+                "paddingLeft": 7.1965813636779785,
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "solid",
+                "strokes": "none",
+                "cornerRadius": 83.4803466796875,
+                "effects": "blur",
+                "fillColors": [
+                  "#ffffff"
+                ]
+              }
+            },
+            {
+              "id": "47:3899",
+              "name": "Link",
+              "type": "FRAME",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 0
+              },
+              "children": [
+                {
+                  "id": "47:3900",
+                  "name": "Запросить КП",
+                  "type": "TEXT",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 1
+                  },
+                  "children": [],
+                  "width": 102,
+                  "height": 11,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": "undefined",
+                    "effects": "none",
+                    "fillColors": [
+                      "#149ec1"
+                    ]
+                  },
+                  "text": {
+                    "characters": "Запросить КП",
+                    "lineHeight": "95.99999785423279%",
+                    "letterSpacing": "14%",
+                    "textCase": "UPPER",
+                    "fontFamily": "Manrope",
+                    "fontStyle": "Bold",
+                    "fontSize": 11
+                  }
+                }
+              ],
+              "width": 199,
+              "height": 42,
+              "layout": {
+                "layoutMode": "HORIZONTAL",
+                "primaryAxisAlignItems": "CENTER",
+                "counterAxisAlignItems": "CENTER",
+                "itemSpacing": 10,
+                "paddingTop": 0,
+                "paddingRight": 18,
+                "paddingBottom": 0,
+                "paddingLeft": 18,
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "solid",
+                "strokes": "solid",
+                "cornerRadius": 999,
+                "effects": "none",
+                "fillColors": [
+                  "#ffffff"
+                ]
+              }
             }
           ],
-          "width": 1280,
-          "height": 158,
+          "width": 1440,
+          "height": 540,
           "layout": {
             "layoutMode": "NONE",
             "primaryAxisAlignItems": "MIN",
@@ -427,8 +378,8 @@
           }
         },
         {
-          "id": "50:4041",
-          "name": "Frame 113",
+          "id": "50:4023",
+          "name": "Frame 96",
           "type": "FRAME",
           "tokenHints": {
             "styleRefs": 0,
@@ -437,8 +388,8 @@
           },
           "children": [
             {
-              "id": "49:4013",
-              "name": "Rectangle 20",
+              "id": "47:3567",
+              "name": "Rectangle 19",
               "type": "RECTANGLE",
               "tokenHints": {
                 "styleRefs": 0,
@@ -446,8 +397,8 @@
                 "rawValueHints": 0
               },
               "children": [],
-              "width": 1360,
-              "height": 1192,
+              "width": 1440,
+              "height": 556,
               "layout": {
                 "layoutPositioning": "AUTO",
                 "constraints": {
@@ -456,42 +407,21 @@
                 }
               },
               "visual": {
-                "fills": "none",
-                "strokes": "solid",
-                "cornerRadius": 51,
-                "effects": "none",
-                "strokeColor": "#e8f2f4"
-              }
-            },
-            {
-              "id": "47:3920",
-              "name": "123123123 1",
-              "type": "RECTANGLE",
-              "tokenHints": {
-                "styleRefs": 0,
-                "variableRefs": 0,
-                "rawValueHints": 0
-              },
-              "children": [],
-              "width": 361,
-              "height": 642,
-              "layout": {
-                "layoutPositioning": "AUTO",
-                "constraints": {
-                  "horizontal": "MIN",
-                  "vertical": "MIN"
-                }
-              },
-              "visual": {
-                "fills": "image",
+                "fills": "gradient",
                 "strokes": "none",
                 "cornerRadius": 0,
-                "effects": "none"
+                "effects": "none",
+                "fillColors": [
+                  "#258fa9",
+                  "#2fc1e6",
+                  "#135b6e",
+                  "#2fc1e6"
+                ]
               }
             },
             {
-              "id": "49:4012",
-              "name": "Frame 95",
+              "id": "47:3856",
+              "name": "Container",
               "type": "FRAME",
               "tokenHints": {
                 "styleRefs": 0,
@@ -500,8 +430,8 @@
               },
               "children": [
                 {
-                  "id": "49:4005",
-                  "name": "Frame 93",
+                  "id": "47:3857",
+                  "name": "Bold Text:margin",
                   "type": "FRAME",
                   "tokenHints": {
                     "styleRefs": 0,
@@ -510,8 +440,8 @@
                   },
                   "children": [
                     {
-                      "id": "49:3987",
-                      "name": "Frame 86",
+                      "id": "47:3858",
+                      "name": "Bold Text",
                       "type": "FRAME",
                       "tokenHints": {
                         "styleRefs": 0,
@@ -520,8 +450,8 @@
                       },
                       "children": [
                         {
-                          "id": "49:3921",
-                          "name": "Cyber TM 200",
+                          "id": "47:3859",
+                          "name": "Оборудование",
                           "type": "TEXT",
                           "tokenHints": {
                             "styleRefs": 0,
@@ -529,8 +459,8 @@
                             "rawValueHints": 1
                           },
                           "children": [],
-                          "width": 413,
-                          "height": 35,
+                          "width": 116,
+                          "height": 23,
                           "layout": {
                             "layoutPositioning": "AUTO",
                             "constraints": {
@@ -544,851 +474,27 @@
                             "cornerRadius": "undefined",
                             "effects": "none",
                             "fillColors": [
-                              "#1e1e1e"
+                              "#eef2ef"
                             ]
                           },
                           "text": {
-                            "characters": "Cyber TM 200",
-                            "lineHeight": "95.99999785423279%",
-                            "letterSpacing": "-2%",
+                            "characters": "Оборудование",
+                            "lineHeight": "22.399999618530273px",
+                            "letterSpacing": "0px",
                             "textCase": "ORIGINAL",
                             "fontFamily": "Manrope",
-                            "fontStyle": "Regular",
-                            "fontSize": 36
-                          }
-                        },
-                        {
-                          "id": "49:3933",
-                          "name": "Frame 85",
-                          "type": "FRAME",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 0
-                          },
-                          "children": [
-                            {
-                              "id": "49:3930",
-                              "name": "Frame 82",
-                              "type": "FRAME",
-                              "tokenHints": {
-                                "styleRefs": 0,
-                                "variableRefs": 0,
-                                "rawValueHints": 0
-                              },
-                              "children": [
-                                {
-                                  "id": "49:3922",
-                                  "name": "Четыре системы под разные задачи операционной. Выб",
-                                  "type": "TEXT",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 1
-                                  },
-                                  "children": [],
-                                  "width": 153,
-                                  "height": 26,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "solid",
-                                    "strokes": "none",
-                                    "cornerRadius": "undefined",
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#42859b"
-                                    ]
-                                  },
-                                  "text": {
-                                    "characters": "Твердотельный",
-                                    "lineHeight": "26px",
-                                    "letterSpacing": "0px",
-                                    "textCase": "ORIGINAL",
-                                    "fontFamily": "Manrope",
-                                    "fontStyle": "Medium",
-                                    "fontSize": 20
-                                  }
-                                }
-                              ],
-                              "width": 185,
-                              "height": 38,
-                              "layout": {
-                                "layoutMode": "HORIZONTAL",
-                                "primaryAxisAlignItems": "CENTER",
-                                "counterAxisAlignItems": "CENTER",
-                                "itemSpacing": 10,
-                                "paddingTop": 6,
-                                "paddingRight": 16,
-                                "paddingBottom": 6,
-                                "paddingLeft": 16,
-                                "layoutPositioning": "AUTO",
-                                "constraints": {
-                                  "horizontal": "MIN",
-                                  "vertical": "MIN"
-                                }
-                              },
-                              "visual": {
-                                "fills": "solid",
-                                "strokes": "none",
-                                "cornerRadius": 23,
-                                "effects": "none",
-                                "fillColors": [
-                                  "#d9f4fa"
-                                ]
-                              }
-                            },
-                            {
-                              "id": "49:3931",
-                              "name": "Frame 83",
-                              "type": "FRAME",
-                              "tokenHints": {
-                                "styleRefs": 0,
-                                "variableRefs": 0,
-                                "rawValueHints": 0
-                              },
-                              "children": [
-                                {
-                                  "id": "49:3928",
-                                  "name": "Четыре системы под разные задачи операционной. Выб",
-                                  "type": "TEXT",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 1
-                                  },
-                                  "children": [],
-                                  "width": 75,
-                                  "height": 26,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "solid",
-                                    "strokes": "none",
-                                    "cornerRadius": "undefined",
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#42859b"
-                                    ]
-                                  },
-                                  "text": {
-                                    "characters": "2010 нм",
-                                    "lineHeight": "26px",
-                                    "letterSpacing": "0px",
-                                    "textCase": "ORIGINAL",
-                                    "fontFamily": "Manrope",
-                                    "fontStyle": "Medium",
-                                    "fontSize": 20
-                                  }
-                                }
-                              ],
-                              "width": 107,
-                              "height": 38,
-                              "layout": {
-                                "layoutMode": "HORIZONTAL",
-                                "primaryAxisAlignItems": "CENTER",
-                                "counterAxisAlignItems": "CENTER",
-                                "itemSpacing": 10,
-                                "paddingTop": 6,
-                                "paddingRight": 16,
-                                "paddingBottom": 6,
-                                "paddingLeft": 16,
-                                "layoutPositioning": "AUTO",
-                                "constraints": {
-                                  "horizontal": "MIN",
-                                  "vertical": "MIN"
-                                }
-                              },
-                              "visual": {
-                                "fills": "solid",
-                                "strokes": "none",
-                                "cornerRadius": 23,
-                                "effects": "none",
-                                "fillColors": [
-                                  "#d9f4fa"
-                                ]
-                              }
-                            },
-                            {
-                              "id": "49:3932",
-                              "name": "Frame 84",
-                              "type": "FRAME",
-                              "tokenHints": {
-                                "styleRefs": 0,
-                                "variableRefs": 0,
-                                "rawValueHints": 0
-                              },
-                              "children": [
-                                {
-                                  "id": "49:3926",
-                                  "name": "Четыре системы под разные задачи операционной. Выб",
-                                  "type": "TEXT",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 1
-                                  },
-                                  "children": [],
-                                  "width": 64,
-                                  "height": 26,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "solid",
-                                    "strokes": "none",
-                                    "cornerRadius": "undefined",
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#42859b"
-                                    ]
-                                  },
-                                  "text": {
-                                    "characters": "200 Вт",
-                                    "lineHeight": "26px",
-                                    "letterSpacing": "0px",
-                                    "textCase": "ORIGINAL",
-                                    "fontFamily": "Manrope",
-                                    "fontStyle": "Medium",
-                                    "fontSize": 20
-                                  }
-                                }
-                              ],
-                              "width": 96,
-                              "height": 38,
-                              "layout": {
-                                "layoutMode": "HORIZONTAL",
-                                "primaryAxisAlignItems": "CENTER",
-                                "counterAxisAlignItems": "CENTER",
-                                "itemSpacing": 10,
-                                "paddingTop": 6,
-                                "paddingRight": 16,
-                                "paddingBottom": 6,
-                                "paddingLeft": 16,
-                                "layoutPositioning": "AUTO",
-                                "constraints": {
-                                  "horizontal": "MIN",
-                                  "vertical": "MIN"
-                                }
-                              },
-                              "visual": {
-                                "fills": "solid",
-                                "strokes": "none",
-                                "cornerRadius": 23,
-                                "effects": "none",
-                                "fillColors": [
-                                  "#d9f4fa"
-                                ]
-                              }
-                            }
-                          ],
-                          "width": 413,
-                          "height": 38,
-                          "layout": {
-                            "layoutMode": "HORIZONTAL",
-                            "primaryAxisAlignItems": "MIN",
-                            "counterAxisAlignItems": "CENTER",
-                            "itemSpacing": 10,
-                            "paddingTop": 0,
-                            "paddingRight": 0,
-                            "paddingBottom": 0,
-                            "paddingLeft": 0,
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "none",
-                            "strokes": "none",
-                            "cornerRadius": 0,
-                            "effects": "none"
+                            "fontStyle": "SemiBold",
+                            "fontSize": 16
                           }
                         }
                       ],
-                      "width": 413,
-                      "height": 100,
+                      "width": 209.59375,
+                      "height": 22.390625,
                       "layout": {
                         "layoutMode": "VERTICAL",
                         "primaryAxisAlignItems": "MIN",
                         "counterAxisAlignItems": "MIN",
-                        "itemSpacing": 27,
-                        "paddingTop": 0,
-                        "paddingRight": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "layoutPositioning": "AUTO",
-                        "constraints": {
-                          "horizontal": "MIN",
-                          "vertical": "MIN"
-                        }
-                      },
-                      "visual": {
-                        "fills": "none",
-                        "strokes": "none",
-                        "cornerRadius": 0,
-                        "effects": "none"
-                      }
-                    },
-                    {
-                      "id": "49:4004",
-                      "name": "Frame 92",
-                      "type": "FRAME",
-                      "tokenHints": {
-                        "styleRefs": 0,
-                        "variableRefs": 0,
-                        "rawValueHints": 0
-                      },
-                      "children": [
-                        {
-                          "id": "49:3925",
-                          "name": "Четыре системы под разные задачи операционной. Выб",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 533,
-                          "height": 52,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#1e1e1e"
-                            ]
-                          },
-                          "text": {
-                            "characters": "Тулиевые лазеры Cyber (150–200 Вт): прецизионная хирургия мягких тканей",
-                            "lineHeight": "26px",
-                            "letterSpacing": "0px",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "Medium",
-                            "fontSize": 18
-                          }
-                        },
-                        {
-                          "id": "52:4047",
-                          "name": "Четыре системы под разные задачи операционной. Выб",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 533,
-                          "height": 156,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#1e1e1e"
-                            ]
-                          },
-                          "text": {
-                            "characters": "Лазерные системы Cyber со специальным тулиевым излучением объединяют ювелирную точность воздействия и мгновенный гемостаз. Глубина термического повреждения окружающих тканей составляет всего 0,1–0,2 мм, что исключает побочные эффекты и ускоряет реабилитацию.",
-                            "lineHeight": "26px",
-                            "letterSpacing": "0px",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "Medium",
-                            "fontSize": 18
-                          }
-                        },
-                        {
-                          "id": "49:4003",
-                          "name": "Frame 91",
-                          "type": "FRAME",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 0
-                          },
-                          "children": [
-                            {
-                              "id": "49:4002",
-                              "name": "Frame 90",
-                              "type": "FRAME",
-                              "tokenHints": {
-                                "styleRefs": 0,
-                                "variableRefs": 0,
-                                "rawValueHints": 0
-                              },
-                              "children": [
-                                {
-                                  "id": "49:3992",
-                                  "name": "Vector 1",
-                                  "type": "VECTOR",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 0
-                                  },
-                                  "children": [],
-                                  "width": 27.547056198120117,
-                                  "height": 27,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "gradient",
-                                    "strokes": "none",
-                                    "cornerRadius": 3,
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#139ec1",
-                                      "#dcf5fb"
-                                    ]
-                                  }
-                                },
-                                {
-                                  "id": "49:3988",
-                                  "name": "Четыре системы под разные задачи операционной. Выб",
-                                  "type": "TEXT",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 1
-                                  },
-                                  "children": [],
-                                  "width": 411,
-                                  "height": 50,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "solid",
-                                    "strokes": "none",
-                                    "cornerRadius": "undefined",
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#1e1e1e"
-                                    ]
-                                  },
-                                  "text": {
-                                    "characters": "Универсальность режимов: от деликатной резекции до высокоскоростной вапоризации.",
-                                    "lineHeight": "AUTO",
-                                    "letterSpacing": "0px",
-                                    "textCase": "ORIGINAL",
-                                    "fontFamily": "Manrope",
-                                    "fontStyle": "Medium",
-                                    "fontSize": 18
-                                  }
-                                }
-                              ],
-                              "width": 460.54705810546875,
-                              "height": 50,
-                              "layout": {
-                                "layoutMode": "HORIZONTAL",
-                                "primaryAxisAlignItems": "MIN",
-                                "counterAxisAlignItems": "MIN",
-                                "itemSpacing": 22,
-                                "paddingTop": 0,
-                                "paddingRight": 0,
-                                "paddingBottom": 0,
-                                "paddingLeft": 0,
-                                "layoutPositioning": "AUTO",
-                                "constraints": {
-                                  "horizontal": "MIN",
-                                  "vertical": "MIN"
-                                }
-                              },
-                              "visual": {
-                                "fills": "none",
-                                "strokes": "none",
-                                "cornerRadius": 0,
-                                "effects": "none"
-                              }
-                            },
-                            {
-                              "id": "49:4001",
-                              "name": "Frame 89",
-                              "type": "FRAME",
-                              "tokenHints": {
-                                "styleRefs": 0,
-                                "variableRefs": 0,
-                                "rawValueHints": 0
-                              },
-                              "children": [
-                                {
-                                  "id": "49:3996",
-                                  "name": "Vector 2",
-                                  "type": "VECTOR",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 0
-                                  },
-                                  "children": [],
-                                  "width": 27.547056198120117,
-                                  "height": 27,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "gradient",
-                                    "strokes": "none",
-                                    "cornerRadius": 3,
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#139ec1",
-                                      "#dcf5fb"
-                                    ]
-                                  }
-                                },
-                                {
-                                  "id": "49:3989",
-                                  "name": "Четыре системы под разные задачи операционной. Выб",
-                                  "type": "TEXT",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 1
-                                  },
-                                  "children": [],
-                                  "width": 410,
-                                  "height": 75,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "solid",
-                                    "strokes": "none",
-                                    "cornerRadius": "undefined",
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#1e1e1e"
-                                    ]
-                                  },
-                                  "text": {
-                                    "characters": "Любой хирургический доступ: одинаково высокая эффективность при эндоскопических, лапароскопических и открытых операциях.",
-                                    "lineHeight": "AUTO",
-                                    "letterSpacing": "0px",
-                                    "textCase": "ORIGINAL",
-                                    "fontFamily": "Manrope",
-                                    "fontStyle": "Medium",
-                                    "fontSize": 18
-                                  }
-                                }
-                              ],
-                              "width": 459.54705810546875,
-                              "height": 75,
-                              "layout": {
-                                "layoutMode": "HORIZONTAL",
-                                "primaryAxisAlignItems": "MIN",
-                                "counterAxisAlignItems": "MIN",
-                                "itemSpacing": 22,
-                                "paddingTop": 0,
-                                "paddingRight": 0,
-                                "paddingBottom": 0,
-                                "paddingLeft": 0,
-                                "layoutPositioning": "AUTO",
-                                "constraints": {
-                                  "horizontal": "MIN",
-                                  "vertical": "MIN"
-                                }
-                              },
-                              "visual": {
-                                "fills": "none",
-                                "strokes": "none",
-                                "cornerRadius": 0,
-                                "effects": "none"
-                              }
-                            },
-                            {
-                              "id": "49:4000",
-                              "name": "Frame 88",
-                              "type": "FRAME",
-                              "tokenHints": {
-                                "styleRefs": 0,
-                                "variableRefs": 0,
-                                "rawValueHints": 0
-                              },
-                              "children": [
-                                {
-                                  "id": "49:3997",
-                                  "name": "Vector 3",
-                                  "type": "VECTOR",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 0
-                                  },
-                                  "children": [],
-                                  "width": 27.547056198120117,
-                                  "height": 27,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "gradient",
-                                    "strokes": "none",
-                                    "cornerRadius": 3,
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#139ec1",
-                                      "#dcf5fb"
-                                    ]
-                                  }
-                                },
-                                {
-                                  "id": "49:3990",
-                                  "name": "Четыре системы под разные задачи операционной. Выб",
-                                  "type": "TEXT",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 1
-                                  },
-                                  "children": [],
-                                  "width": 410,
-                                  "height": 75,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "solid",
-                                    "strokes": "none",
-                                    "cornerRadius": "undefined",
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#1e1e1e"
-                                    ]
-                                  },
-                                  "text": {
-                                    "characters": "Широкий спектр применения: урология, общая и торакальная хирургия, гастроэнтерология и другие направления.",
-                                    "lineHeight": "AUTO",
-                                    "letterSpacing": "0px",
-                                    "textCase": "ORIGINAL",
-                                    "fontFamily": "Manrope",
-                                    "fontStyle": "Medium",
-                                    "fontSize": 18
-                                  }
-                                }
-                              ],
-                              "width": 460.54705810546875,
-                              "height": 75,
-                              "layout": {
-                                "layoutMode": "HORIZONTAL",
-                                "primaryAxisAlignItems": "MIN",
-                                "counterAxisAlignItems": "MIN",
-                                "itemSpacing": 22,
-                                "paddingTop": 0,
-                                "paddingRight": 0,
-                                "paddingBottom": 0,
-                                "paddingLeft": 0,
-                                "layoutPositioning": "AUTO",
-                                "constraints": {
-                                  "horizontal": "MIN",
-                                  "vertical": "MIN"
-                                }
-                              },
-                              "visual": {
-                                "fills": "none",
-                                "strokes": "none",
-                                "cornerRadius": 0,
-                                "effects": "none"
-                              }
-                            },
-                            {
-                              "id": "49:3999",
-                              "name": "Frame 87",
-                              "type": "FRAME",
-                              "tokenHints": {
-                                "styleRefs": 0,
-                                "variableRefs": 0,
-                                "rawValueHints": 0
-                              },
-                              "children": [
-                                {
-                                  "id": "49:3998",
-                                  "name": "Vector 4",
-                                  "type": "VECTOR",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 0
-                                  },
-                                  "children": [],
-                                  "width": 27.547056198120117,
-                                  "height": 27,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "gradient",
-                                    "strokes": "none",
-                                    "cornerRadius": 3,
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#139ec1",
-                                      "#dcf5fb"
-                                    ]
-                                  }
-                                },
-                                {
-                                  "id": "49:3991",
-                                  "name": "Четыре системы под разные задачи операционной. Выб",
-                                  "type": "TEXT",
-                                  "tokenHints": {
-                                    "styleRefs": 0,
-                                    "variableRefs": 0,
-                                    "rawValueHints": 1
-                                  },
-                                  "children": [],
-                                  "width": 410,
-                                  "height": 25,
-                                  "layout": {
-                                    "layoutPositioning": "AUTO",
-                                    "constraints": {
-                                      "horizontal": "MIN",
-                                      "vertical": "MIN"
-                                    }
-                                  },
-                                  "visual": {
-                                    "fills": "solid",
-                                    "strokes": "none",
-                                    "cornerRadius": "undefined",
-                                    "effects": "none",
-                                    "fillColors": [
-                                      "#1e1e1e"
-                                    ]
-                                  },
-                                  "text": {
-                                    "characters": "РУ Росздравнадзора: бессрочное",
-                                    "lineHeight": "AUTO",
-                                    "letterSpacing": "0px",
-                                    "textCase": "ORIGINAL",
-                                    "fontFamily": "Manrope",
-                                    "fontStyle": "Medium",
-                                    "fontSize": 18
-                                  }
-                                }
-                              ],
-                              "width": 459.54705810546875,
-                              "height": 27,
-                              "layout": {
-                                "layoutMode": "HORIZONTAL",
-                                "primaryAxisAlignItems": "MIN",
-                                "counterAxisAlignItems": "MIN",
-                                "itemSpacing": 22,
-                                "paddingTop": 0,
-                                "paddingRight": 0,
-                                "paddingBottom": 0,
-                                "paddingLeft": 0,
-                                "layoutPositioning": "AUTO",
-                                "constraints": {
-                                  "horizontal": "MIN",
-                                  "vertical": "MIN"
-                                }
-                              },
-                              "visual": {
-                                "fills": "none",
-                                "strokes": "none",
-                                "cornerRadius": 0,
-                                "effects": "none"
-                              }
-                            }
-                          ],
-                          "width": 520.5470581054688,
-                          "height": 363,
-                          "layout": {
-                            "layoutMode": "VERTICAL",
-                            "primaryAxisAlignItems": "MIN",
-                            "counterAxisAlignItems": "MIN",
-                            "itemSpacing": 22,
-                            "paddingTop": 35,
-                            "paddingRight": 30,
-                            "paddingBottom": 35,
-                            "paddingLeft": 30,
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": 34,
-                            "effects": "none",
-                            "fillColors": [
-                              "#f8faf9"
-                            ]
-                          }
-                        }
-                      ],
-                      "width": 533,
-                      "height": 615,
-                      "layout": {
-                        "layoutMode": "VERTICAL",
-                        "primaryAxisAlignItems": "MIN",
-                        "counterAxisAlignItems": "MIN",
-                        "itemSpacing": 22,
+                        "itemSpacing": 0,
                         "paddingTop": 0,
                         "paddingRight": 0,
                         "paddingBottom": 0,
@@ -1407,13 +513,308 @@
                       }
                     }
                   ],
-                  "width": 533,
-                  "height": 761,
+                  "width": 209.59375,
+                  "height": 26.390625,
                   "layout": {
                     "layoutMode": "VERTICAL",
                     "primaryAxisAlignItems": "MIN",
                     "counterAxisAlignItems": "MIN",
-                    "itemSpacing": 46,
+                    "itemSpacing": 0,
+                    "paddingTop": 0,
+                    "paddingRight": 0,
+                    "paddingBottom": 4,
+                    "paddingLeft": 0,
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "none",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none"
+                  }
+                },
+                {
+                  "id": "47:3860",
+                  "name": "Frame 67",
+                  "type": "FRAME",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [
+                    {
+                      "id": "47:3861",
+                      "name": "Cyber TM 200",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 90,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Cyber TM 200",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3862",
+                      "name": "Litho 35 / EVO",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 89,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Litho 35 / EVO",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3863",
+                      "name": "Fiber Dust PRO",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 96,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Fiber Dust PRO",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3864",
+                      "name": "Litho DK",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 54,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Litho DK",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    }
+                  ],
+                  "width": 96,
+                  "height": 92,
+                  "layout": {
+                    "layoutMode": "VERTICAL",
+                    "primaryAxisAlignItems": "MIN",
+                    "counterAxisAlignItems": "MIN",
+                    "itemSpacing": 0,
+                    "paddingTop": 0,
+                    "paddingRight": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "none",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none"
+                  }
+                }
+              ],
+              "width": 209.59375,
+              "height": 134.390625,
+              "layout": {
+                "layoutMode": "VERTICAL",
+                "primaryAxisAlignItems": "MIN",
+                "counterAxisAlignItems": "MIN",
+                "itemSpacing": 16,
+                "paddingTop": 0,
+                "paddingRight": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "none",
+                "strokes": "none",
+                "cornerRadius": 0,
+                "effects": "none"
+              }
+            },
+            {
+              "id": "47:3865",
+              "name": "Container",
+              "type": "FRAME",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 0
+              },
+              "children": [
+                {
+                  "id": "47:3866",
+                  "name": "Bold Text",
+                  "type": "FRAME",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [
+                    {
+                      "id": "47:3867",
+                      "name": "Направления",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 106,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#eef2ef"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Направления",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "SemiBold",
+                        "fontSize": 16
+                      }
+                    }
+                  ],
+                  "width": 209.59375,
+                  "height": 22.390625,
+                  "layout": {
+                    "layoutMode": "VERTICAL",
+                    "primaryAxisAlignItems": "MIN",
+                    "counterAxisAlignItems": "MIN",
+                    "itemSpacing": 0,
                     "paddingTop": 0,
                     "paddingRight": 0,
                     "paddingBottom": 0,
@@ -1432,8 +833,192 @@
                   }
                 },
                 {
-                  "id": "49:4008",
-                  "name": "Лазерные системы Cyber со специальным тулиевым излучением объединяют ювелирную точность воздействия и мгновенный гемостаз. Глубина термического повреждения окружающих тканей составляет всего 0,1–0,2 мм, что исключает побочные эффекты и ускоряет реабилитацию.",
+                  "id": "47:3868",
+                  "name": "Frame 68",
+                  "type": "FRAME",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [
+                    {
+                      "id": "47:3869",
+                      "name": "Урология",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 64,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Урология",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3870",
+                      "name": "Нейрохирургия",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 104,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Нейрохирургия",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3871",
+                      "name": "Хирургия",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 63,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Хирургия",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    }
+                  ],
+                  "width": 104,
+                  "height": 69,
+                  "layout": {
+                    "layoutMode": "VERTICAL",
+                    "primaryAxisAlignItems": "MIN",
+                    "counterAxisAlignItems": "MIN",
+                    "itemSpacing": 0,
+                    "paddingTop": 0,
+                    "paddingRight": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "none",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none"
+                  }
+                }
+              ],
+              "width": 209.59375,
+              "height": 107.390625,
+              "layout": {
+                "layoutMode": "VERTICAL",
+                "primaryAxisAlignItems": "MIN",
+                "counterAxisAlignItems": "MIN",
+                "itemSpacing": 16,
+                "paddingTop": 0,
+                "paddingRight": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "none",
+                "strokes": "none",
+                "cornerRadius": 0,
+                "effects": "none"
+              }
+            },
+            {
+              "id": "47:3872",
+              "name": "Container",
+              "type": "FRAME",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 0
+              },
+              "children": [
+                {
+                  "id": "47:3873",
+                  "name": "Клиникам",
                   "type": "TEXT",
                   "tokenHints": {
                     "styleRefs": 0,
@@ -1441,8 +1026,8 @@
                     "rawValueHints": 1
                   },
                   "children": [],
-                  "width": 533,
-                  "height": 156,
+                  "width": 77,
+                  "height": 23,
                   "layout": {
                     "layoutPositioning": "AUTO",
                     "constraints": {
@@ -1456,22 +1041,22 @@
                     "cornerRadius": "undefined",
                     "effects": "none",
                     "fillColors": [
-                      "#1e1e1e"
+                      "#eef2ef"
                     ]
                   },
                   "text": {
-                    "characters": "Лазерные системы Cyber со специальным тулиевым излучением объединяют ювелирную точность воздействия и мгновенный гемостаз. Глубина термического повреждения окружающих тканей составляет всего 0,1–0,2 мм, что исключает побочные эффекты и ускоряет реабилитацию.",
-                    "lineHeight": "26px",
+                    "characters": "Клиникам",
+                    "lineHeight": "22.399999618530273px",
                     "letterSpacing": "0px",
                     "textCase": "ORIGINAL",
                     "fontFamily": "Manrope",
-                    "fontStyle": "Medium",
-                    "fontSize": 18
+                    "fontStyle": "SemiBold",
+                    "fontSize": 16
                   }
                 },
                 {
-                  "id": "49:4011",
-                  "name": "Frame 94",
+                  "id": "47:3874",
+                  "name": "Frame 69",
                   "type": "FRAME",
                   "tokenHints": {
                     "styleRefs": 0,
@@ -1480,65 +1065,18 @@
                   },
                   "children": [
                     {
-                      "id": "49:4006",
-                      "name": "Link",
-                      "type": "FRAME",
+                      "id": "47:3875",
+                      "name": "Закупка и документы",
+                      "type": "TEXT",
                       "tokenHints": {
                         "styleRefs": 0,
                         "variableRefs": 0,
-                        "rawValueHints": 0
+                        "rawValueHints": 1
                       },
-                      "children": [
-                        {
-                          "id": "49:4007",
-                          "name": "запросить кп",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 127,
-                          "height": 20,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#ffffff"
-                            ]
-                          },
-                          "text": {
-                            "characters": "запросить кп",
-                            "lineHeight": "AUTO",
-                            "letterSpacing": "1px",
-                            "textCase": "UPPER",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "Bold",
-                            "fontSize": 15
-                          }
-                        }
-                      ],
-                      "width": 203.39747619628906,
-                      "height": 62.33438491821289,
+                      "children": [],
+                      "width": 141,
+                      "height": 23,
                       "layout": {
-                        "layoutMode": "HORIZONTAL",
-                        "primaryAxisAlignItems": "MIN",
-                        "counterAxisAlignItems": "CENTER",
-                        "itemSpacing": 11.987381935119629,
-                        "paddingTop": 0,
-                        "paddingRight": 37,
-                        "paddingBottom": 0,
-                        "paddingLeft": 37,
                         "layoutPositioning": "AUTO",
                         "constraints": {
                           "horizontal": "MIN",
@@ -1547,22 +1085,107 @@
                       },
                       "visual": {
                         "fills": "solid",
-                        "strokes": "solid",
-                        "cornerRadius": 1197.5394287109375,
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
                         "effects": "none",
                         "fillColors": [
-                          "#9b5094"
+                          "#ffffff"
                         ]
+                      },
+                      "text": {
+                        "characters": "Закупка и документы",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3876",
+                      "name": "Сервис и обучение",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 128,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Сервис и обучение",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3877",
+                      "name": "Демонстрация",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 100,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Демонстрация",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
                       }
                     }
                   ],
-                  "width": 236,
-                  "height": 62.33438491821289,
+                  "width": 141,
+                  "height": 69,
                   "layout": {
                     "layoutMode": "VERTICAL",
                     "primaryAxisAlignItems": "MIN",
                     "counterAxisAlignItems": "MIN",
-                    "itemSpacing": 19,
+                    "itemSpacing": 0,
                     "paddingTop": 0,
                     "paddingRight": 0,
                     "paddingBottom": 0,
@@ -1581,13 +1204,13 @@
                   }
                 }
               ],
-              "width": 533,
-              "height": 1057.3343505859375,
+              "width": 141,
+              "height": 108,
               "layout": {
                 "layoutMode": "VERTICAL",
                 "primaryAxisAlignItems": "MIN",
                 "counterAxisAlignItems": "MIN",
-                "itemSpacing": 39,
+                "itemSpacing": 16,
                 "paddingTop": 0,
                 "paddingRight": 0,
                 "paddingBottom": 0,
@@ -1606,8 +1229,8 @@
               }
             },
             {
-              "id": "47:3919",
-              "name": "Frame 81",
+              "id": "47:3878",
+              "name": "Container",
               "type": "FRAME",
               "tokenHints": {
                 "styleRefs": 0,
@@ -1616,340 +1239,18 @@
               },
               "children": [
                 {
-                  "id": "47:3915",
-                  "name": "Frame 77",
-                  "type": "FRAME",
+                  "id": "47:3879",
+                  "name": "Пациентам",
+                  "type": "TEXT",
                   "tokenHints": {
                     "styleRefs": 0,
                     "variableRefs": 0,
-                    "rawValueHints": 0
+                    "rawValueHints": 1
                   },
-                  "children": [
-                    {
-                      "id": "47:3629",
-                      "name": "123123123 1",
-                      "type": "RECTANGLE",
-                      "tokenHints": {
-                        "styleRefs": 0,
-                        "variableRefs": 0,
-                        "rawValueHints": 0
-                      },
-                      "children": [],
-                      "width": 74,
-                      "height": 131,
-                      "layout": {
-                        "layoutPositioning": "AUTO",
-                        "constraints": {
-                          "horizontal": "MIN",
-                          "vertical": "MIN"
-                        }
-                      },
-                      "visual": {
-                        "fills": "image",
-                        "strokes": "none",
-                        "cornerRadius": 0,
-                        "effects": "none"
-                      }
-                    },
-                    {
-                      "id": "47:3640",
-                      "name": "Frame 33",
-                      "type": "FRAME",
-                      "tokenHints": {
-                        "styleRefs": 0,
-                        "variableRefs": 0,
-                        "rawValueHints": 0
-                      },
-                      "children": [
-                        {
-                          "id": "47:3642",
-                          "name": "Cyber TM 200",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 126,
-                          "height": 19,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#9b5094"
-                            ]
-                          },
-                          "text": {
-                            "characters": "Cyber TM 200",
-                            "lineHeight": "95.99999785423279%",
-                            "letterSpacing": "-2%",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "Medium",
-                            "fontSize": 20
-                          }
-                        },
-                        {
-                          "id": "47:3646",
-                          "name": "~32–33 млн ₽",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 89,
-                          "height": 13,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#1e1e1e"
-                            ]
-                          },
-                          "text": {
-                            "characters": "~32–33 млн ₽",
-                            "lineHeight": "95.99999785423279%",
-                            "letterSpacing": "-2%",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "SemiBold",
-                            "fontSize": 14
-                          }
-                        }
-                      ],
-                      "width": 160,
-                      "height": 42,
-                      "layout": {
-                        "layoutMode": "VERTICAL",
-                        "primaryAxisAlignItems": "MIN",
-                        "counterAxisAlignItems": "CENTER",
-                        "itemSpacing": 10,
-                        "paddingTop": 0,
-                        "paddingRight": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "layoutPositioning": "AUTO",
-                        "constraints": {
-                          "horizontal": "MIN",
-                          "vertical": "MIN"
-                        }
-                      },
-                      "visual": {
-                        "fills": "none",
-                        "strokes": "none",
-                        "cornerRadius": 0,
-                        "effects": "none"
-                      }
-                    }
-                  ],
-                  "width": 200,
-                  "height": 255,
+                  "children": [],
+                  "width": 89,
+                  "height": 23,
                   "layout": {
-                    "layoutMode": "VERTICAL",
-                    "primaryAxisAlignItems": "MIN",
-                    "counterAxisAlignItems": "CENTER",
-                    "itemSpacing": 36,
-                    "paddingTop": 20,
-                    "paddingRight": 20,
-                    "paddingBottom": 20,
-                    "paddingLeft": 20,
-                    "layoutPositioning": "AUTO",
-                    "constraints": {
-                      "horizontal": "MIN",
-                      "vertical": "MIN"
-                    }
-                  },
-                  "visual": {
-                    "fills": "gradient",
-                    "strokes": "none",
-                    "cornerRadius": 28,
-                    "effects": "blur",
-                    "fillColors": [
-                      "#8b43ca",
-                      "#a2cdde"
-                    ]
-                  }
-                },
-                {
-                  "id": "47:3916",
-                  "name": "Frame 78",
-                  "type": "FRAME",
-                  "tokenHints": {
-                    "styleRefs": 0,
-                    "variableRefs": 0,
-                    "rawValueHints": 0
-                  },
-                  "children": [
-                    {
-                      "id": "47:3903",
-                      "name": "123123123 2",
-                      "type": "RECTANGLE",
-                      "tokenHints": {
-                        "styleRefs": 0,
-                        "variableRefs": 0,
-                        "rawValueHints": 0
-                      },
-                      "children": [],
-                      "width": 74,
-                      "height": 131,
-                      "layout": {
-                        "layoutPositioning": "AUTO",
-                        "constraints": {
-                          "horizontal": "MIN",
-                          "vertical": "MIN"
-                        }
-                      },
-                      "visual": {
-                        "fills": "image",
-                        "strokes": "none",
-                        "cornerRadius": 0,
-                        "effects": "none"
-                      }
-                    },
-                    {
-                      "id": "47:3647",
-                      "name": "Frame 34",
-                      "type": "FRAME",
-                      "tokenHints": {
-                        "styleRefs": 0,
-                        "variableRefs": 0,
-                        "rawValueHints": 0
-                      },
-                      "children": [
-                        {
-                          "id": "47:3649",
-                          "name": "Litho 35 / EVO",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 124,
-                          "height": 19,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#1e1e1e"
-                            ]
-                          },
-                          "text": {
-                            "characters": "Litho 35 / EVO",
-                            "lineHeight": "95.99999785423279%",
-                            "letterSpacing": "-2%",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "Medium",
-                            "fontSize": 20
-                          }
-                        },
-                        {
-                          "id": "47:3653",
-                          "name": "цена в КП",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 64,
-                          "height": 13,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#1e1e1e"
-                            ]
-                          },
-                          "text": {
-                            "characters": "цена в КП",
-                            "lineHeight": "95.99999785423279%",
-                            "letterSpacing": "-2%",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "SemiBold",
-                            "fontSize": 14
-                          }
-                        }
-                      ],
-                      "width": 160,
-                      "height": 42,
-                      "layout": {
-                        "layoutMode": "VERTICAL",
-                        "primaryAxisAlignItems": "MIN",
-                        "counterAxisAlignItems": "CENTER",
-                        "itemSpacing": 10,
-                        "paddingTop": 0,
-                        "paddingRight": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "layoutPositioning": "AUTO",
-                        "constraints": {
-                          "horizontal": "MIN",
-                          "vertical": "MIN"
-                        }
-                      },
-                      "visual": {
-                        "fills": "none",
-                        "strokes": "none",
-                        "cornerRadius": 0,
-                        "effects": "none"
-                      }
-                    }
-                  ],
-                  "width": 200,
-                  "height": 255,
-                  "layout": {
-                    "layoutMode": "VERTICAL",
-                    "primaryAxisAlignItems": "MIN",
-                    "counterAxisAlignItems": "CENTER",
-                    "itemSpacing": 36,
-                    "paddingTop": 20,
-                    "paddingRight": 20,
-                    "paddingBottom": 20,
-                    "paddingLeft": 20,
                     "layoutPositioning": "AUTO",
                     "constraints": {
                       "horizontal": "MIN",
@@ -1959,16 +1260,25 @@
                   "visual": {
                     "fills": "solid",
                     "strokes": "none",
-                    "cornerRadius": 28,
-                    "effects": "blur",
+                    "cornerRadius": "undefined",
+                    "effects": "none",
                     "fillColors": [
-                      "#8fc2da"
+                      "#eef2ef"
                     ]
+                  },
+                  "text": {
+                    "characters": "Пациентам",
+                    "lineHeight": "22.399999618530273px",
+                    "letterSpacing": "0px",
+                    "textCase": "ORIGINAL",
+                    "fontFamily": "Manrope",
+                    "fontStyle": "SemiBold",
+                    "fontSize": 16
                   }
                 },
                 {
-                  "id": "47:3917",
-                  "name": "Frame 79",
+                  "id": "47:3880",
+                  "name": "Frame 70",
                   "type": "FRAME",
                   "tokenHints": {
                     "styleRefs": 0,
@@ -1977,17 +1287,17 @@
                   },
                   "children": [
                     {
-                      "id": "47:3904",
-                      "name": "123123123 3",
-                      "type": "RECTANGLE",
+                      "id": "47:3881",
+                      "name": "Где сделать операцию",
+                      "type": "TEXT",
                       "tokenHints": {
                         "styleRefs": 0,
                         "variableRefs": 0,
-                        "rawValueHints": 0
+                        "rawValueHints": 1
                       },
                       "children": [],
-                      "width": 74,
-                      "height": 131,
+                      "width": 152,
+                      "height": 23,
                       "layout": {
                         "layoutPositioning": "AUTO",
                         "constraints": {
@@ -1996,110 +1306,37 @@
                         }
                       },
                       "visual": {
-                        "fills": "image",
+                        "fills": "solid",
                         "strokes": "none",
-                        "cornerRadius": 0,
-                        "effects": "none"
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Где сделать операцию",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
                       }
                     },
                     {
-                      "id": "47:3654",
-                      "name": "Frame 35",
-                      "type": "FRAME",
+                      "id": "47:3882",
+                      "name": "Частые вопросы",
+                      "type": "TEXT",
                       "tokenHints": {
                         "styleRefs": 0,
                         "variableRefs": 0,
-                        "rawValueHints": 0
+                        "rawValueHints": 1
                       },
-                      "children": [
-                        {
-                          "id": "47:3656",
-                          "name": "Fiber Dust PRO",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 134,
-                          "height": 19,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#1e1e1e"
-                            ]
-                          },
-                          "text": {
-                            "characters": "Fiber Dust PRO",
-                            "lineHeight": "95.99999785423279%",
-                            "letterSpacing": "-2%",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "Medium",
-                            "fontSize": 20
-                          }
-                        },
-                        {
-                          "id": "47:3660",
-                          "name": "цена в КП",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 64,
-                          "height": 13,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#1e1e1e"
-                            ]
-                          },
-                          "text": {
-                            "characters": "цена в КП",
-                            "lineHeight": "95.99999785423279%",
-                            "letterSpacing": "-2%",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "SemiBold",
-                            "fontSize": 14
-                          }
-                        }
-                      ],
-                      "width": 160,
-                      "height": 42,
+                      "children": [],
+                      "width": 110,
+                      "height": 23,
                       "layout": {
-                        "layoutMode": "VERTICAL",
-                        "primaryAxisAlignItems": "MIN",
-                        "counterAxisAlignItems": "CENTER",
-                        "itemSpacing": 10,
-                        "paddingTop": 0,
-                        "paddingRight": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
                         "layoutPositioning": "AUTO",
                         "constraints": {
                           "horizontal": "MIN",
@@ -2107,24 +1344,112 @@
                         }
                       },
                       "visual": {
-                        "fills": "none",
+                        "fills": "solid",
                         "strokes": "none",
-                        "cornerRadius": 0,
-                        "effects": "none"
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Частые вопросы",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3883",
+                      "name": "Видео операций",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 110,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Видео операций",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3884",
+                      "name": "Новости и события",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 127,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Новости и события",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
                       }
                     }
                   ],
-                  "width": 200,
-                  "height": 255,
+                  "width": 152,
+                  "height": 92,
                   "layout": {
                     "layoutMode": "VERTICAL",
                     "primaryAxisAlignItems": "MIN",
-                    "counterAxisAlignItems": "CENTER",
-                    "itemSpacing": 36,
-                    "paddingTop": 20,
-                    "paddingRight": 20,
-                    "paddingBottom": 20,
-                    "paddingLeft": 20,
+                    "counterAxisAlignItems": "MIN",
+                    "itemSpacing": 0,
+                    "paddingTop": 0,
+                    "paddingRight": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
                     "layoutPositioning": "AUTO",
                     "constraints": {
                       "horizontal": "MIN",
@@ -2132,205 +1457,27 @@
                     }
                   },
                   "visual": {
-                    "fills": "solid",
+                    "fills": "none",
                     "strokes": "none",
-                    "cornerRadius": 28,
-                    "effects": "blur",
-                    "fillColors": [
-                      "#8fc2da"
-                    ]
-                  }
-                },
-                {
-                  "id": "47:3918",
-                  "name": "Frame 80",
-                  "type": "FRAME",
-                  "tokenHints": {
-                    "styleRefs": 0,
-                    "variableRefs": 0,
-                    "rawValueHints": 0
-                  },
-                  "children": [
-                    {
-                      "id": "47:3905",
-                      "name": "123123123 4",
-                      "type": "RECTANGLE",
-                      "tokenHints": {
-                        "styleRefs": 0,
-                        "variableRefs": 0,
-                        "rawValueHints": 0
-                      },
-                      "children": [],
-                      "width": 74,
-                      "height": 131,
-                      "layout": {
-                        "layoutPositioning": "AUTO",
-                        "constraints": {
-                          "horizontal": "MIN",
-                          "vertical": "MIN"
-                        }
-                      },
-                      "visual": {
-                        "fills": "image",
-                        "strokes": "none",
-                        "cornerRadius": 0,
-                        "effects": "none"
-                      }
-                    },
-                    {
-                      "id": "47:3661",
-                      "name": "Frame 36",
-                      "type": "FRAME",
-                      "tokenHints": {
-                        "styleRefs": 0,
-                        "variableRefs": 0,
-                        "rawValueHints": 0
-                      },
-                      "children": [
-                        {
-                          "id": "47:3663",
-                          "name": "Litho DK",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 75,
-                          "height": 19,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#1e1e1e"
-                            ]
-                          },
-                          "text": {
-                            "characters": "Litho DK",
-                            "lineHeight": "95.99999785423279%",
-                            "letterSpacing": "-2%",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "Medium",
-                            "fontSize": 20
-                          }
-                        },
-                        {
-                          "id": "47:3667",
-                          "name": "~7–8 млн ₽",
-                          "type": "TEXT",
-                          "tokenHints": {
-                            "styleRefs": 0,
-                            "variableRefs": 0,
-                            "rawValueHints": 1
-                          },
-                          "children": [],
-                          "width": 73,
-                          "height": 13,
-                          "layout": {
-                            "layoutPositioning": "AUTO",
-                            "constraints": {
-                              "horizontal": "MIN",
-                              "vertical": "MIN"
-                            }
-                          },
-                          "visual": {
-                            "fills": "solid",
-                            "strokes": "none",
-                            "cornerRadius": "undefined",
-                            "effects": "none",
-                            "fillColors": [
-                              "#1e1e1e"
-                            ]
-                          },
-                          "text": {
-                            "characters": "~7–8 млн ₽",
-                            "lineHeight": "95.99999785423279%",
-                            "letterSpacing": "-2%",
-                            "textCase": "ORIGINAL",
-                            "fontFamily": "Manrope",
-                            "fontStyle": "SemiBold",
-                            "fontSize": 14
-                          }
-                        }
-                      ],
-                      "width": 160,
-                      "height": 42,
-                      "layout": {
-                        "layoutMode": "VERTICAL",
-                        "primaryAxisAlignItems": "MIN",
-                        "counterAxisAlignItems": "CENTER",
-                        "itemSpacing": 10,
-                        "paddingTop": 0,
-                        "paddingRight": 0,
-                        "paddingBottom": 0,
-                        "paddingLeft": 0,
-                        "layoutPositioning": "AUTO",
-                        "constraints": {
-                          "horizontal": "MIN",
-                          "vertical": "MIN"
-                        }
-                      },
-                      "visual": {
-                        "fills": "none",
-                        "strokes": "none",
-                        "cornerRadius": 0,
-                        "effects": "none"
-                      }
-                    }
-                  ],
-                  "width": 200,
-                  "height": 255,
-                  "layout": {
-                    "layoutMode": "VERTICAL",
-                    "primaryAxisAlignItems": "MIN",
-                    "counterAxisAlignItems": "CENTER",
-                    "itemSpacing": 42,
-                    "paddingTop": 20,
-                    "paddingRight": 20,
-                    "paddingBottom": 20,
-                    "paddingLeft": 20,
-                    "layoutPositioning": "AUTO",
-                    "constraints": {
-                      "horizontal": "MIN",
-                      "vertical": "MIN"
-                    }
-                  },
-                  "visual": {
-                    "fills": "solid",
-                    "strokes": "none",
-                    "cornerRadius": 28,
-                    "effects": "blur",
-                    "fillColors": [
-                      "#8fc2da"
-                    ]
+                    "cornerRadius": 0,
+                    "effects": "none"
                   }
                 }
               ],
-              "width": 842,
-              "height": 255,
+              "width": 152,
+              "height": 131,
               "layout": {
-                "layoutMode": "HORIZONTAL",
+                "layoutMode": "VERTICAL",
                 "primaryAxisAlignItems": "MIN",
                 "counterAxisAlignItems": "MIN",
-                "itemSpacing": 14,
+                "itemSpacing": 16,
                 "paddingTop": 0,
                 "paddingRight": 0,
                 "paddingBottom": 0,
                 "paddingLeft": 0,
                 "layoutPositioning": "AUTO",
                 "constraints": {
-                  "horizontal": "CENTER",
+                  "horizontal": "MIN",
                   "vertical": "MIN"
                 }
               },
@@ -2340,10 +1487,854 @@
                 "cornerRadius": 0,
                 "effects": "none"
               }
+            },
+            {
+              "id": "47:3885",
+              "name": "Container",
+              "type": "FRAME",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 0
+              },
+              "children": [
+                {
+                  "id": "47:3886",
+                  "name": "Контакты",
+                  "type": "TEXT",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 1
+                  },
+                  "children": [],
+                  "width": 75,
+                  "height": 23,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": "undefined",
+                    "effects": "none",
+                    "fillColors": [
+                      "#eef2ef"
+                    ]
+                  },
+                  "text": {
+                    "characters": "Контакты",
+                    "lineHeight": "22.399999618530273px",
+                    "letterSpacing": "0px",
+                    "textCase": "ORIGINAL",
+                    "fontFamily": "Manrope",
+                    "fontStyle": "SemiBold",
+                    "fontSize": 16
+                  }
+                },
+                {
+                  "id": "47:3887",
+                  "name": "Frame 71",
+                  "type": "FRAME",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [
+                    {
+                      "id": "47:3888",
+                      "name": "+7 495 109-90-60",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 115,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "+7 495 109-90-60",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3889",
+                      "name": "contact@quantasystem.ru",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 174,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "contact@quantasystem.ru",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3890",
+                      "name": "Москва, БЦ «Ирис»",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 127,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Москва, БЦ «Ирис»",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    },
+                    {
+                      "id": "47:3891",
+                      "name": "Дилерам",
+                      "type": "TEXT",
+                      "tokenHints": {
+                        "styleRefs": 0,
+                        "variableRefs": 0,
+                        "rawValueHints": 1
+                      },
+                      "children": [],
+                      "width": 61,
+                      "height": 23,
+                      "layout": {
+                        "layoutPositioning": "AUTO",
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        }
+                      },
+                      "visual": {
+                        "fills": "solid",
+                        "strokes": "none",
+                        "cornerRadius": "undefined",
+                        "effects": "none",
+                        "fillColors": [
+                          "#ffffff"
+                        ]
+                      },
+                      "text": {
+                        "characters": "Дилерам",
+                        "lineHeight": "22.399999618530273px",
+                        "letterSpacing": "0px",
+                        "textCase": "ORIGINAL",
+                        "fontFamily": "Manrope",
+                        "fontStyle": "Regular",
+                        "fontSize": 14
+                      }
+                    }
+                  ],
+                  "width": 174,
+                  "height": 92,
+                  "layout": {
+                    "layoutMode": "VERTICAL",
+                    "primaryAxisAlignItems": "MIN",
+                    "counterAxisAlignItems": "MIN",
+                    "itemSpacing": 0,
+                    "paddingTop": 0,
+                    "paddingRight": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "none",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none"
+                  }
+                }
+              ],
+              "width": 174,
+              "height": 131,
+              "layout": {
+                "layoutMode": "VERTICAL",
+                "primaryAxisAlignItems": "MIN",
+                "counterAxisAlignItems": "MIN",
+                "itemSpacing": 16,
+                "paddingTop": 0,
+                "paddingRight": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "none",
+                "strokes": "none",
+                "cornerRadius": 0,
+                "effects": "none"
+              }
+            },
+            {
+              "id": "47:3892",
+              "name": "Имеются противопоказания. Необходимо ознакомиться ",
+              "type": "TEXT",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 1
+              },
+              "children": [],
+              "width": 1360,
+              "height": 64,
+              "layout": {
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "solid",
+                "strokes": "none",
+                "cornerRadius": "undefined",
+                "effects": "none",
+                "fillColors": [
+                  "#ffffff"
+                ]
+              },
+              "text": {
+                "characters": "Имеются противопоказания. Необходимо ознакомиться с инструкцией по применению или получить консультацию специалиста. Материалы о медицинских изделиях предназначены для медицинских работников.",
+                "lineHeight": "AUTO",
+                "letterSpacing": "0.25999999046325684px",
+                "textCase": "UPPER",
+                "fontFamily": "Bebas Neue",
+                "fontStyle": "Regular",
+                "fontSize": 32
+              }
+            },
+            {
+              "id": "47:3893",
+              "name": "Frame 72",
+              "type": "FRAME",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 0
+              },
+              "children": [
+                {
+                  "id": "47:3894",
+                  "name": "ООО «Кванта Систем» · официальный дистрибьютор Qua",
+                  "type": "TEXT",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 1
+                  },
+                  "children": [],
+                  "width": 389,
+                  "height": 23,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": "undefined",
+                    "effects": "none",
+                    "fillColors": [
+                      "#ffffff"
+                    ]
+                  },
+                  "text": {
+                    "characters": "Политика конфиденциальности и обработки данных",
+                    "lineHeight": "22.399999618530273px",
+                    "letterSpacing": "0px",
+                    "textCase": "ORIGINAL",
+                    "fontFamily": "Manrope",
+                    "fontStyle": "Regular",
+                    "fontSize": 12
+                  }
+                },
+                {
+                  "id": "47:3895",
+                  "name": "ООО «Кванта Систем» · официальный дистрибьютор Qua",
+                  "type": "TEXT",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 1
+                  },
+                  "children": [],
+                  "width": 389,
+                  "height": 23,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": "undefined",
+                    "effects": "none",
+                    "fillColors": [
+                      "#ffffff"
+                    ]
+                  },
+                  "text": {
+                    "characters": "Форма заявки на изменение обработки персональных данных",
+                    "lineHeight": "22.399999618530273px",
+                    "letterSpacing": "0px",
+                    "textCase": "ORIGINAL",
+                    "fontFamily": "Manrope",
+                    "fontStyle": "Regular",
+                    "fontSize": 12
+                  }
+                }
+              ],
+              "width": 389,
+              "height": 46,
+              "layout": {
+                "layoutMode": "VERTICAL",
+                "primaryAxisAlignItems": "MIN",
+                "counterAxisAlignItems": "MIN",
+                "itemSpacing": 0,
+                "paddingTop": 0,
+                "paddingRight": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "none",
+                "strokes": "none",
+                "cornerRadius": 0,
+                "effects": "none"
+              }
+            },
+            {
+              "id": "47:3896",
+              "name": "Frame 66",
+              "type": "FRAME",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 0
+              },
+              "children": [
+                {
+                  "id": "47:3897",
+                  "name": "ООО «Кванта Систем» · официальный дистрибьютор Qua",
+                  "type": "TEXT",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 1
+                  },
+                  "children": [],
+                  "width": 223,
+                  "height": 23,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": "undefined",
+                    "effects": "none",
+                    "fillColors": [
+                      "#ffffff"
+                    ]
+                  },
+                  "text": {
+                    "characters": "ООО Кванта Систем AHI © 2020",
+                    "lineHeight": "22.399999618530273px",
+                    "letterSpacing": "0px",
+                    "textCase": "ORIGINAL",
+                    "fontFamily": "Manrope",
+                    "fontStyle": "Regular",
+                    "fontSize": 12
+                  }
+                },
+                {
+                  "id": "47:3898",
+                  "name": "ООО «Кванта Систем» · официальный дистрибьютор Qua",
+                  "type": "TEXT",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 1
+                  },
+                  "children": [],
+                  "width": 223,
+                  "height": 30,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": "undefined",
+                    "effects": "none",
+                    "fillColors": [
+                      "#ffffff"
+                    ]
+                  },
+                  "text": {
+                    "characters": "официальный дистрибьютор Quanta System S.p.A. (El.En. Group)",
+                    "lineHeight": "15px",
+                    "letterSpacing": "0px",
+                    "textCase": "ORIGINAL",
+                    "fontFamily": "Manrope",
+                    "fontStyle": "Regular",
+                    "fontSize": 12
+                  }
+                }
+              ],
+              "width": 223,
+              "height": 56,
+              "layout": {
+                "layoutMode": "VERTICAL",
+                "primaryAxisAlignItems": "MIN",
+                "counterAxisAlignItems": "MIN",
+                "itemSpacing": 3,
+                "paddingTop": 0,
+                "paddingRight": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "none",
+                "strokes": "none",
+                "cornerRadius": 0,
+                "effects": "none"
+              }
+            },
+            {
+              "id": "57:4108",
+              "name": "Frame 118",
+              "type": "FRAME",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 0
+              },
+              "children": [
+                {
+                  "id": "47:3902",
+                  "name": "Quanta System",
+                  "type": "VECTOR",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [],
+                  "width": 1360,
+                  "height": 198,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none",
+                    "fillColors": [
+                      "#1a768d"
+                    ]
+                  }
+                }
+              ],
+              "width": 1360,
+              "height": 136,
+              "layout": {
+                "layoutMode": "NONE",
+                "primaryAxisAlignItems": "MIN",
+                "counterAxisAlignItems": "MIN",
+                "itemSpacing": 0,
+                "paddingTop": 0,
+                "paddingRight": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "layoutPositioning": "AUTO",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              "visual": {
+                "fills": "none",
+                "strokes": "none",
+                "cornerRadius": 0,
+                "effects": "none"
+              }
+            },
+            {
+              "id": "47:3906",
+              "name": "Partner Logos",
+              "type": "GROUP",
+              "tokenHints": {
+                "styleRefs": 0,
+                "variableRefs": 0,
+                "rawValueHints": 0
+              },
+              "children": [
+                {
+                  "id": "47:3907",
+                  "name": "Фигура_9",
+                  "type": "VECTOR",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [],
+                  "width": 10.471662521362305,
+                  "height": 3.206439971923828,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none",
+                    "fillColors": [
+                      "#d507d3"
+                    ]
+                  }
+                },
+                {
+                  "id": "47:3908",
+                  "name": "Эллипс_37_копия",
+                  "type": "VECTOR",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [],
+                  "width": 4.6878180503845215,
+                  "height": 4.345941543579102,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none",
+                    "fillColors": [
+                      "#6622cc"
+                    ]
+                  }
+                },
+                {
+                  "id": "47:3909",
+                  "name": "gasfort",
+                  "type": "VECTOR",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 2,
+                    "rawValueHints": 0
+                  },
+                  "children": [],
+                  "width": 93.0636978149414,
+                  "height": 14.640667915344238,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none",
+                    "fillColors": [
+                      "#ffffff"
+                    ]
+                  }
+                },
+                {
+                  "id": "47:3910",
+                  "name": "Фигура_7",
+                  "type": "VECTOR",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [],
+                  "width": 88.00768280029297,
+                  "height": 14.389472007751465,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "gradient",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none",
+                    "fillColors": [
+                      "#f9c540",
+                      "#fae925"
+                    ]
+                  }
+                },
+                {
+                  "id": "47:3911",
+                  "name": "Фигура_8",
+                  "type": "VECTOR",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [],
+                  "width": 71.31409454345703,
+                  "height": 15.337712287902832,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "gradient",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none",
+                    "fillColors": [
+                      "#811cce",
+                      "#f500d5",
+                      "#f500d5"
+                    ]
+                  }
+                },
+                {
+                  "id": "47:3912",
+                  "name": "Фигура_6",
+                  "type": "VECTOR",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [],
+                  "width": 89.82695770263672,
+                  "height": 16.117860794067383,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "gradient",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none",
+                    "fillColors": [
+                      "#5409ea",
+                      "#fd00f7",
+                      "#fd00f7"
+                    ]
+                  }
+                },
+                {
+                  "id": "47:3913",
+                  "name": "Эллипс_37",
+                  "type": "VECTOR",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [],
+                  "width": 4.91409969329834,
+                  "height": 4.865324974060059,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none",
+                    "fillColors": [
+                      "#fadd2e"
+                    ]
+                  }
+                },
+                {
+                  "id": "47:3914",
+                  "name": "Фигура_10",
+                  "type": "VECTOR",
+                  "tokenHints": {
+                    "styleRefs": 0,
+                    "variableRefs": 0,
+                    "rawValueHints": 0
+                  },
+                  "children": [],
+                  "width": 16.191787719726562,
+                  "height": 5.228105068206787,
+                  "layout": {
+                    "layoutPositioning": "AUTO",
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  },
+                  "visual": {
+                    "fills": "solid",
+                    "strokes": "none",
+                    "cornerRadius": 0,
+                    "effects": "none",
+                    "fillColors": [
+                      "#781ecd"
+                    ]
+                  }
+                }
+              ],
+              "width": 93.0636978149414,
+              "height": 36.937591552734375,
+              "layout": {
+                "layoutPositioning": "AUTO"
+              },
+              "visual": {
+                "fills": "unknown",
+                "strokes": "unknown",
+                "cornerRadius": "undefined",
+                "effects": "none"
+              }
             }
           ],
-          "width": 1360,
-          "height": 1395,
+          "width": 1440,
+          "height": 556,
           "layout": {
             "layoutMode": "NONE",
             "primaryAxisAlignItems": "MIN",
@@ -2367,13 +2358,13 @@
           }
         }
       ],
-      "width": 1360,
-      "height": 1594,
+      "width": 1440,
+      "height": 1096,
       "layout": {
         "layoutMode": "VERTICAL",
         "primaryAxisAlignItems": "MIN",
         "counterAxisAlignItems": "MIN",
-        "itemSpacing": 41,
+        "itemSpacing": 0,
         "paddingTop": 0,
         "paddingRight": 0,
         "paddingBottom": 0,
@@ -2393,17 +2384,28 @@
     },
     "stats": {
       "totalNodes": 67,
-      "frames": 32,
+      "frames": 22,
       "instances": 0,
-      "textNodes": 25,
-      "autoLayoutFrames": 30,
+      "textNodes": 32,
+      "autoLayoutFrames": 18,
       "absoluteNodes": 0
     },
     "tokenization": {
       "styleRefs": 0,
-      "variableRefs": 0,
-      "rawValueCandidates": 25,
-      "coverage": 0
+      "variableRefs": 2,
+      "rawValueCandidates": 32,
+      "coverage": 0.059,
+      "resolvedVariables": [
+        {
+          "id": "VariableID:8e7768382132e08571666f2d1027811f2feb90cf/113:3",
+          "name": "Primary/Light",
+          "collection": "Color",
+          "resolvedType": "COLOR",
+          "modes": {
+            "Mode 1": "#ffffff"
+          }
+        }
+      ]
     }
   }
 }
