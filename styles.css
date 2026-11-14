@@ -1059,7 +1059,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 1336px;
   margin-bottom: 46px;
 }
 
@@ -1086,23 +1085,6 @@ img {
   line-height: 26px;
   color: #1e1e1e;
   margin: 0;
-}
-
-/* Link: plain 15px Bold text, UPPERCASE, 1px tracking — no pill */
-.videos-all-link {
-  font-family: var(--font-main);
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #159ec1;
-  text-decoration: none;
-  transition: opacity 0.15s ease;
-}
-
-.videos-all-link:hover {
-  opacity: 0.8;
 }
 
 .videos-cards-grid {
@@ -1196,7 +1178,8 @@ img {
   margin: 0;
 }
 
-.news-all-btn {
+.news-all-btn,
+.videos-all-link {
   height: 52px;
   padding: 0 32px;
   border-radius: 9999px;
@@ -1213,7 +1196,8 @@ img {
   transition: background 0.15s ease;
 }
 
-.news-all-btn:hover {
+.news-all-btn:hover,
+.videos-all-link:hover {
   background: #f7faf9;
 }
 
