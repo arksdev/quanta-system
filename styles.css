@@ -1297,112 +1297,112 @@ img {
 }
 
 .cta-proposal-banner {
+  position: relative;
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
   height: 540px;
-  background: linear-gradient(135deg, #1b93b1 0%, #29a0bd 50%, #9b5094 100%);
-  border-radius: 40px;
+  background: url("assets/cta-bg.svg") center / 100% 100% no-repeat;
   overflow: hidden;
-  position: relative;
 }
 
-.cta-proposal-container {
-  width: 100%;
-  max-width: 1360px;
-  height: 100%;
+/* Absolute layout copied from Frame 97 so nothing depends on the container */
+.cta-proposal-inner {
+  position: relative;
+  width: 1440px;
+  height: 540px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
 }
 
-.cta-proposal-text {
-  max-width: 580px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  color: #ffffff;
-  z-index: 2;
+.cta-laser-img {
+  position: absolute;
+  left: 421px;
+  top: 64px;
+  width: 631px;
+  height: 476px;
+  display: block;
 }
 
 .cta-proposal-title {
+  position: absolute;
+  left: 40px;
+  top: 77px;
+  width: 544px;
   font-family: var(--font-main);
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.15;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
   color: #ffffff;
   margin: 0;
 }
 
 .cta-proposal-desc {
+  position: absolute;
+  left: 40px;
+  top: 203px;
+  width: 348px;
   font-family: var(--font-main);
-  font-size: 18px;
-  line-height: 1.45;
-  color: rgba(255, 255, 255, 0.9);
-  margin: 0 0 10px;
-}
-
-.cta-proposal-actions {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.cta-proposal-phone {
-  font-family: var(--font-main);
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
   color: #ffffff;
-  transition: opacity 0.15s ease;
-}
-
-.cta-proposal-phone:hover {
-  opacity: 0.85;
+  margin: 0;
 }
 
 .cta-proposal-btn {
-  height: 52px;
-  padding: 0 32px;
-  border-radius: 9999px;
+  position: absolute;
+  left: 40px;
+  top: 431px;
+  width: 199px;
+  height: 42px;
+  border: 0;
+  border-radius: 999px;
   background: #ffffff;
-  color: var(--color-secondary);
+  color: #149ec1;
   font-family: var(--font-main);
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 1px;
+  line-height: 0.96;
+  letter-spacing: 1.54px;
   text-transform: uppercase;
-  transition: transform 0.15s ease, background 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s ease;
 }
 
 .cta-proposal-btn:hover {
   background: #f0faff;
-  transform: translateY(-1px);
 }
 
-.cta-proposal-visual {
+/* Frame 76: white 4% fill over a 24.94px backdrop blur */
+.cta-proposal-phone {
   position: absolute;
-  right: -20px;
-  bottom: 0;
-  width: 631px;
-  height: 476px;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.cta-laser-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+  left: 979px;
+  top: 409px;
+  width: 421px;
+  height: 75.665px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(24.94px);
+  -webkit-backdrop-filter: blur(24.94px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  font-size: 46.058px;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* Mega Footer */
 .mega-footer {
   width: 100%;
   max-width: 1440px;
-  margin: 20px auto 0;
+  margin: 0 auto;
   background: #135b6e;
   border-radius: 40px 40px 0 0;
   padding: 60px 40px 40px;
