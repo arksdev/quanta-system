@@ -1,6 +1,6 @@
 /* ==========================================================================
-   QUANTA SURGICAL LASERS — SECTION 1 (HERO & HEADER)
-   Values extracted strictly from Figma Node 47:3579 (Frame 8)
+   QUANTA SURGICAL LASERS — COMPLETE DESKTOP STYLES
+   Exact metrics extracted from Figma MAIN FRAME (Node 47:3566)
    ========================================================================== */
 
 :root {
@@ -8,8 +8,11 @@
   --color-secondary: #149ec1;
   --color-accent-purple: #9b5094;
   --color-card-teal: #0a84a2;
+  --color-dark-teal: #135b6e;
   --color-white: #ffffff;
   --color-border-light: #eef2ef;
+  --color-text-dark: #1e1e1e;
+  --color-text-muted: #4a5450;
 
   --font-main: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -23,7 +26,7 @@
 html, body {
   font-family: var(--font-main);
   background: #ffffff;
-  color: #1e1e1e;
+  color: var(--color-text-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -46,8 +49,7 @@ img {
 }
 
 /* ==========================================================================
-   SECTION 1: HERO CANVAS & CONTAINER
-   Figma Node 47:3579 (1440x810, background linear-gradient)
+   SECTION 1: HERO CANVAS & CONTAINER (Figma Node 47:3579 Frame 8)
    ========================================================================== */
 
 .section-hero {
@@ -66,10 +68,7 @@ img {
   margin: 0 auto;
 }
 
-/* ==========================================================================
-   HEADER NAVIGATION (Figma Node 47:3604 Frame 24, 1360x43 @ y=27)
-   ========================================================================== */
-
+/* Header */
 .header {
   position: absolute;
   top: 29px;
@@ -185,10 +184,7 @@ img {
   transform: translateY(-1px);
 }
 
-/* ==========================================================================
-   HERO TEXT BLOCK (Figma Node 47:3584 Frame 5, 680x443 @ x=40, y=148)
-   ========================================================================== */
-
+/* Hero Content */
 .hero-text-block {
   position: absolute;
   left: 0;
@@ -234,10 +230,7 @@ img {
   margin: 0;
 }
 
-/* ==========================================================================
-   SEGMENTED SWITCHER (Figma Node 47:3599 Frame 9, 397.4x62.3 @ x=43, y=693)
-   ========================================================================== */
-
+/* Switcher */
 .hero-switcher {
   position: absolute;
   left: 3px;
@@ -280,10 +273,7 @@ img {
   transform: translateY(-1px);
 }
 
-/* ==========================================================================
-   CENTER LASER MACHINE (Figma Node 47:3581 Frame 7, 516x677 @ x=761, y=133)
-   Relative to container (left: 40px): left = 761 - 40 = 721px
-   ========================================================================== */
+/* Laser Graphic */
 .hero-laser-wrap {
   position: absolute;
   left: 721px;
@@ -301,10 +291,7 @@ img {
   display: block;
 }
 
-/* ==========================================================================
-   RIGHT METRICS CARDS (Figma Node 47:3589 Frame 3, 246.4x417.3 @ x=1153.6, y=348)
-   ========================================================================== */
-
+/* Metrics Cards */
 .hero-metrics-list {
   position: absolute;
   right: 0;
@@ -315,6 +302,7 @@ img {
   gap: 9.55px;
   z-index: 5;
 }
+
 .hero-metric-card {
   width: 246.4px;
   height: 132.7px;
@@ -344,4 +332,1114 @@ img {
   font-weight: 500;
   line-height: 1;
   color: #ffffff;
+}
+
+/* ==========================================================================
+   SECTION 2: EQUIPMENT CATALOG & SWITCHER (Figma Node 50:4045 Frame 116)
+   margin-top: 120px (y: 810 -> 930)
+   ========================================================================== */
+
+.section-equipment {
+  margin-top: 120px;
+  position: relative;
+  width: 100%;
+}
+
+.equipment-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.equipment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 41px;
+}
+
+.equipment-title {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.28;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.equipment-header-right {
+  max-width: 603px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.equipment-subtitle {
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.equipment-clinical-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #ecf0ed;
+  box-sizing: border-box;
+}
+
+.equipment-clinical-tab {
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 500;
+  color: #4a5450;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.equipment-clinical-tab.active {
+  background: var(--color-accent-purple);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.equipment-main-card {
+  position: relative;
+  width: 100%;
+  border: 1px solid #e8f2f4;
+  border-radius: 51px;
+  background: #ffffff;
+  padding: 48px 56px 64px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
+}
+
+.equipment-models-grid {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 60px;
+}
+
+.model-thumb-card {
+  width: 200px;
+  height: 255px;
+  border-radius: 28px;
+  background: #e8f3f8;
+  padding: 24px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.model-thumb-card.active {
+  background: linear-gradient(180deg, rgba(139, 67, 202, 0.15) 0%, rgba(162, 205, 222, 0.3) 100%);
+  border: 1px solid rgba(155, 80, 148, 0.3);
+  box-shadow: 0 8px 24px rgba(139, 67, 202, 0.08);
+}
+
+.model-thumb-card:hover {
+  transform: translateY(-2px);
+}
+
+.model-thumb-img {
+  width: 74px;
+  height: 131px;
+  object-fit: contain;
+}
+
+.model-thumb-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.model-thumb-title {
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.model-thumb-card.active .model-thumb-title {
+  color: var(--color-accent-purple);
+}
+
+.model-thumb-price {
+  font-family: var(--font-main);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.model-detail-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.model-large-photo-wrap {
+  width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.model-large-img {
+  width: 361px;
+  height: 642px;
+  object-fit: contain;
+}
+
+.model-specs-col {
+  flex: 1;
+  max-width: 533px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.model-name {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.model-badges-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.model-badge {
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 23px;
+  background: #d9f4fa;
+  color: #42859b;
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+.model-lead-text {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.44;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.model-body-text {
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.model-features-box {
+  border-radius: 34px;
+  background: #f8faf9;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin: 8px 0;
+}
+
+.model-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.model-feature-icon {
+  width: 27.5px;
+  height: 27px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.model-feature-text {
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-text-dark);
+}
+
+.model-cta-btn {
+  width: 203.4px;
+  height: 62.3px;
+  border-radius: 9999px;
+  background: var(--color-accent-purple);
+  color: #ffffff;
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.model-cta-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+/* ==========================================================================
+   SECTION 3: BENTO COMPARISON + DIRECTIONS + WHY SURGEONS
+   margin-top: 130px
+   ========================================================================== */
+
+.section-applications {
+  margin-top: 130px;
+  position: relative;
+  width: 100%;
+}
+
+.applications-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+}
+
+/* Bento Comparison */
+.bento-comparison-grid {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.bento-card-patients {
+  flex: 1;
+  min-height: 912px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #a7deeb 0%, #149ec1 100%);
+  color: #ffffff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-card-clinics {
+  flex: 1;
+  min-height: 912px;
+  border-radius: 40px;
+  background: #ffffff;
+  border: 1px solid #e8f2f4;
+  color: var(--color-text-dark);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.bento-card-title {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.28;
+  margin: 0 0 16px;
+}
+
+.bento-card-title.text-dark {
+  color: var(--color-text-dark);
+}
+
+.bento-card-desc {
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+  margin: 0;
+}
+
+.bento-card-desc.text-dark {
+  color: var(--color-text-muted);
+}
+
+.bento-features-list,
+.bento-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  margin: 60px 0;
+}
+
+.bento-feature-title,
+.bento-step-title {
+  font-family: var(--font-main);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.bento-feature-desc,
+.bento-step-desc {
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.bento-cta-btn-light {
+  height: 65px;
+  padding: 0 40px;
+  border-radius: 9999px;
+  background: #ffffff;
+  color: var(--color-accent-purple);
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  transition: transform 0.15s ease;
+}
+
+.bento-cta-btn-purple {
+  height: 65px;
+  padding: 0 40px;
+  border-radius: 9999px;
+  background: var(--color-accent-purple);
+  color: #ffffff;
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  transition: transform 0.15s ease;
+}
+
+/* Clinical Directions */
+.clinical-directions-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.clinical-directions-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.clinical-directions-title {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.clinical-directions-subtitle {
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.clinical-directions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.clinical-direction-row {
+  height: 94px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e8f2f4;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.clinical-direction-row:hover {
+  transform: translateX(4px);
+  border-color: var(--color-secondary);
+  box-shadow: 0 4px 20px rgba(20, 158, 193, 0.08);
+}
+
+.clinical-direction-name {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.clinical-direction-desc {
+  font-family: var(--font-main);
+  font-size: 15px;
+  color: var(--color-text-muted);
+  flex: 1;
+}
+
+.clinical-direction-arrow {
+  font-size: 24px;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+/* Why Surgeons Block */
+.why-surgeons-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 890px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.why-surgeons-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.why-surgeons-card {
+  position: relative;
+  z-index: 2;
+  width: 680px;
+  min-height: 890px;
+  background: rgba(10, 132, 162, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 40px;
+  padding: 60px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.why-surgeons-title {
+  font-family: var(--font-main);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.why-surgeons-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px 24px;
+  margin: 40px 0;
+}
+
+.why-stat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.why-stat-val {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.why-stat-desc {
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.why-surgeons-quote {
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 30px;
+}
+
+.why-surgeons-btn {
+  height: 60px;
+  padding: 0 36px;
+  border-radius: 9999px;
+  background: #ffffff;
+  color: var(--color-secondary);
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  transition: transform 0.15s ease;
+}
+
+/* ==========================================================================
+   SECTION 4: SURGICAL VIDEOS (Figma Node 50:4032 Frame 104)
+   margin-top: 130px
+   ========================================================================== */
+
+.section-videos {
+  margin-top: 130px;
+  position: relative;
+  width: 100%;
+}
+
+.videos-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.videos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.videos-title {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin: 0 0 10px;
+}
+
+.videos-subtitle {
+  font-family: var(--font-main);
+  font-size: 16px;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.videos-all-link {
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  transition: opacity 0.15s ease;
+}
+
+.videos-all-link:hover {
+  opacity: 0.8;
+}
+
+.videos-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 38px;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-2px);
+}
+
+.video-thumb-wrap {
+  position: relative;
+  width: 100%;
+  height: 225px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.video-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-duration-badge {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  height: 27px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background: rgba(12, 18, 16, 0.85);
+  color: #ffffff;
+  font-family: var(--font-main);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+.video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3px;
+  box-sizing: border-box;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.video-tag {
+  font-family: var(--font-main);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.video-card-title {
+  font-family: var(--font-main);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.video-author {
+  font-family: var(--font-main);
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   SECTION 5: NEWS & EVENTS (Figma Node 50:4027 Frame 100)
+   margin-top: 130px
+   ========================================================================== */
+
+.section-news {
+  margin-top: 130px;
+  position: relative;
+  width: 100%;
+}
+
+.news-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.news-main-title {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.news-all-btn {
+  height: 52px;
+  padding: 0 32px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 1px solid #eef2ef;
+  color: var(--color-secondary);
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.news-all-btn:hover {
+  background: #f7faf9;
+}
+
+.news-layout-grid {
+  display: flex;
+  gap: 92px;
+  align-items: flex-start;
+}
+
+.news-featured-card {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.news-featured-card:hover {
+  transform: translateY(-2px);
+}
+
+.news-featured-img {
+  width: 680px;
+  height: 390px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.news-featured-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news-item-category {
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent-purple);
+}
+
+.news-featured-title {
+  font-family: var(--font-main);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.news-list-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.news-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f0f4f2;
+  transition: transform 0.15s ease;
+}
+
+.news-list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.news-list-item:hover {
+  transform: translateX(4px);
+}
+
+.news-item-title {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 6: CTA PROPOSAL + MEGA FOOTER (Figma Node 50:4046 Frame 117)
+   margin-top: 90px
+   ========================================================================== */
+
+.section-cta-footer {
+  margin-top: 90px;
+  position: relative;
+  width: 100%;
+}
+
+.cta-proposal-banner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 540px;
+  background: linear-gradient(135deg, #1b93b1 0%, #29a0bd 50%, #9b5094 100%);
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cta-proposal-container {
+  width: 100%;
+  max-width: 1360px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.cta-proposal-text {
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.cta-proposal-title {
+  font-family: var(--font-main);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0;
+}
+
+.cta-proposal-desc {
+  font-family: var(--font-main);
+  font-size: 18px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 10px;
+}
+
+.cta-proposal-actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.cta-proposal-phone {
+  font-family: var(--font-main);
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: opacity 0.15s ease;
+}
+
+.cta-proposal-phone:hover {
+  opacity: 0.85;
+}
+
+.cta-proposal-btn {
+  height: 52px;
+  padding: 0 32px;
+  border-radius: 9999px;
+  background: #ffffff;
+  color: var(--color-secondary);
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.cta-proposal-btn:hover {
+  background: #f0faff;
+  transform: translateY(-1px);
+}
+
+.cta-proposal-visual {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 631px;
+  height: 476px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cta-laser-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Mega Footer */
+.mega-footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 20px auto 0;
+  background: #135b6e;
+  border-radius: 40px 40px 0 0;
+  padding: 60px 40px 40px;
+  color: #ffffff;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.mega-footer-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mega-footer-cols {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.mega-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mega-col-heading {
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 700;
+  color: #eef2ef;
+}
+
+.mega-col-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mega-col-list a,
+.mega-col-list span {
+  font-family: var(--font-main);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.15s ease;
+}
+
+.mega-col-list a:hover {
+  color: #ffffff;
+}
+
+.mega-footer-disclaimer {
+  font-family: var(--font-main);
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.65);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 24px;
+  margin: 0;
+}
+
+.mega-footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.mega-footer-legal-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mega-footer-legal-links a {
+  font-family: var(--font-main);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.mega-footer-legal-links a:hover {
+  color: #ffffff;
+}
+
+.mega-footer-copy-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--font-main);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mega-footer-partners img {
+  width: 93px;
+  height: 37px;
+  display: block;
+}
+
+.mega-footer-watermark {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0.35;
+  margin-top: 20px;
+}
+
+.mega-footer-watermark img {
+  width: 100%;
+  max-width: 1360px;
+  height: auto;
 }
