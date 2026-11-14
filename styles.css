@@ -538,12 +538,20 @@ img {
   box-shadow: inset 0 0 0 9px #E8F2F4;
 }
 
-.model-large-img {
+/* Photo slot: one box, three machines crossfading inside it */
+.model-photos {
   position: absolute;
   left: 163px;
   top: 157px;
   width: 361px;
   height: 642px;
+}
+
+.model-large-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   /* every system stands on the same floor line */
   object-position: center bottom;
@@ -1636,4 +1644,655 @@ img {
   text-align: justify;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.25);
+}
+
+/* ==========================================================================
+   RESPONSIVENESS
+   Above 1440 the page is the Figma frame, untouched. Below that the 1360
+   containers go fluid and every absolute composition returns to flow:
+   1439 (laptop / tablet landscape), 1199 (burger), 1023 (one column),
+   767 (phone).
+   ========================================================================== */
+
+/* Mobile-only toggle; the desktop header is a row of five pills */
+.header-burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.header-burger span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  border-radius: 2px;
+  background: #ffffff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.header.is-open .header-burger span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.header.is-open .header-burger span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.is-open .header-burger span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* ------------------------------------------------------------ ≤ 1439px --- */
+
+@media (max-width: 1439px) {
+  /* ------------------------------------------------------------- shell */
+  .hero-container,
+  .equipment-container,
+  .applications-container,
+  .videos-container,
+  .news-container {
+    width: 100%;
+    max-width: none;
+    padding-left: clamp(20px, 3.6vw, 40px);
+    padding-right: clamp(20px, 3.6vw, 40px);
+  }
+
+  /* -------------------------------------------------------------- hero */
+  .section-hero {
+    height: auto;
+  }
+
+  .hero-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    grid-template-areas:
+      "header header"
+      "text laser"
+      "switch laser"
+      "metrics metrics";
+    align-items: start;
+    column-gap: clamp(16px, 3vw, 40px);
+    row-gap: clamp(18px, 2.4vw, 30px);
+    padding-top: clamp(20px, 2.4vw, 29px);
+    padding-bottom: clamp(28px, 4vw, 56px);
+  }
+
+  .header {
+    position: relative;
+    top: auto;
+    grid-area: header;
+    width: auto;
+    height: auto;
+  }
+
+  .header-logo-title { font-size: clamp(19px, 1.7vw, 24px); }
+  .header-phone { font-size: clamp(17px, 1.7vw, 24px); }
+  .header-right { gap: clamp(12px, 1.6vw, 24px); }
+  .header-cta-btn {
+    width: auto;
+    height: 40px;
+    padding: 0 clamp(16px, 1.8vw, 24px);
+    font-size: 10px;
+  }
+  .header-menu-link {
+    height: 40px;
+    padding: 0 clamp(12px, 1.5vw, 25px);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-text-block {
+    position: static;
+    grid-area: text;
+    width: auto;
+  }
+
+  .hero-title-group { margin-bottom: clamp(24px, 3.2vw, 56px); }
+  .hero-title { font-size: clamp(40px, 6.2vw, 92px); }
+  .hero-distributor-badge { font-size: clamp(12px, 1.05vw, 14px); line-height: 1.5; }
+  .hero-desc { font-size: clamp(16px, 1.4vw, 20px); line-height: 1.45; max-width: 48ch; }
+
+  .hero-switcher {
+    position: static;
+    grid-area: switch;
+    justify-self: start;
+  }
+
+  .hero-switch-btn { height: clamp(52px, 4.4vw, 62px); font-size: clamp(12px, 1.05vw, 15px); }
+  .hero-switch-btn.active { width: clamp(160px, 15vw, 210px); }
+  .hero-switch-btn.secondary { width: clamp(136px, 12.5vw, 177px); }
+
+  .hero-laser-wrap {
+    position: relative;
+    left: auto;
+    top: auto;
+    grid-area: laser;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 516 / 677;
+    align-self: center;
+  }
+
+  .hero-metrics-list {
+    position: static;
+    grid-area: metrics;
+    width: auto;
+    flex-direction: row;
+    gap: clamp(8px, 1vw, 12px);
+  }
+
+  .hero-metric-card {
+    flex: 1 1 0;
+    width: auto;
+    height: auto;
+    padding: clamp(16px, 1.8vw, 24px) clamp(16px, 2vw, 32px);
+    border-radius: clamp(16px, 1.7vw, 24px);
+  }
+
+  .hero-metric-val { font-size: clamp(24px, 2.6vw, 36px); margin-bottom: clamp(12px, 1.6vw, 24px); }
+  .hero-metric-label { font-size: clamp(13px, 1.2vw, 17px); }
+
+  /* --------------------------------------------------------- equipment */
+  .equipment-header {
+    gap: clamp(16px, 4vw, 351px);
+    flex-wrap: wrap;
+  }
+
+  .equipment-title { width: auto; font-size: clamp(32px, 3.4vw, 48px); }
+  .equipment-subtitle { width: auto; flex: 1 1 320px; font-size: clamp(16px, 1.4vw, 20px); }
+
+  .equipment-showcase-card {
+    width: 100%;
+    height: auto;
+    margin-top: clamp(32px, 4vw, 56px);
+    padding: clamp(24px, 3vw, 48px);
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
+    grid-template-areas:
+      "photo specs"
+      "thumbs specs";
+    column-gap: clamp(20px, 3vw, 48px);
+    row-gap: clamp(20px, 2.4vw, 32px);
+    align-items: start;
+  }
+
+  .model-photos {
+    position: relative;
+    left: auto;
+    top: auto;
+    grid-area: photo;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 361 / 642;
+  }
+
+  .model-specs-col {
+    position: static;
+    grid-area: specs;
+    width: auto;
+    height: auto;
+    align-self: stretch;
+    gap: clamp(24px, 2.6vw, 39px);
+  }
+
+  .model-specs-top { gap: clamp(24px, 2.6vw, 46px); }
+  .model-specs-body { gap: clamp(14px, 1.4vw, 22px); }
+  .model-name { width: auto; font-size: clamp(26px, 2.6vw, 36px); }
+  .model-badge {
+    height: clamp(30px, 2.8vw, 38px);
+    padding: 0 clamp(12px, 1.2vw, 16px);
+    font-size: clamp(14px, 1.4vw, 20px);
+  }
+  .model-lead-text,
+  .model-body-text { font-size: clamp(15px, 1.3vw, 18px); line-height: 1.5; }
+  .model-features-box {
+    width: auto;
+    max-width: 520.55px;
+    padding: clamp(20px, 2.4vw, 35px) clamp(18px, 2vw, 30px);
+    border-radius: clamp(20px, 2.2vw, 34px);
+    gap: clamp(16px, 1.6vw, 22px);
+  }
+  .model-feature-text { font-size: clamp(15px, 1.3vw, 18px); line-height: 1.4; }
+  .model-cta-btn {
+    width: clamp(180px, 15vw, 203.4px);
+    height: clamp(52px, 4.6vw, 62.33px);
+    font-size: clamp(12px, 1.05vw, 15px);
+  }
+
+  .equipment-models-grid {
+    position: static;
+    grid-area: thumbs;
+    align-self: end;
+    gap: clamp(8px, 0.9vw, 11.35px);
+  }
+
+  .model-thumb-card {
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
+    height: auto;
+    padding: clamp(10px, 1.1vw, 16.21px);
+    border-radius: clamp(14px, 1.6vw, 22.69px);
+    gap: clamp(12px, 1.4vw, 29.18px);
+  }
+
+  .model-thumb-img {
+    width: clamp(40px, 4.2vw, 59.88px);
+    height: auto;
+    aspect-ratio: 59.88 / 106.35;
+  }
+
+  .model-thumb-title { font-size: clamp(11px, 1.1vw, 16.21px); white-space: normal; }
+  .model-thumb-price { font-size: clamp(9px, 0.8vw, 11.35px); }
+
+  /* ------------------------------------------------------- applications */
+  /* the SVG does not stretch with background-size, so the band is rebuilt as
+     a gradient: cyan base plus the purple bloom in the bottom-right corner */
+  .sec3-bg {
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    background:
+      radial-gradient(120% 80% at 100% 100%, rgba(155, 80, 148, 0.9) 0%, rgba(155, 80, 148, 0) 62%),
+      #159ec1;
+  }
+
+  .applications-container { gap: clamp(56px, 8vw, 130px); }
+
+  .bento-comparison-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    /* the base rule is flex-start: without this the shorter card hangs */
+    align-items: stretch;
+    gap: clamp(12px, 1.4vw, 20px);
+  }
+
+  .bento-card {
+    width: auto;
+    height: auto;
+    padding: clamp(32px, 4vw, 86px) clamp(26px, 4vw, 77px) clamp(28px, 3.4vw, 74px) clamp(24px, 3.4vw, 67px);
+    border-radius: clamp(28px, 3.6vw, 56px);
+  }
+  .bento-card-clinics { margin-top: clamp(0px, 8vw, 181px); }
+  .bento-card-patients { gap: clamp(32px, 4vw, 88px); }
+  .bento-title { font-size: clamp(30px, 3.4vw, 48px); }
+  .bento-desc { font-size: clamp(16px, 1.4vw, 20px); line-height: 1.4; }
+  .bento-item-title { font-size: clamp(21px, 2.2vw, 32px); }
+  .bento-item-desc { font-size: clamp(15px, 1.3vw, 18px); line-height: 1.45; }
+  .bento-steps { gap: clamp(14px, 1.4vw, 20px); }
+  .bento-features { gap: clamp(26px, 3.2vw, 46px); }
+
+  .directions-block { gap: clamp(28px, 4vw, 59px); }
+  .directions-title { font-size: clamp(30px, 3.4vw, 48px); }
+  .directions-subtitle { font-size: clamp(16px, 1.4vw, 20px); line-height: 1.5; }
+  .direction-row {
+    height: auto;
+    min-height: clamp(72px, 6.5vw, 94px);
+    padding: clamp(14px, 1.6vw, 22px) clamp(20px, 2.3vw, 33px);
+    border-radius: clamp(24px, 2.6vw, 40px);
+    gap: clamp(12px, 1.6vw, 23px);
+  }
+  .direction-name {
+    flex: 0 0 clamp(120px, 24%, 372px);
+    width: auto;
+    font-size: clamp(18px, 1.8vw, 24px);
+  }
+  .direction-desc { font-size: clamp(14px, 1.3vw, 18px); line-height: 1.45; }
+  .direction-arrow { font-size: clamp(16px, 1.5vw, 20px); }
+
+  .why-surgeons {
+    height: auto;
+    margin-top: clamp(56px, 8vw, 130px);
+  }
+  .why-surgeons-photo {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1440 / 808;
+    border-radius: clamp(24px, 3.4vw, 64px);
+  }
+  .why-surgeons-card {
+    position: relative;
+    left: auto;
+    top: auto;
+    z-index: 1;
+    width: min(680px, 100%);
+    height: auto;
+    margin: clamp(-200px, -12vw, -56px) auto 0;
+    padding: clamp(28px, 4vw, 72px) clamp(24px, 4vw, 74px);
+    border-radius: clamp(28px, 3.4vw, 55px);
+    gap: clamp(28px, 3vw, 50px);
+  }
+  .why-surgeons-title { font-size: clamp(28px, 3.4vw, 48px); max-width: none; }
+  .why-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(16px, 4vw, 61px);
+    row-gap: clamp(16px, 2vw, 32px);
+  }
+  .why-stat-value { font-size: clamp(26px, 2.8vw, 40px); line-height: 1.4; }
+  .why-stat-desc { font-size: clamp(13px, 1.1vw, 15px); line-height: 1.5; }
+  .why-surgeons-text {
+    font-size: clamp(16px, 1.4vw, 20px);
+    line-height: 1.5;
+    max-width: none;
+    padding-top: clamp(0px, 2vw, 24px);
+  }
+
+  /* ----------------------------------------------------- videos & news */
+  .videos-header,
+  .news-header { gap: 20px; flex-wrap: wrap; }
+  .videos-title,
+  .news-main-title { font-size: clamp(30px, 3.4vw, 48px); }
+  .videos-subtitle { font-size: clamp(15px, 1.3vw, 18px); }
+
+  .videos-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: clamp(20px, 2.6vw, 38px);
+  }
+  .video-thumb-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 428 / 225;
+    border-radius: clamp(20px, 2.4vw, 34px);
+  }
+  .video-card-title { max-width: none; font-size: clamp(19px, 1.7vw, 24px); }
+
+  .news-all-btn,
+  .videos-all-link {
+    height: clamp(48px, 4.5vw, 65px);
+    padding: 0 clamp(22px, 2.6vw, 37px);
+    font-size: clamp(11px, 1.05vw, 15px);
+  }
+
+  .news-layout-grid { gap: clamp(28px, 4vw, 92px); }
+  .news-featured-card { width: auto; flex: 1 1 0; min-width: 0; }
+  .news-featured-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 680 / 390;
+    border-radius: clamp(24px, 3vw, 40px);
+  }
+  .news-list-side { width: auto; flex: 1 1 0; min-width: 0; }
+  .news-featured-title,
+  .news-item-title { font-size: clamp(19px, 1.7vw, 24px); max-width: none; }
+
+  /* -------------------------------------------------------- cta & footer */
+  .cta-proposal-banner { height: auto; }
+
+  .cta-proposal-inner {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.92fr);
+    grid-template-areas:
+      "title laser"
+      "desc laser"
+      "btn laser"
+      "phone laser";
+    column-gap: clamp(20px, 4vw, 60px);
+    row-gap: clamp(14px, 1.6vw, 22px);
+    padding: clamp(36px, 4.4vw, 64px) clamp(20px, 3.6vw, 40px);
+    align-items: start;
+  }
+  .cta-proposal-title { position: static; grid-area: title; width: auto; font-size: clamp(30px, 3.4vw, 48px); }
+  .cta-proposal-desc { position: static; grid-area: desc; width: auto; font-size: clamp(16px, 1.4vw, 20px); line-height: 1.4; }
+  .cta-proposal-btn {
+    position: static;
+    grid-area: btn;
+    width: max-content;
+    justify-self: start;
+    margin-top: clamp(8px, 1vw, 16px);
+  }
+  .cta-proposal-phone {
+    position: static;
+    grid-area: phone;
+    width: max-content;
+    max-width: 100%;
+    height: auto;
+    padding: clamp(14px, 1.8vw, 22px) clamp(20px, 2.6vw, 32px);
+    font-size: clamp(24px, 3.2vw, 46px);
+  }
+  .cta-laser-img {
+    position: static;
+    grid-area: laser;
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+
+  .mega-footer-inner {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    padding: 0 clamp(20px, 3.6vw, 40px) clamp(28px, 3.4vw, 40px);
+  }
+  .mega-footer-watermark {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1360 / 136;
+    object-fit: fill;
+    margin-bottom: clamp(28px, 4vw, 76px);
+  }
+  .mega-footer-nav {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    gap: clamp(20px, 3vw, 32px) clamp(24px, 4.4vw, 60px);
+  }
+  .mega-col { position: static; white-space: normal; }
+  .mega-footer-meta {
+    position: static;
+    width: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 223px) minmax(0, 389px) max-content;
+    gap: clamp(20px, 3vw, 28px) clamp(20px, 3.6vw, 40px);
+    margin-top: clamp(32px, 4vw, 56px);
+    align-items: start;
+  }
+  .mega-footer-company,
+  .mega-footer-legal,
+  .mega-footer-partner { position: static; width: auto; }
+  .mega-footer-partner { justify-self: end; }
+  .mega-footer-disclaimer {
+    position: static;
+    width: auto;
+    margin-top: clamp(24px, 3vw, 40px);
+    font-size: clamp(18px, 2.4vw, 32px);
+    line-height: 1.05;
+  }
+}
+
+/* ------------------------------------------------------------ ≤ 1199px --- */
+
+@media (max-width: 1199px) {
+  .header-nav {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    left: auto;
+    display: none;
+    min-width: 260px;
+    padding: 10px;
+    border-radius: 24px;
+    background: rgba(6, 88, 112, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 20px 40px rgba(6, 60, 76, 0.28);
+    z-index: 30;
+  }
+
+  .header.is-open .header-nav { display: block; }
+
+  .header-menu {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .header-menu-link {
+    display: flex;
+    justify-content: flex-start;
+    height: 44px;
+    padding: 0 18px;
+    font-size: 11px;
+  }
+
+  .header-burger { display: flex; }
+  .header-phone { display: none; }
+}
+
+/* ------------------------------------------------------------ ≤ 1023px --- */
+
+@media (max-width: 1023px) {
+  .hero-container {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "header"
+      "text"
+      "switch"
+      "laser"
+      "metrics";
+  }
+
+  .hero-laser-wrap { max-width: 460px; margin: 0 auto; }
+
+  .equipment-showcase-card {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "photo"
+      "thumbs"
+      "specs";
+  }
+
+  .model-photos { max-width: 420px; margin: 0 auto; }
+  .equipment-models-grid { max-width: 560px; }
+
+  .bento-comparison-grid { grid-template-columns: minmax(0, 1fr); }
+  .bento-card-clinics { margin-top: 0; }
+
+  /* on one column the directions block lands far below the 688px where the
+     desktop frame starts the band, so the band now runs to the section end */
+  .sec3-bg {
+    top: 25%;
+    bottom: 0;
+    height: auto;
+  }
+
+  .direction-row { flex-wrap: wrap; }
+
+  .why-surgeons-card { margin-top: -120px; }
+
+  .news-layout-grid { flex-direction: column; }
+  .news-featured-card,
+  .news-list-side { flex: 0 0 auto; width: 100%; }
+
+  .cta-proposal-inner {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "title"
+      "desc"
+      "btn"
+      "phone"
+      "laser";
+    justify-items: start;
+  }
+
+  .cta-laser-img { max-width: 520px; justify-self: center; }
+
+  .mega-footer-nav { grid-template-columns: repeat(3, max-content); }
+  .mega-footer-meta { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .mega-footer-partner { justify-self: start; }
+}
+
+/* ------------------------------------------------------------- ≤ 767px --- */
+
+@media (max-width: 767px) {
+  .hero-container {
+    row-gap: 18px;
+    padding-top: 18px;
+    padding-bottom: 32px;
+  }
+
+  .header-logo-title { font-size: 18px; }
+  .header-logo-sub { font-size: 8px; letter-spacing: 0.14em; }
+  .header-cta-btn { height: 36px; padding: 0 14px; font-size: 9px; letter-spacing: 0.06em; }
+
+  .hero-title { font-size: clamp(34px, 10vw, 48px); }
+  .hero-desc { font-size: 15px; }
+
+  .hero-switcher { width: 100%; }
+  .hero-switch-btn { flex: 1 1 0; width: auto; height: 52px; font-size: 11px; }
+
+  .hero-metrics-list { flex-wrap: wrap; }
+  .hero-metric-card {
+    flex: 1 1 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 18px;
+  }
+  .hero-metric-val { margin-bottom: 0; font-size: 24px; }
+  .hero-metric-label { font-size: 12px; text-align: right; }
+
+  .equipment-showcase-card { padding: 20px; border-radius: 32px; }
+  .equipment-models-grid { gap: 8px; }
+  .model-thumb-card { padding: 10px 6px; gap: 10px; border-radius: 16px; }
+  .model-thumb-title { font-size: 11px; }
+  .model-thumb-price { font-size: 9px; }
+
+  .model-specs-col { gap: 22px; }
+  .model-specs-header { gap: 16px; }
+  .model-badges-row { flex-wrap: wrap; gap: 6px; }
+  .model-features-box { padding: 18px 16px; border-radius: 22px; }
+  .model-feature-item { gap: 12px; }
+  .model-feature-icon { width: 20px; height: 20px; }
+  .model-cta-btn { width: 100%; }
+
+  .bento-card { padding: 28px 22px; border-radius: 28px; gap: 26px; }
+
+  .direction-row {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 18px 44px 18px 20px;
+    border-radius: 26px;
+  }
+  .direction-name { flex: 0 0 auto; }
+  .direction-desc { flex: 0 0 auto; }
+  .direction-arrow {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+  }
+
+  .why-surgeons-card {
+    margin-top: -40px;
+    padding: 26px 20px;
+    border-radius: 28px;
+    gap: 24px;
+  }
+  .why-stats { column-gap: 14px; row-gap: 16px; }
+  .why-surgeons-btn { width: 100%; }
+
+  .videos-cards-grid { grid-template-columns: minmax(0, 1fr); }
+
+  .cta-proposal-btn { width: 100%; }
+  .cta-proposal-phone { width: 100%; justify-content: center; font-size: clamp(20px, 6vw, 28px); }
+
+  .mega-footer-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mega-footer-meta { grid-template-columns: minmax(0, 1fr); }
+  .mega-footer-disclaimer { text-align: left; }
 }

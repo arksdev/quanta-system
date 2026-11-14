@@ -26,7 +26,7 @@
         </a>
 
         <nav class="header-nav" aria-label="Основное меню">
-          <ul class="header-menu">
+          <ul class="header-menu" id="header-menu">
             <li><a href="#equipment" class="header-menu-link">Оборудование</a></li>
             <li><a href="#clinics" class="header-menu-link">Клиникам</a></li>
             <li><a href="#dealers" class="header-menu-link">Дилерам</a></li>
@@ -38,6 +38,9 @@
         <div class="header-right">
           <a href="tel:+74951099060" class="header-phone">+7 495 109-90-60</a>
           <button type="button" class="header-cta-btn" onclick="alert('Заявка на КП: выберите оборудование или свяжитесь с нами.');">Запросить КП</button>
+          <button type="button" class="header-burger" aria-label="Меню" aria-expanded="false" aria-controls="header-menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </header>
 
@@ -98,9 +101,11 @@
       <!-- Showcase Card (Rectangle 20: 1360x1192, 9px stroke #E8F2F4, radius 51) -->
       <div class="equipment-showcase-card">
         <!-- Model photo: one 361x642 slot, three systems crossfading in place -->
-        <img src="assets/model-cyber-tm-large.webp" alt="Cyber TM 200" class="model-large-img is-active" width="361" height="642">
-        <img src="assets/model-litho-large.webp" alt="Litho 35 / EVO" class="model-large-img" width="361" height="642">
-        <img src="assets/model-fiber-dust-large.webp" alt="Fiber Dust PRO" class="model-large-img" width="361" height="642">
+        <div class="model-photos">
+          <img src="assets/model-cyber-tm-large.webp" alt="Cyber TM 200" class="model-large-img is-active" width="361" height="642">
+          <img src="assets/model-litho-large.webp" alt="Litho 35 / EVO" class="model-large-img" width="361" height="642">
+          <img src="assets/model-fiber-dust-large.webp" alt="Fiber Dust PRO" class="model-large-img" width="361" height="642">
+        </div>
 
         <!-- Right specs column (Frame 95) — Cyber TM 200 -->
         <div class="model-specs-col is-active">
@@ -562,5 +567,6 @@
 
   <script src="assets/hero-fx.js" defer></script>
   <script src="assets/equipment.js" defer></script>
+  <script src="assets/nav.js" defer></script>
 </body>
 </html>

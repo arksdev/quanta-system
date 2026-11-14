@@ -55,8 +55,8 @@ The three cards are `<button data-model="0|1|2">` with `aria-pressed`; a click s
 | Model | Photo | Thumb | Badges | Copy |
 |---|---|---|---|---|
 | Cyber TM 200 | `model-cyber-tm-large.webp` (722×1284) | `thumb-cyber-tm.webp` | Твердотельный · 2010 нм · 200 Вт | Figma frame |
-| Litho 35 / EVO | `model-litho-large.webp` (722×1153, from the user's `2nd.png`) | `thumb-litho-35.webp` | Гольмиевый · 2100 нм · 35 Вт | `docs/01` and `docs/11` of the `quantasystem` prototype |
-| Fiber Dust PRO | `model-fiber-dust-large.webp` (722×1127, from `v3.png`) | `thumb-fiber-dust.webp` | Волоконный · 1940 нм · 2500 Гц | same |
+| Litho 35 / EVO | `model-litho-large.webp` (722×1151, cropped to alpha bbox) | `thumb-litho-35.webp` | Гольмиевый · 2100 нм · 35 Вт | `docs/01` and `docs/11` of the `quantasystem` prototype |
+| Fiber Dust PRO | `model-fiber-dust-large.webp` (722×1121, cropped to alpha bbox) | `thumb-fiber-dust.webp` | Волоконный · 1940 нм · 2500 Гц | same |
 
 - All three photos share the 361×642 slot at x163 y280, `object-fit: contain` + `object-position: center bottom`, so the machines stand on one floor line; sources are exported at 2× (722px wide).
 - Every specs column is 1057.33 tall with the CTA on `margin-top: auto`, so the button stays at Figma's y1202 whatever the copy length and the card stays 1192.
@@ -132,3 +132,18 @@ The three cards are `<button data-model="0|1|2">` with `aria-pressed`; a click s
 | Light rays | CSS port of Magic UI "Light Rays", the effect used on aurapass.me: seven blurred beams (blur 30px, white 45%) plus two radial glows at 40%, `mix-blend-mode: screen` | Intensity stays low on purpose — the rays are atmosphere and the headline has to read. `.hero-rays` is a `z-index: 0` sibling of `.hero-container`, so text, cards and the machine stay above it; each beam pulses and swings on its own 9–15s period (peak `--ray-intensity` 0.4–0.75), so the fan never repeats; on this light hero the beam holds its brightness halfway down before fading, otherwise it reads as a blob at the top edge |
 | Machine carousel | three `.hero-laser-img` stacked in `.hero-laser-wrap`, one marked `is-current`, swapped every 10s | `hero-laser.webp` (Cyber TM), `hero-laser-litho.webp`, `hero-laser-quanta.webp` — all 1354px tall, so `object-fit: contain` in the 516×677 slot draws them at the same scale and baseline |
 | Pixel swap | 900ms canvas mosaic: the buffer is drawn at 1:1, blocks grow to 14 CSS px and shrink back while the two images crossfade | `imageSmoothingEnabled = false` on the upscale; block size is scaled by the device pixel ratio so the mosaic is the same size on retina |
+
+## Responsiveness
+
+Desktop ≥1440 is the Figma frame, untouched (page 7846). Below it the 1360 containers go fluid and every absolute composition returns to flow. Breakpoints follow the `HR` project: 1439 / 1199 / 1023 / 767.
+
+| Breakpoint | What changes |
+|---|---|
+| ≤1439 | Containers `width: 100%` with `clamp(20px, 3.6vw, 40px)` side padding. Hero becomes a grid (header / text+switcher \| machine / metrics). Equipment card becomes a two-column grid (photo + selector \| specs). CTA banner and footer drop their 1440 absolute layers for grids. Type, radii and gaps clamp down. `.sec3-bg` is rebuilt as a CSS gradient: the SVG ignores `background-size` and stays 1440×1415 |
+| ≤1199 | Header nav collapses into a burger (`assets/nav.js`), the phone is hidden and the panel drops under the logo |
+| ≤1023 | One column: hero, equipment (photo → selector → specs), bento, news, CTA. The band starts at 25% of the section so the directions block still lands on colour |
+| ≤767 | Phone type scale, full-width buttons, compact selector cards, direction rows stack with the arrow pinned top-right, footer nav two columns, meta one column |
+
+- Every absolute block that returned to flow had its `top`/`left` reset to `auto`; a `position: relative` element keeps those offsets and shifts the whole block.
+- The three model photos share one 361×642 slot with `object-fit: contain` + `object-position: center bottom`. All three are cropped to their alpha bbox, so the systems stand on one floor line.
+- The selector thumbnails were swapped: the design file had the cabinet under `thumb-litho-35` and the cart under `thumb-fiber-dust`, which is the other way round from the machines.
