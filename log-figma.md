@@ -75,9 +75,11 @@
 
 | Element | Node ID | Dimensions (px) | Position (px) | Radius | Fill / Stroke | Typography / Details |
 |---|---|---|---|---|---|---|
-| Section Wrapper | `50:4027` | 1360×747 | y6310 | — | — | margin-top: 130px, 2 columns |
-| Featured Article| `47:3823` | 680×498 | left column | 24px | `assets/news-featured.webp` | photo 680×390px, РОУ конгресс |
-| Side News List | `47:3831` | 588×519 | right column | — | — | 4 articles with dates and categories |
+| Section Wrapper | `50:4027` (Frame 100) | 1360×629 | y6310 | — | — | header 65 + 45 gap + content 519 |
+| Header | `50:4026` (Frame 99) | 1360×65 | top | — | — | title 48px Regular lh 96% ls −2%, top-aligned |
+| «Все новости» | `47:3690` | 194×65 | right, x1167 | 9999 | `#ffffff` + 1.2px `#24a9cb` | 15px Bold, ls 1px, UPPER, `#29a1bf`, padding 0 37 |
+| Featured article | `47:3823` | 680×498 (content 483) | left column | 40 (image) | `assets/news-featured.webp` | image 680×390 + 12 gap; category 14/22.4 `#9b5094`; title 24/0.96 max-w 624 |
+| Side news list | `47:3831` | 588×519 | x772 | — | items 1px `#dde1de` bottom | gap 27; item gap 14 + padding-bottom 20; title 24/0.96 max-w 480, last item no border |
 
 ## Section 6 — CTA Proposal & Mega Footer (Figma Node `50:4046` Frame 117)
 
