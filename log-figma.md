@@ -109,3 +109,11 @@ MAIN FRAME (`47:3566`) is a vertical auto-layout with `itemSpacing: 120`, so eve
 | Manrope | `assets/fonts/Manrope-Variable.ttf` | variable 100–900, `--font-main` |
 | Onest | `assets/fonts/Onest-Variable.ttf` | variable, arrow glyphs, `--font-onest` |
 | Bebas Neue | `assets/fonts/BebasNeue-Regular.ttf` | 2014 cut by Fontfabric: the Google Fonts 2019 file has no Cyrillic and silently falls back to Manrope |
+
+## Hero effects (`assets/hero-fx.js`)
+
+| Effect | Implementation | Notes |
+|---|---|---|
+| Light rays | trimmed port of the reactbits "Light Rays" shader (WebGL2, no dependencies) at `opacity: 0.2` | the canvas is a `z-index: 0` sibling of `.hero-container`, so text and cards stay above it; the source point sits 20% above the hero and aims down; paused when the hero scrolls away or the tab hides |
+| Machine carousel | three `.hero-laser-img` stacked in `.hero-laser-wrap`, one marked `is-current`, swapped every 10s | `hero-laser.webp` (Cyber TM), `hero-laser-litho.webp`, `hero-laser-quanta.webp` — all 1354px tall, so `object-fit: contain` in the 516×677 slot draws them at the same scale and baseline |
+| Pixel swap | 900ms canvas mosaic: the buffer is drawn at 1:1, blocks grow to 14 CSS px and shrink back while the two images crossfade | `imageSmoothingEnabled = false` on the upscale; block size is scaled by the device pixel ratio so the mosaic is the same size on retina |

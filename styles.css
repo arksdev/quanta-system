@@ -88,6 +88,17 @@ img {
   overflow: hidden;
 }
 
+/* Light rays over the gradient — reactbits port, rendered at 20% opacity */
+.hero-rays {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .hero-container {
   position: relative;
   width: 100%;
@@ -313,9 +324,33 @@ img {
 }
 
 .hero-laser-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  display: block;
+  opacity: 0;
+}
+
+.hero-laser-img.is-current {
+  opacity: 1;
+}
+
+/* Mosaic swap: the canvas shows the pixelated blend, the images step aside */
+.hero-laser-fx {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.hero-laser-wrap.is-swapping .hero-laser-img {
+  opacity: 0;
+}
+
+.hero-laser-wrap.is-swapping .hero-laser-fx {
   display: block;
 }
 
