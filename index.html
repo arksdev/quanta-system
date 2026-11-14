@@ -97,10 +97,13 @@
 
       <!-- Showcase Card (Rectangle 20: 1360x1192, 9px stroke #E8F2F4, radius 51) -->
       <div class="equipment-showcase-card">
-        <img src="assets/model-cyber-tm-large.webp" alt="Cyber TM 200" class="model-large-img" width="361" height="642">
+        <!-- Model photo: one 361x642 slot, three systems crossfading in place -->
+        <img src="assets/model-cyber-tm-large.webp" alt="Cyber TM 200" class="model-large-img is-active" width="361" height="642">
+        <img src="assets/model-litho-large.webp" alt="Litho 35 / EVO" class="model-large-img" width="361" height="642">
+        <img src="assets/model-fiber-dust-large.webp" alt="Fiber Dust PRO" class="model-large-img" width="361" height="642">
 
-        <!-- Right specs column (Frame 95) -->
-        <div class="model-specs-col">
+        <!-- Right specs column (Frame 95) — Cyber TM 200 -->
+        <div class="model-specs-col is-active">
           <!-- Frame 93: itemSpacing 46px -->
           <div class="model-specs-top">
             <!-- Frame 86: title + badges, itemSpacing 27px -->
@@ -140,36 +143,119 @@
             </div>
           </div>
 
-          <!-- Paragraph repeated under the features box, as in the frame -->
-          <p class="model-body-text">Лазерные системы Cyber со специальным тулиевым излучением объединяют ювелирную точность воздействия и мгновенный гемостаз. Глубина термического повреждения окружающих тканей составляет всего 0,1–0,2 мм, что исключает побочные эффекты и ускоряет реабилитацию.</p>
+          <p class="model-body-text">Вапорезекция не требует морцеллятора: аденома удаляется за один этап, а стоимость комплекса — около 32–33 млн ₽.</p>
 
           <!-- Frame 94 / Link -->
           <button type="button" class="model-cta-btn" onclick="alert('Заявка на Cyber TM 200 принята.');">ЗАПРОСИТЬ КП</button>
         </div>
 
+        <!-- Right specs column (Frame 95) — Litho 35 / EVO -->
+        <div class="model-specs-col">
+          <div class="model-specs-top">
+            <div class="model-specs-header">
+              <h3 class="model-name">Litho 35 / EVO</h3>
+              <div class="model-badges-row">
+                <span class="model-badge">Гольмиевый</span>
+                <span class="model-badge">2100 нм</span>
+                <span class="model-badge">35 Вт</span>
+              </div>
+            </div>
+
+            <div class="model-specs-body">
+              <p class="model-lead-text">Гольмиевые лазеры Litho (30–35 Вт): литотрипсия сверхплотных камней без ретропульсии</p>
+              <p class="model-body-text">Гольмиевый комплекс Litho 35 / EVO работает на длине волны 2100 нм: длительность импульса до 1500 мкс и пиковая мощность до 10 кВт. Технология Zero Retropulsion удерживает камень в фокусе волокна, поэтому сверхплотные конкременты дробятся на месте, без отдачи и лишних проходов.</p>
+
+              <div class="model-features-box">
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Zero Retropulsion: камень остаётся в фокусе волокна, ретроградное смещение исключено.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Импульс до 1500 мкс и пиковая мощность до 10 кВт: дробит конкременты плотностью выше 1200 HU.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Режимы dusting и фрагментации: от микропыли до фрагментов под извлечение щипцами.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">РУ Росздравнадзора: бессрочное</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="model-body-text">Один аппарат закрывает всю литотрипсию клиники: длинный импульс снижает расход волокон и время операции.</p>
+
+          <button type="button" class="model-cta-btn" onclick="alert('Заявка на Litho 35 / EVO принята.');">ЗАПРОСИТЬ КП</button>
+        </div>
+
+        <!-- Right specs column (Frame 95) — Fiber Dust PRO -->
+        <div class="model-specs-col">
+          <div class="model-specs-top">
+            <div class="model-specs-header">
+              <h3 class="model-name">Fiber Dust PRO</h3>
+              <div class="model-badges-row">
+                <span class="model-badge">Волоконный</span>
+                <span class="model-badge">1940 нм</span>
+                <span class="model-badge">2500 Гц</span>
+              </div>
+            </div>
+
+            <div class="model-specs-body">
+              <p class="model-lead-text">Тулиевый волоконный Fiber Dust PRO (1940 нм): ультра-пыль камней и гибкая RIRS</p>
+              <p class="model-body-text">Fiber Dust PRO — тулиевый волоконный лазер (TFL) с длиной волны 1940 нм, мощностью до 60 Вт и частотой до 2500 Гц. Сверхтонкие световоды от 150 мкм доходят до нижних чашечек почки, а высокочастотный режим распыляет камень в микропыль, которая выводится с мочой.</p>
+
+              <div class="model-features-box">
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Частота до 2500 Гц: камень распыляется в микропыль, а не раскалывается на острые осколки.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Световоды от 150 мкм: доступ к нижним чашечкам почки при гибкой уретерореноскопии.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">1940 нм — пик поглощения водой: минимальная зона повреждения и предсказуемый гемостаз.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">РУ Росздравнадзора: бессрочное</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="model-body-text">Работает с существующей гибкой оптикой: волокна от 150 мкм не требуют замены эндоскопической стойки.</p>
+
+          <button type="button" class="model-cta-btn" onclick="alert('Заявка на Fiber Dust PRO принята.');">ЗАПРОСИТЬ КП</button>
+        </div>
+
         <!-- Model switcher (Frame 81: 509x226.94, three 162.1px cards) -->
         <div class="equipment-models-grid">
-          <div class="model-thumb-card active">
+          <button type="button" class="model-thumb-card active" data-model="0" aria-pressed="true">
             <img src="assets/thumb-cyber-tm.webp" alt="Cyber TM 200" class="model-thumb-img" width="60" height="106">
             <div class="model-thumb-info">
               <span class="model-thumb-title">Cyber TM 200</span>
               <span class="model-thumb-price">~32–33 млн ₽</span>
             </div>
-          </div>
-          <div class="model-thumb-card">
+          </button>
+          <button type="button" class="model-thumb-card" data-model="1" aria-pressed="false">
             <img src="assets/thumb-litho-35.webp" alt="Litho 35 / EVO" class="model-thumb-img" width="60" height="106">
             <div class="model-thumb-info">
               <span class="model-thumb-title">Litho 35 / EVO</span>
               <span class="model-thumb-price">цена в КП</span>
             </div>
-          </div>
-          <div class="model-thumb-card">
+          </button>
+          <button type="button" class="model-thumb-card" data-model="2" aria-pressed="false">
             <img src="assets/thumb-fiber-dust.webp" alt="Fiber Dust PRO" class="model-thumb-img" width="60" height="106">
             <div class="model-thumb-info">
               <span class="model-thumb-title">Fiber Dust PRO</span>
               <span class="model-thumb-price">цена в КП</span>
             </div>
-          </div>
+          </button>
         </div>
       </div>
     </div>
@@ -475,5 +561,6 @@
   </section>
 
   <script src="assets/hero-fx.js" defer></script>
+  <script src="assets/equipment.js" defer></script>
 </body>
 </html>

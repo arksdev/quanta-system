@@ -544,17 +544,49 @@ img {
   width: 361px;
   height: 642px;
   object-fit: contain;
+  /* every system stands on the same floor line */
+  object-position: center bottom;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-/* Right specs column — Frame 95 (533 wide, itemSpacing 39) */
+.model-large-img.is-active {
+  opacity: 1;
+}
+
+/* Right specs column — Frame 95 (533 wide, itemSpacing 39). One column per
+   model, all 1057.33 tall so the CTA keeps Figma's y=1202 for every system */
 .model-specs-col {
   position: absolute;
   left: 680px;
   top: 84px;
   width: 533px;
-  display: flex;
+  height: 1057.33px;
+  display: none;
   flex-direction: column;
   gap: 39px;
+}
+
+.model-specs-col.is-active {
+  display: flex;
+  animation: model-specs-in 0.32s ease both;
+}
+
+@keyframes model-specs-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .model-specs-col.is-active {
+    animation: none;
+  }
 }
 
 /* Frame 93 / Frame 86 */
@@ -653,6 +685,7 @@ img {
 .model-cta-btn {
   width: 203.4px;
   height: 62.33px;
+  margin-top: auto;
   border-radius: 9999px;
   background: var(--color-accent-purple);
   color: #ffffff;
@@ -681,6 +714,7 @@ img {
 .model-thumb-card {
   width: 162.1px;
   height: 226.94px;
+  border: 0;
   border-radius: 22.69px;
   background: rgba(143, 194, 218, 0.14);
   backdrop-filter: blur(6.7px);
@@ -690,6 +724,8 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 29.18px;
+  font: inherit;
+  color: inherit;
   cursor: pointer;
   transition: transform 0.15s ease;
 }

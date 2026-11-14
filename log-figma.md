@@ -48,6 +48,21 @@ MAIN FRAME (`47:3566`) is a vertical auto-layout with `itemSpacing: 120`, so eve
 | Switcher row | `47:3919` (Frame 81) | 509×226.94 | x89, y1007 | — | — | three cards, gap 11.35 |
 | Switcher card | — | 162.1×226.94 | — | 22.69 | active `linear-gradient(180deg, rgba(139,67,202,.14), rgba(162,205,222,.14))`, others `rgba(143,194,218,.14)` | padding 16.21, gap 29.18; title 16.21 Medium, price 11.347 SemiBold; thumbs `47:3629`, `47:3903`, `47:3904` at 59.88×106.35, no opacity fade |
 
+### Model switcher (`assets/equipment.js`)
+
+The three cards are `<button data-model="0|1|2">` with `aria-pressed`; a click swaps the photo and the specs column. No autoplay.
+
+| Model | Photo | Thumb | Badges | Copy |
+|---|---|---|---|---|
+| Cyber TM 200 | `model-cyber-tm-large.webp` (722×1284) | `thumb-cyber-tm.webp` | Твердотельный · 2010 нм · 200 Вт | Figma frame |
+| Litho 35 / EVO | `model-litho-large.webp` (722×1153, from the user's `2nd.png`) | `thumb-litho-35.webp` | Гольмиевый · 2100 нм · 35 Вт | `docs/01` and `docs/11` of the `quantasystem` prototype |
+| Fiber Dust PRO | `model-fiber-dust-large.webp` (722×1127, from `v3.png`) | `thumb-fiber-dust.webp` | Волоконный · 1940 нм · 2500 Гц | same |
+
+- All three photos share the 361×642 slot at x163 y280, `object-fit: contain` + `object-position: center bottom`, so the machines stand on one floor line; sources are exported at 2× (722px wide).
+- Every specs column is 1057.33 tall with the CTA on `margin-top: auto`, so the button stays at Figma's y1202 whatever the copy length and the card stays 1192.
+- Transition: column `model-specs-in` 320ms fade + 8px rise, photo `opacity` 300ms; `prefers-reduced-motion` drops the column animation.
+- Deviation from the frame: the paragraph under the features box repeats the body copy in Figma. It now carries a commercial note per model instead (morcellator economics, one-machine coverage, optics compatibility).
+
 ## Section 3 — Bento Comparison + Directions + Why Surgeons (Figma Node `50:4040` Frame 112)
 
 | Element | Node ID | Dimensions (px) | Position (px) | Radius | Fill / Stroke | Typography / Details |
@@ -114,6 +129,6 @@ MAIN FRAME (`47:3566`) is a vertical auto-layout with `itemSpacing: 120`, so eve
 
 | Effect | Implementation | Notes |
 |---|---|---|
-| Light rays | trimmed port of the reactbits "Light Rays" shader (WebGL2, no dependencies) at `opacity: 0.2` | the canvas is a `z-index: 0` sibling of `.hero-container`, so text and cards stay above it; the source point sits 20% above the hero and aims down; paused when the hero scrolls away or the tab hides |
+| Light rays | CSS port of Magic UI "Light Rays", the effect used on aurapass.me: seven blurred beams (blur 30px, white 90%) plus two radial glows, `mix-blend-mode: screen` | `.hero-rays` is a `z-index: 0` sibling of `.hero-container`, so text, cards and the machine stay above it; each beam pulses and swings on its own 9–15s period, so the fan never repeats; on this light hero the beam holds its brightness halfway down before fading, otherwise it reads as a blob at the top edge |
 | Machine carousel | three `.hero-laser-img` stacked in `.hero-laser-wrap`, one marked `is-current`, swapped every 10s | `hero-laser.webp` (Cyber TM), `hero-laser-litho.webp`, `hero-laser-quanta.webp` — all 1354px tall, so `object-fit: contain` in the 516×677 slot draws them at the same scale and baseline |
 | Pixel swap | 900ms canvas mosaic: the buffer is drawn at 1:1, blocks grow to 14 CSS px and shrink back while the two images crossfade | `imageSmoothingEnabled = false` on the upscale; block size is scaled by the device pixel ratio so the mosaic is the same size on retina |
