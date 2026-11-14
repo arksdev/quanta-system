@@ -379,204 +379,77 @@ img {
   margin: 0 auto;
 }
 
+/* Header — Frame 115 (1280x52, gap 351) */
 .equipment-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 41px;
+  gap: 351px;
+  margin-bottom: 0;
 }
 
 .equipment-title {
+  position: relative;
+  top: 3px;
+  width: 326px;
   font-family: var(--font-main);
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 1.28;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
   color: var(--color-text-dark);
   margin: 0;
-}
-
-.equipment-header-right {
-  max-width: 603px;
-  display: flex;
-  flex-direction: column;
-  gap: 39px;
 }
 
 .equipment-subtitle {
+  position: relative;
+  top: 1px;
+  width: 533px;
   font-family: var(--font-main);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.625;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
   color: var(--color-text-dark);
   margin: 0;
 }
 
-.equipment-clinical-tabs {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px;
-  border-radius: 999px;
-  background: #ffffff;
-  border: 1px solid #ecf0ed;
-  box-sizing: border-box;
-}
-
-.equipment-clinical-tab {
-  height: 44px;
-  padding: 0 24px;
-  border-radius: 999px;
-  font-family: var(--font-main);
-  font-size: 15px;
-  font-weight: 500;
-  color: #4a5450;
-  border: none;
-  cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-.equipment-clinical-tab.active {
-  background: var(--color-accent-purple);
-  color: #ffffff;
-  font-weight: 600;
-}
-
-/* 4 Model selector cards positioned over the top boundary */
-.equipment-models-grid {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  width: 842px;
-  margin: 0 auto -52px;
-  position: relative;
-  z-index: 2;
-}
-
-.model-thumb-card {
-  width: 200px;
-  height: 255px;
-  border-radius: 28px;
-  background: rgba(143, 194, 218, 0.14);
-  backdrop-filter: blur(6.7px);
-  -webkit-backdrop-filter: blur(6.7px);
-  border: none;
-  box-shadow: none;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: transform 0.15s ease;
-  box-sizing: border-box;
-}
-
-/* Active card: Lilac gradient at 0.14 opacity, NO BORDER */
-.model-thumb-card.active {
-  background: linear-gradient(180deg, rgba(139, 67, 202, 0.14) 0%, rgba(162, 205, 222, 0.14) 100%);
-  border: none;
-  box-shadow: none;
-}
-
-.model-thumb-card:hover {
-  transform: translateY(-2px);
-}
-
-.model-thumb-img {
-  width: 74px;
-  height: 131px;
-  object-fit: contain;
-  opacity: 0.6;
-  transition: opacity 0.15s ease;
-}
-
-.model-thumb-card.active .model-thumb-img {
-  opacity: 1;
-}
-
-.model-thumb-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  text-align: center;
-}
-
-.model-thumb-title {
-  font-family: var(--font-main);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 0.96;
-  letter-spacing: -0.02em;
-  color: var(--color-text-dark);
-}
-
-.model-thumb-card.active .model-thumb-title {
-  color: #9b5094;
-}
-
-.model-thumb-price {
-  font-family: var(--font-main);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 0.96;
-  letter-spacing: -0.02em;
-  color: var(--color-text-dark);
-}
-
-/* Main Showcase Card: Rectangle 20 (1360x1192, stroke #E8F2F4 9px, radius 51px, NO box-shadow) */
+/* Showcase card — Rectangle 20. The 9px stroke is an inset shadow so the
+   children below keep the frame coordinates instead of losing 9px to a border */
 .equipment-showcase-card {
   position: relative;
-  width: 100%;
-  max-width: 1360px;
+  width: 1360px;
   height: 1192px;
-  border: 9px solid #E8F2F4;
+  margin-top: 71px;
   border-radius: 51px;
   background: #ffffff;
-  box-shadow: none;
-  padding: 75px 68px 42px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-.model-detail-layout {
-  display: grid;
-  grid-template-columns: 1fr 533px;
-  gap: 60px;
-  align-items: start;
-}
-
-/* Left column: machine image centered horizontally in left column */
-.model-large-photo-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 642px;
+  box-shadow: inset 0 0 0 9px #E8F2F4;
 }
 
 .model-large-img {
+  position: absolute;
+  left: 163px;
+  top: 157px;
   width: 361px;
   height: 642px;
   object-fit: contain;
-  margin: 0 auto;
 }
 
-/* Right Specs Column: Figma Frame 95 (533x1057px, itemSpacing 39px) */
+/* Right specs column — Frame 95 (533 wide, itemSpacing 39) */
 .model-specs-col {
+  position: absolute;
+  left: 680px;
+  top: 84px;
   width: 533px;
   display: flex;
   flex-direction: column;
   gap: 39px;
 }
 
-/* Frame 93: wraps header and specs body with itemSpacing 46px */
+/* Frame 93 / Frame 86 */
 .model-specs-top {
   display: flex;
   flex-direction: column;
   gap: 46px;
 }
 
-/* Frame 86: title + badges with itemSpacing 27px */
 .model-specs-header {
   display: flex;
   flex-direction: column;
@@ -584,9 +457,10 @@ img {
 }
 
 .model-name {
+  width: 413px;
   font-family: var(--font-main);
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 0.96;
   letter-spacing: -0.02em;
   color: var(--color-text-dark);
@@ -605,28 +479,21 @@ img {
   background: #d9f4fa;
   color: #42859b;
   font-family: var(--font-main);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
   display: inline-flex;
   align-items: center;
 }
 
-/* Frame 92: lead + body + features box with itemSpacing 22px */
+/* Frame 92 */
 .model-specs-body {
   display: flex;
   flex-direction: column;
   gap: 22px;
 }
 
-.model-lead-text {
-  font-family: var(--font-main);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
-  color: var(--color-text-dark);
-  margin: 0;
-}
-
+.model-lead-text,
 .model-body-text {
   font-family: var(--font-main);
   font-size: 18px;
@@ -636,15 +503,15 @@ img {
   margin: 0;
 }
 
-/* Frame 91: features box (padding 35px 30px, gap 22px) */
+/* Features box — Frame 91 (hug width, padding 35px 30px, gap 22) */
 .model-features-box {
+  width: 520.55px;
   border-radius: 34px;
   background: #f8faf9;
   padding: 35px 30px;
   display: flex;
   flex-direction: column;
   gap: 22px;
-  margin: 0;
 }
 
 .model-feature-item {
@@ -668,10 +535,10 @@ img {
   color: var(--color-text-dark);
 }
 
-/* Frame 94 / Link: CTA Button (203.4x62.3px, radius 9999px) */
+/* Frame 94 / Link */
 .model-cta-btn {
   width: 203.4px;
-  height: 62.3px;
+  height: 62.33px;
   border-radius: 9999px;
   background: var(--color-accent-purple);
   color: #ffffff;
@@ -680,13 +547,83 @@ img {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 0;
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
 .model-cta-btn:hover {
   transform: translateY(-1px);
   opacity: 0.92;
+}
+
+/* Model switcher — Frame 81 (three 162.1x226.94 cards, gap 11.35) */
+.equipment-models-grid {
+  position: absolute;
+  left: 89px;
+  top: 884px;
+  display: flex;
+  gap: 11.35px;
+}
+
+.model-thumb-card {
+  width: 162.1px;
+  height: 226.94px;
+  border-radius: 22.69px;
+  background: rgba(143, 194, 218, 0.14);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  padding: 16.21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 29.18px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.model-thumb-card.active {
+  background: linear-gradient(180deg, rgba(139, 67, 202, 0.14) 0%, rgba(162, 205, 222, 0.14) 100%);
+}
+
+.model-thumb-card:hover {
+  transform: translateY(-2px);
+}
+
+.model-thumb-img {
+  width: 59.88px;
+  height: 106.35px;
+  object-fit: contain;
+}
+
+.model-thumb-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8.1px;
+  text-align: center;
+}
+
+.model-thumb-title {
+  font-family: var(--font-main);
+  font-size: 16.21px;
+  font-weight: 500;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  color: var(--color-text-dark);
+  white-space: nowrap;
+}
+
+.model-thumb-card.active .model-thumb-title {
+  color: #9b5094;
+}
+
+.model-thumb-price {
+  font-family: var(--font-main);
+  font-size: 11.347px;
+  font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  color: var(--color-text-dark);
 }
 
 
@@ -696,7 +633,7 @@ img {
    ========================================================================== */
 
 .section-applications {
-  margin-top: 139px;
+  margin-top: 120px;
   position: relative;
   width: 100%;
 }
@@ -1052,7 +989,7 @@ img {
    ========================================================================== */
 
 .section-videos {
-  margin-top: 130px;
+  margin-top: 120px;
   position: relative;
   width: 100%;
 }
@@ -1161,7 +1098,7 @@ img {
    ========================================================================== */
 
 .section-news {
-  margin-top: 130px;
+  margin-top: 120px;
   position: relative;
   width: 100%;
 }
@@ -1296,11 +1233,11 @@ img {
 
 /* ==========================================================================
    SECTION 6: CTA PROPOSAL + MEGA FOOTER (Figma Node 50:4046 Frame 117)
-   margin-top: 90px
+   margin-top: 120px (MAIN FRAME auto-layout itemSpacing)
    ========================================================================== */
 
 .section-cta-footer {
-  margin-top: 90px;
+  margin-top: 120px;
   position: relative;
   width: 100%;
 }

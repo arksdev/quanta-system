@@ -29,21 +29,24 @@
 
 ## Section 2 — Equipment Catalog & Switcher (Figma Node `50:4045` Frame 116)
 
+MAIN FRAME (`47:3566`) is a vertical auto-layout with `itemSpacing: 120`, so every section sits exactly 120px below the previous one — the 120px `margin-top` on each section element comes from there, not from a measured gap.
+
 | Element | Node ID | Dimensions (px) | Position (px) | Radius | Fill / Stroke | Typography / Details |
 |---|---|---|---|---|---|---|
-| Section Wrapper | `50:4045` | 1360×1594 | x40, y930 | — | — | margin-top: 120px, flex col, gap: 41px |
-| Header Block | `50:4044` | 1280×158 | inside section | — | — | title + clinical direction tabs |
-| Section Title | `47:3626` | 326×46 | inside header | — | `#1e1e1e` | Manrope SemiBold 36px |
-| Clinical Tabs | `47:3633` | 603×60 | inside header | 999px | `#ffffff`, stroke `#ecf0ed` | 3 pills: Аденома простаты, МКБ, Нейрохирургия |
-| Selector Cards Grid | `47:3919` (`Frame 81`) | 842×255 | x259, y0 (in F113) | 0 | `none` | `none` | `none` | flex row, gap: 14px, overlaps top of R20 by 52px |
-| Card 1 (Active Lilac) | `47:3915` (`Frame 77`) | 200×255 | inside F81 | 28px | `linear-gradient(180deg, rgba(139,67,202,0.14) 0%, rgba(162,205,222,0.14) 100%)` | `none` (NO BORDER) | `blur(6.7px)` | Title: Manrope 20px Medium, `#9b5094`; Price: Manrope 14px SemiBold, `#1e1e1e` |
-| Cards 2, 3, 4 (Inactive) | `47:3916..` | 200×255 | inside F81 | 28px | `rgba(143,194,218,0.14)` | `none` (NO BORDER) | `blur(6.7px)` | Machine thumb `opacity: 0.6`; Title: Manrope 20px Medium, `#1e1e1e`; Price: Manrope 14px SemiBold, `#1e1e1e` |
-| Main Showcase Card | `49:4013` (`Rectangle 20`) | 1360×1192 | x0, y203 (in F113) | 51px | `#ffffff` | `9px solid #E8F2F4` | `none` | 9px outer border, radius 51px, NO box-shadow |
-| Machine Photo | `47:3920` | 361×642 | left column | — | `assets/model-cyber-tm-large.webp` | 2x WebP export, horizontally centered in left column |
-| Model Title | `49:3921` | 413×35 | right column | — | `#1e1e1e` | — | Manrope SemiBold 36px |
-| Badges Row | `49:3933` | 413×38 | below title | 23px | `#d9f4fa`, text `#42859b` | — | Твердотельный, 2010 нм, 200 Вт |
-| Features Box | `49:4003` | 520.5×363 | right column | 34px | `#f8faf9` | — | 4 items with `assets/feature-diamond.svg` |
-| CTA Button | `49:4006` | 203.4×62.3| right column | 9999px | `#9b5094` | — | "ЗАПРОСИТЬ КП", text `#ffffff` |
+| Section Wrapper | `50:4045` | 1360×1315 | x40, y930 | — | — | header 52 + 41 gap + Frame 113 (1222) |
+| Header row | Frame 115 | 1280×52 | y0 | — | — | flex row, gap 351 |
+| Section title | — | 326×46 | x0 | — | `#1e1e1e` | Manrope Regular 48 / lh 96% / ls −2% |
+| Subtitle | — | 533×52 | x677 | — | `#1e1e1e` | 20 Medium / lh 26, two lines |
+| Showcase frame | `50:4041` (Frame 113) | 1360×1222 | y93 | — | — | card starts 30px into it |
+| Showcase card | `49:4013` (Rectangle 20) | 1360×1192 | x0, y123 | 51 | `#ffffff`, 9px stroke `#E8F2F4` | stroke drawn as an inset ring so children keep frame coordinates |
+| Machine photo | `47:3920` | 361×642 | x163, y280 | — | `assets/model-cyber-tm-large.webp` | — |
+| Model title | — | 413×35 | x680, y207 | — | `#1e1e1e` | Manrope Regular 36 / lh 96% / ls −2% |
+| Badges | — | 185 + 107 + 96 × 38 | y269, gap 10 | 23 | `#d9f4fa`, text `#42859b` | 20 Medium / lh 26, padding 0 16 |
+| Lead + body | — | 533 | y353 | — | `#1e1e1e` | 18 Medium / lh 26, gaps 22 |
+| Features box | — | 520.55×363 | y605 | 34 | `#f8faf9` | padding 35/30, gap 22, 4 items, icon 27.5 |
+| CTA button | — | 203.4×62.33 | x680, y1202 | pill | `#9b5094` | Manrope Bold 15, ls 1, UPPER |
+| Switcher row | `47:3919` (Frame 81) | 509×226.94 | x89, y1007 | — | — | three cards, gap 11.35 |
+| Switcher card | — | 162.1×226.94 | — | 22.69 | active `linear-gradient(180deg, rgba(139,67,202,.14), rgba(162,205,222,.14))`, others `rgba(143,194,218,.14)` | padding 16.21, gap 29.18; title 16.21 Medium, price 11.347 SemiBold; thumbs `47:3629`, `47:3903`, `47:3904` at 59.88×106.35, no opacity fade |
 
 ## Section 3 — Bento Comparison + Directions + Why Surgeons (Figma Node `50:4040` Frame 112)
 
