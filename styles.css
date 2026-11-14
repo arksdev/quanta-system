@@ -91,7 +91,8 @@ img {
 /* Light rays over the gradient — Magic UI "Light Rays" port (blurred beams,
    screen blend, each pulsing on its own period). */
 .hero-rays {
-  --light-rays-color: rgba(255, 255, 255, 0.9);
+  /* keep it low: the rays are atmosphere, the copy has to stay the hero */
+  --light-rays-color: rgba(255, 255, 255, 0.45);
   --light-rays-blur: 30px;
   --light-rays-length: 100%;
   position: absolute;
@@ -111,7 +112,7 @@ img {
 .hero-rays__glow {
   position: absolute;
   inset: 0;
-  opacity: 0.6;
+  opacity: 0.4;
   pointer-events: none;
 }
 

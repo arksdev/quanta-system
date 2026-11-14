@@ -17,7 +17,7 @@
         --ray-swing:${(0.8 + Math.random() * 1.8).toFixed(2)}deg;
         --ray-duration:${(RAYS.cycle * (0.75 + Math.random() * 0.5)).toFixed(2)}s;
         --ray-delay:${(Math.random() * RAYS.cycle).toFixed(2)}s;
-        --ray-intensity:${(0.6 + Math.random() * 0.5).toFixed(2)}"></div>`).join('');
+        --ray-intensity:${(0.4 + Math.random() * 0.35).toFixed(2)}"></div>`).join('');
 
     host.innerHTML = `<div class="hero-rays__layer">
       <div class="hero-rays__glow hero-rays__glow--a"></div>
