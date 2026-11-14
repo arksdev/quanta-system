@@ -3,6 +3,14 @@
    Exact metrics extracted from Figma MAIN FRAME (Node 47:3566)
    ========================================================================== */
 
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/fonts/Manrope-Variable.ttf") format("truetype");
+}
+
 :root {
   --color-primary: #4adafc;
   --color-secondary: #149ec1;
@@ -29,8 +37,10 @@ html, body {
   color: var(--color-text-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: none;
+  font-synthesis: none;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -413,42 +423,38 @@ img {
   font-weight: 600;
 }
 
-.equipment-main-card {
-  position: relative;
-  width: 100%;
-  border: 1px solid #e8f2f4;
-  border-radius: 51px;
-  background: #ffffff;
-  padding: 48px 56px 64px;
-  box-sizing: border-box;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
-}
-
+/* 4 Model selector cards positioned over the top boundary */
 .equipment-models-grid {
   display: flex;
   justify-content: center;
   gap: 14px;
-  margin-bottom: 60px;
+  width: 842px;
+  margin: 0 auto -60px;
+  position: relative;
+  z-index: 2;
 }
 
 .model-thumb-card {
   width: 200px;
   height: 255px;
   border-radius: 28px;
-  background: #e8f3f8;
-  padding: 24px 20px 20px;
+  background: #8fc2da;
+  border: none;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease;
+  box-sizing: border-box;
 }
 
+/* Active card: Lilac gradient, NO BORDER */
 .model-thumb-card.active {
-  background: linear-gradient(180deg, rgba(139, 67, 202, 0.15) 0%, rgba(162, 205, 222, 0.3) 100%);
-  border: 1px solid rgba(155, 80, 148, 0.3);
-  box-shadow: 0 8px 24px rgba(139, 67, 202, 0.08);
+  background: linear-gradient(180deg, #8b43ca 0%, #a2cdde 100%);
+  border: none;
+  box-shadow: none;
 }
 
 .model-thumb-card:hover {
@@ -465,52 +471,71 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
   text-align: center;
 }
 
 .model-thumb-title {
   font-family: var(--font-main);
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
   color: var(--color-text-dark);
 }
 
 .model-thumb-card.active .model-thumb-title {
-  color: var(--color-accent-purple);
+  color: #9b5094;
 }
 
 .model-thumb-price {
   font-family: var(--font-main);
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--color-text-muted);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  color: var(--color-text-dark);
+}
+
+/* Main Showcase Card: Rectangle 20 (1360x1192, stroke #e8f2f4, radius 51px) */
+.equipment-showcase-card {
+  position: relative;
+  width: 100%;
+  max-width: 1360px;
+  min-height: 1192px;
+  border: 1px solid #e8f2f4;
+  border-radius: 51px;
+  background: #ffffff;
+  padding: 120px 60px 64px;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .model-detail-layout {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 533px;
   gap: 60px;
+  align-items: start;
 }
 
+/* Left column: machine image centered horizontally in left column */
 .model-large-photo-wrap {
-  width: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
+  width: 100%;
+  min-height: 642px;
 }
 
 .model-large-img {
   width: 361px;
   height: 642px;
   object-fit: contain;
+  margin: 0 auto;
 }
 
 .model-specs-col {
-  flex: 1;
-  max-width: 533px;
+  width: 533px;
   display: flex;
   flex-direction: column;
   gap: 20px;
