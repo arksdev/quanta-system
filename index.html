@@ -197,127 +197,125 @@
   </section>
 
   <!-- ========================================================================
-       SECTION 3: COMPARISON BENTO + DIRECTIONS + SURGEONS
+       SECTION 3: BENTO COMPARISON + DIRECTIONS + WHY SURGEONS
        (Figma Node 50:4040 Frame 112)
        ======================================================================== -->
   <section class="section-applications" id="clinics">
+    <div class="sec3-bg" aria-hidden="true"></div>
+
     <div class="applications-container">
 
-      <!-- Bento Dual Cards: Пациентам & Клиникам -->
+      <!-- Bento: Клиникам (left, y=181) + Пациентам (right, y=0) -->
       <div class="bento-comparison-grid">
-        <!-- Card 1: Пациентам -->
-        <div class="bento-card-patients">
-          <div class="bento-card-inner">
-            <div class="bento-card-header">
-              <h2 class="bento-card-title">Пациентам</h2>
-              <p class="bento-card-desc">Мы не лечим сами, а поставляем оборудование. Но можем подсказать клиники, где оперируют на лазерах Quanta System.</p>
-            </div>
-            <div class="bento-features-list">
-              <div class="bento-feature">
-                <h3 class="bento-feature-title">Без разрезов на коже</h3>
-                <p class="bento-feature-desc">Хирург работает через естественные пути тонким эндоскопом под видеоконтролем.</p>
-              </div>
-              <div class="bento-feature">
-                <h3 class="bento-feature-title">Меньше крови и нагрева</h3>
-                <p class="bento-feature-desc">Луч прогревает ткань на десятые доли миллиметра и сразу коагулирует сосуды.</p>
-              </div>
-              <div class="bento-feature">
-                <h3 class="bento-feature-title">Домой обычно через 1–2 дня</h3>
-                <p class="bento-feature-desc">Сроки назначает лечащий врач после осмотра.</p>
-              </div>
-            </div>
-            <a href="#dealers" class="bento-cta-btn-light">Где сделать операцию</a>
+        <!-- Frame 108: Клиникам (white card, 10px gradient stroke) -->
+        <div class="bento-card bento-card-clinics">
+          <div class="bento-header">
+            <h2 class="bento-title">Клиникам</h2>
+            <p class="bento-desc">Сопровождаем от выбора модели до первой самостоятельной операции и дальше.</p>
           </div>
+          <div class="bento-steps">
+            <div class="bento-item">
+              <h3 class="bento-item-title">Демонстрация</h3>
+              <p class="bento-item-desc">Аппликант приезжает с лазером в вашу операционную на тестовый день.</p>
+            </div>
+            <div class="bento-item">
+              <h3 class="bento-item-title">Закупка</h3>
+              <p class="bento-item-desc">КП на бланке, проект ТЗ по 44-ФЗ и 223-ФЗ, регистрационные удостоверения.</p>
+            </div>
+            <div class="bento-item">
+              <h3 class="bento-item-title">Обучение</h3>
+              <p class="bento-item-desc">Стажировка хирургов и сестёр в референтных центрах и в вашей клинике.</p>
+            </div>
+            <div class="bento-item">
+              <h3 class="bento-item-title">Сервис</h3>
+              <p class="bento-item-desc">Склад запчастей в Москве, выезд инженера до 24 часов, подменный аппарат.</p>
+            </div>
+          </div>
+          <a href="#equipment" class="bento-cta bento-cta-purple">подробнее для клиник</a>
         </div>
 
-        <!-- Card 2: Клиникам -->
-        <div class="bento-card-clinics">
-          <div class="bento-card-inner">
-            <div class="bento-card-header">
-              <h2 class="bento-card-title text-dark">Клиникам</h2>
-              <p class="bento-card-desc text-dark">Сопровождаем от выбора модели до первого пациента в операционной.</p>
-            </div>
-            <div class="bento-steps-list">
-              <div class="bento-step-item">
-                <h3 class="bento-step-title">Демонстрация</h3>
-                <p class="bento-step-desc">Аппликант приезжает с лазером в вашу операционную на плановые вмешательства.</p>
-              </div>
-              <div class="bento-step-item">
-                <h3 class="bento-step-title">Закупка</h3>
-                <p class="bento-step-desc">КП на бланке, проект ТЗ по 44-ФЗ и 223-ФЗ, регистрационное удостоверение.</p>
-              </div>
-              <div class="bento-step-item">
-                <h3 class="bento-step-title">Обучение</h3>
-                <p class="bento-step-desc">Стажировка хирургов и сестёр в референтных центрах Москвы и Санкт-Петербурга.</p>
-              </div>
-              <div class="bento-step-item">
-                <h3 class="bento-step-title">Сервис</h3>
-                <p class="bento-step-desc">Склад запчастей в Москве, выезд инженера до 24 часов по России.</p>
-              </div>
-            </div>
-            <a href="#equipment" class="bento-cta-btn-purple">ПОДРОБНЕЕ ДЛЯ КЛИНИК</a>
+        <!-- Frame 109: Пациентам (gradient card) -->
+        <div class="bento-card bento-card-patients">
+          <div class="bento-header">
+            <h2 class="bento-title">Пациентам</h2>
+            <p class="bento-desc">Мы не лечим сами, а поставляем оборудование. Но можем рассказать, как проходит лазерная операция, и подсказать клиники, где на нём работают.</p>
           </div>
+          <div class="bento-features">
+            <div class="bento-item">
+              <h3 class="bento-item-title">Без разрезов на коже</h3>
+              <p class="bento-item-desc">Хирург работает через естественные пути тонким эндоскопом.</p>
+            </div>
+            <div class="bento-item">
+              <h3 class="bento-item-title">Меньше крови и нагрева</h3>
+              <p class="bento-item-desc">Луч прогревает ткань на десятые доли миллиметра и сразу запечатывает сосуды.</p>
+            </div>
+            <div class="bento-item">
+              <h3 class="bento-item-title">Домой обычно через 1–2 дня</h3>
+              <p class="bento-item-desc">Сроки назначает лечащий врач после осмотра.</p>
+            </div>
+          </div>
+          <a href="#dealers" class="bento-cta bento-cta-white">Где сделать операцию</a>
         </div>
       </div>
 
-      <!-- Clinical Directions Section -->
-      <div class="clinical-directions-block">
-        <div class="clinical-directions-header">
-          <h2 class="clinical-directions-title">Клинические направления</h2>
-          <p class="clinical-directions-subtitle">Методики, протоколы и опыт российских клиник по каждому профилю</p>
+      <!-- Frame 57: Клинические направления -->
+      <div class="directions-block">
+        <div class="directions-header">
+          <h2 class="directions-title">Клинические направления</h2>
+          <p class="directions-subtitle">Методики, протоколы и опыт российских клиник по каждому направлению.</p>
         </div>
-        <div class="clinical-directions-list">
-          <a href="#equipment" class="clinical-direction-row">
-            <span class="clinical-direction-name">Урология</span>
-            <span class="clinical-direction-desc">Вапорезекция и энуклеация простаты, литотрипсия, резекция опухолей мочевого пузыря.</span>
-            <span class="clinical-direction-arrow">→</span>
+        <div class="directions-list">
+          <a href="#equipment" class="direction-row">
+            <span class="direction-name">Урология</span>
+            <span class="direction-desc">Вапорезекция и энуклеация простаты, литотрипсия, резекция почки, опухоли мочевого пузыря.</span>
+            <span class="direction-arrow">→</span>
           </a>
-          <a href="#equipment" class="clinical-direction-row">
-            <span class="clinical-direction-name">Нейрохирургия</span>
-            <span class="clinical-direction-desc">Эндоскопическая резекция внутрижелудочковых опухолей, рассечение спаек и арахноидальных кист.</span>
-            <span class="clinical-direction-arrow">→</span>
+          <a href="#equipment" class="direction-row">
+            <span class="direction-name">Нейрохирургия</span>
+            <span class="direction-desc">Эндоскопическая резекция внутрижелудочковых опухолей, бесконтактный гемостаз.</span>
+            <span class="direction-arrow">→</span>
           </a>
-          <a href="#equipment" class="clinical-direction-row">
-            <span class="clinical-direction-name">Торакальная хирургия</span>
-            <span class="clinical-direction-desc">Аэро- и гемостаз лёгкого при открытом и торакоскопическом доступе, метастазэктомия.</span>
-            <span class="clinical-direction-arrow">→</span>
+          <a href="#equipment" class="direction-row">
+            <span class="direction-name">Торакальная хирургия</span>
+            <span class="direction-desc">Аэро- и гемостаз лёгкого при открытом и торакоскопическом доступе.</span>
+            <span class="direction-arrow">→</span>
           </a>
-          <a href="#equipment" class="clinical-direction-row">
-            <span class="clinical-direction-name">Онкология и гастроэнтерология</span>
-            <span class="clinical-direction-desc">Абляция опухолей, альтернатива аргоноплазменной коагуляции, гемостаз при кровотечениях.</span>
-            <span class="clinical-direction-arrow">→</span>
+          <a href="#equipment" class="direction-row">
+            <span class="direction-name">Онкология и гастроэнтерология</span>
+            <span class="direction-desc">Абляция опухолей, альтернатива аргоноплазменной коагуляции.</span>
+            <span class="direction-arrow">→</span>
           </a>
         </div>
       </div>
 
-      <!-- Why Surgeons Choose Section -->
-      <div class="why-surgeons-wrapper">
-        <img src="assets/why-surgeons-bg.webp" alt="Операционная Quanta System" class="why-surgeons-bg-img" width="1440" height="808">
-        <div class="why-surgeons-card">
-          <h2 class="why-surgeons-title">Почему хирурги выбирают Quanta System</h2>
-          <div class="why-surgeons-stats-grid">
-            <div class="why-stat-box">
-              <span class="why-stat-val">0,1–0,2 мм</span>
-              <span class="why-stat-desc">глубина термического воздействия, 2010 нм</span>
-            </div>
-            <div class="why-stat-box">
-              <span class="why-stat-val">4 г/мин</span>
-              <span class="why-stat-desc">скорость вапорезекции на Cyber TM 200</span>
-            </div>
-            <div class="why-stat-box">
-              <span class="why-stat-val">1500 мкс</span>
-              <span class="why-stat-desc">длинный импульс Litho против ретропульсии</span>
-            </div>
-            <div class="why-stat-box">
-              <span class="why-stat-val">150 мкм</span>
-              <span class="why-stat-desc">волокно Fiber Dust для нижних чашечек</span>
-            </div>
-          </div>
-          <p class="why-surgeons-quote">Итальянская разработка с 1985 года, сотни публикаций в PubMed и постоянное присутствие в ведущих урологических центрах Европы и России.</p>
-          <a href="#video" class="why-surgeons-btn">Смотреть операции</a>
-        </div>
-      </div>
+    </div>
 
+    <!-- Frame 105: Почему хирурги выбирают Quanta System -->
+    <div class="why-surgeons">
+      <img src="assets/why-surgeons-bg.webp" alt="Операционная Quanta System" class="why-surgeons-photo" width="1440" height="808">
+      <div class="why-surgeons-card">
+        <h2 class="why-surgeons-title">Почему хирурги выбирают Quanta System</h2>
+        <div class="why-stats">
+          <div class="why-stat">
+            <span class="why-stat-value">0,1–0,2 мм</span>
+            <span class="why-stat-desc">глубина термического воздействия, 2010 нм</span>
+          </div>
+          <div class="why-stat">
+            <span class="why-stat-value">4 г/мин</span>
+            <span class="why-stat-desc">скорость вапорезекции на Cyber TM 200</span>
+          </div>
+          <div class="why-stat">
+            <span class="why-stat-value">1500 мкс</span>
+            <span class="why-stat-desc">длинный импульс Litho против ретропульсии</span>
+          </div>
+          <div class="why-stat">
+            <span class="why-stat-value">150 мкм</span>
+            <span class="why-stat-desc">волокно Fiber Dust для нижних чашечек</span>
+          </div>
+        </div>
+        <p class="why-surgeons-text">Итальянская разработка с 1985 года, сотни публикаций и обучение в референтных центрах России.</p>
+        <a href="#video" class="why-surgeons-btn">Смотреть операции</a>
+      </div>
     </div>
   </section>
 

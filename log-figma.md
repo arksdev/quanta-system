@@ -49,13 +49,15 @@
 
 | Element | Node ID | Dimensions (px) | Position (px) | Radius | Fill / Stroke | Typography / Details |
 |---|---|---|---|---|---|---|
-| Section Wrapper | `50:4040` | 1440×2889 | y2654 | — | — | margin-top: 130px, flex col, gap: 130px |
-| Bento Grid | `50:4038` | 1360×1093 | inside section | — | — | 2 columns of 680×912px |
-| Card Пациентам | `50:4037` | 680×912 | left column | 40px | gradient `#a7deeb` to `#149ec1` | text white, 3 advantages, CTA button |
-| Card Клиникам | `50:4036` | 680×912 | right column | 40px | `#ffffff`, stroke `#e8f2f4` | text dark, 4 stages, purple CTA button |
-| Directions Block | `47:3705` | 1360×546 | middle | — | — | 4 interactive rows (Урология, Нейрохирургия...) |
-| Why Surgeons Card| `47:3731` | 680×890 | bottom | 40px | `rgba(10,132,162,0.88)`, blur | 4 key stats (0.1-0.2 мм, 4 г/мин, 1500 мкс, 150 мкм) |
-| Surgeon Background| `47:3730` | 1440×808 | bottom | 40px | `assets/why-surgeons-bg.webp` | modern OR photo background |
+| Section Wrapper | `50:4040` (Frame 112) | 1440×2889 | y2654 | — | — | 3 blocks with 130px gaps; 139px from card bottom |
+| Background | `47:3571` (Rectangle 16) | 1440×1415 | y688 (in F112) | top 53 | `assets/sec3-bg.svg` — `#159EC1` + purple gradient | Full-bleed, top corners only |
+| Bento Grid | `50:4038` (Frame 110) | 1360×1093 | x40 | — | — | 2×680px cards, no gap |
+| Card «Клиникам» | `50:4036` (Frame 108) | 680×912 | left, y181 | 56 | `#ffffff`, 10px stroke `#32ABC9`→`#A5DDEA` @30% (0→703px) | padding 86/77/72/67 **inside** stroke; title 48/400/−2%; steps 32 + 18/26, gaps 20/19; CTA 65 `#9b5094` |
+| Card «Пациентам» | `50:4037` (Frame 109) | 680×912 | right, y0 | 56 | `#A7DEEB`→`#149EC1` (0→697px) | padding 86/77/74/67; features 32 + 18/26, gaps 46/19; CTA 65 white |
+| Directions Block | `47:3705` (Frame 57) | 1360×546 | y1223 | — | — | header 96 + 59 gap + 4 rows 94 with 5px gaps |
+| Direction Row | `47:3710..` | 1360×94 | y1378+ | 59 | `#ffffff` | padding 0 33; name 24/400/−2% width 372; desc 18/26; arrow Onest 20 `#159ec1` |
+| Why Surgeons Card| `47:3731` (Container) | 680×890 | x720, y100 | 55 | `rgba(10,132,162,0.9)`→`0.39`, `blur(15.2px)` | padding 72/74, gap 50; title 48 max-w 499; stats 2×235.3, value 40/64 |
+| Surgeon Background| `47:3730` (Rectangle 17) | 1440×808 | y0 | 64 | `assets/why-surgeons-bg.webp` | full-bleed operating-room photo |
 
 ## Section 4 — Surgical Videos (Figma Node `50:4032` Frame 104)
 

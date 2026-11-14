@@ -11,6 +11,14 @@
   src: url("assets/fonts/Manrope-Variable.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Onest";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/fonts/Onest-Variable.ttf") format("truetype");
+}
+
 :root {
   --color-primary: #4adafc;
   --color-secondary: #149ec1;
@@ -23,6 +31,7 @@
   --color-text-muted: #4a5450;
 
   --font-main: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-onest: "Onest", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 *, *::before, *::after {
@@ -511,7 +520,7 @@ img {
   position: relative;
   width: 100%;
   max-width: 1360px;
-  min-height: 1192px;
+  height: 1192px;
   border: 9px solid #E8F2F4;
   border-radius: 51px;
   background: #ffffff;
@@ -671,18 +680,34 @@ img {
   opacity: 0.92;
 }
 
+
 /* ==========================================================================
    SECTION 3: BENTO COMPARISON + DIRECTIONS + WHY SURGEONS
-   margin-top: 130px
+   Figma Frame 112 (50:4040) — 1440x2889
    ========================================================================== */
 
 .section-applications {
-  margin-top: 130px;
+  margin-top: 139px;
   position: relative;
   width: 100%;
 }
 
+/* Rectangle 16 (47:3571): 1440x1415 at y=688, top corners rounded */
+.sec3-bg {
+  position: absolute;
+  top: 688px;
+  left: 50%;
+  width: 1440px;
+  height: 1415px;
+  margin-left: -720px;
+  background: url("assets/sec3-bg.svg") no-repeat 0 0 / 1440px 1415px;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .applications-container {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 1360px;
   margin: 0 auto;
@@ -691,116 +716,118 @@ img {
   gap: 130px;
 }
 
-/* Bento Comparison */
+/* ---------------------------------------------------------------- Bento grid
+   Frame 110 (50:4038): 1360x1093 — two 680px cards, Клиникам offset 181px  */
 .bento-comparison-grid {
   display: flex;
-  gap: 20px;
+  align-items: flex-start;
   width: 100%;
 }
 
-.bento-card-patients {
-  flex: 1;
-  min-height: 912px;
-  border-radius: 40px;
-  background: linear-gradient(180deg, #a7deeb 0%, #149ec1 100%);
+.bento-card {
+  width: 680px;
+  height: 912px;
+  border-radius: 56px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   color: #ffffff;
-  padding: 60px;
-  display: flex;
-  flex-direction: column;
 }
 
+.bento-card > * {
+  flex-shrink: 0;
+}
+
+/* Frame 108: Клиникам — white fill, 10px gradient stroke (padding inside stroke) */
 .bento-card-clinics {
-  flex: 1;
-  min-height: 912px;
-  border-radius: 40px;
-  background: #ffffff;
-  border: 1px solid #e8f2f4;
-  color: var(--color-text-dark);
-  padding: 60px;
+  margin-top: 181px;
+  padding: 86px 77px 72px 67px;
+  gap: 54px;
+  color: #1e1e1e;
+  border: 10px solid transparent;
+  background-image: linear-gradient(#ffffff, #ffffff),
+    linear-gradient(180deg, rgba(50, 171, 201, 0.3) 0, rgba(165, 221, 234, 0.3) 703px, rgba(165, 221, 234, 0.3) 100%),
+    linear-gradient(#ffffff, #ffffff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box, border-box;
+}
+
+/* Frame 109: Пациентам — gradient #A7DEEB → #149EC1, padding 86/77/74/67 */
+.bento-card-patients {
+  padding: 86px 77px 74px 67px;
+  gap: 88px;
+  background: linear-gradient(180deg, #a7deeb 0, #149ec1 697px, #149ec1 100%);
+}
+
+.bento-header {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
-.bento-card-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.bento-card-title {
+.bento-title {
   font-family: var(--font-main);
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 1.28;
-  margin: 0 0 16px;
-}
-
-.bento-card-title.text-dark {
-  color: var(--color-text-dark);
-}
-
-.bento-card-desc {
-  font-family: var(--font-main);
-  font-size: 16px;
+  font-size: 48px;
   font-weight: 400;
-  line-height: 1.625;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
-.bento-card-desc.text-dark {
-  color: var(--color-text-muted);
-}
-
-.bento-features-list,
-.bento-steps-list {
-  display: flex;
-  flex-direction: column;
-  gap: 46px;
-  margin: 60px 0;
-}
-
-.bento-feature-title,
-.bento-step-title {
+.bento-desc {
   font-family: var(--font-main);
   font-size: 20px;
-  font-weight: 600;
-  line-height: 1.4;
-  margin: 0 0 10px;
-}
-
-.bento-feature-desc,
-.bento-step-desc {
-  font-family: var(--font-main);
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.6;
+  font-weight: 500;
+  line-height: 26px;
   margin: 0;
-  opacity: 0.9;
 }
 
-.bento-cta-btn-light {
-  height: 65px;
-  padding: 0 40px;
-  border-radius: 9999px;
-  background: #ffffff;
-  color: var(--color-accent-purple);
+.bento-steps,
+.bento-features {
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-steps {
+  gap: 20px;
+}
+
+.bento-features {
+  gap: 46px;
+}
+
+.bento-item {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.bento-item-title {
   font-family: var(--font-main);
-  font-size: 15px;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-start;
-  transition: transform 0.15s ease;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  margin: 0;
 }
 
-.bento-cta-btn-purple {
+.bento-item-desc {
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 0;
+}
+
+.bento-card-clinics .bento-item-desc {
+  font-weight: 400;
+}
+
+/* Link buttons: height 65, radius 9999, 15px Bold, letter-spacing 1px, UPPER */
+.bento-cta {
   height: 65px;
-  padding: 0 40px;
+  padding: 0 37px;
   border-radius: 9999px;
-  background: var(--color-accent-purple);
-  color: #ffffff;
   font-family: var(--font-main);
   font-size: 15px;
   font-weight: 700;
@@ -810,181 +837,206 @@ img {
   align-items: center;
   justify-content: center;
   align-self: flex-start;
+  text-decoration: none;
   transition: transform 0.15s ease;
 }
 
-/* Clinical Directions */
-.clinical-directions-block {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.clinical-directions-header {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.clinical-directions-title {
-  font-family: var(--font-main);
-  font-size: 36px;
-  font-weight: 600;
-  color: var(--color-text-dark);
-  margin: 0;
-}
-
-.clinical-directions-subtitle {
-  font-family: var(--font-main);
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color-text-muted);
-  margin: 0;
-}
-
-.clinical-directions-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.clinical-direction-row {
-  height: 94px;
+.bento-cta-white {
   background: #ffffff;
-  border-radius: 20px;
-  border: 1px solid #e8f2f4;
-  padding: 0 40px;
+  color: #9b5094;
+}
+
+.bento-cta-purple {
+  background: #9b5094;
+  color: #ffffff;
+}
+
+/* ------------------------------------------------------- Frame 57: Directions
+   1360x546 — header (96) + 59px gap + 4 rows of 94px with 5px gaps          */
+.directions-block {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 59px;
+}
+
+.directions-header {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.directions-title {
+  font-family: var(--font-main);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.directions-subtitle {
+  font-family: var(--font-onest);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.directions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.direction-row {
+  height: 94px;
+  padding: 0 33px;
+  border-radius: 59px;
+  background: #ffffff;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 23px;
   text-decoration: none;
-  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.clinical-direction-row:hover {
-  transform: translateX(4px);
-  border-color: var(--color-secondary);
-  box-shadow: 0 4px 20px rgba(20, 158, 193, 0.08);
+.direction-name {
+  width: 372px;
+  flex-shrink: 0;
+  font-family: var(--font-main);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  color: #1e1e1e;
 }
 
-.clinical-direction-name {
+.direction-desc {
+  flex: 1;
+  margin-right: 2px;
   font-family: var(--font-main);
   font-size: 18px;
-  font-weight: 600;
-  color: var(--color-text-dark);
-  width: 320px;
-  flex-shrink: 0;
+  font-weight: 400;
+  line-height: 26px;
+  color: #1e1e1e;
 }
 
-.clinical-direction-desc {
-  font-family: var(--font-main);
-  font-size: 15px;
-  color: var(--color-text-muted);
-  flex: 1;
+.direction-arrow {
+  font-family: var(--font-onest);
+  font-size: 20px;
+  line-height: 32px;
+  color: #159ec1;
 }
 
-.clinical-direction-arrow {
-  font-size: 24px;
-  color: var(--color-secondary);
-  font-weight: 600;
-}
-
-/* Why Surgeons Block */
-.why-surgeons-wrapper {
+/* ------------------------------------------------- Frame 105: Why surgeons
+   1440x990 — photo 1440x808 (r=64) + glass card 680x890 at (720, 100)       */
+.why-surgeons {
   position: relative;
   width: 100%;
-  min-height: 890px;
-  border-radius: 40px;
-  overflow: hidden;
+  max-width: 1440px;
+  height: 990px;
+  margin: 130px auto 0;
 }
 
-.why-surgeons-bg-img {
+.why-surgeons-photo {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 808px;
   object-fit: cover;
+  border-radius: 64px;
 }
 
 .why-surgeons-card {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 100px;
+  left: 50%;
   width: 680px;
-  min-height: 890px;
-  background: rgba(10, 132, 162, 0.88);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 40px;
-  padding: 60px;
-  color: #ffffff;
+  height: 890px;
+  border-radius: 55px;
+  padding: 72px 74px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
+  gap: 50px;
+  background: linear-gradient(180deg, rgba(10, 132, 162, 0.9) 0%, rgba(10, 132, 162, 0.39) 100%);
+  backdrop-filter: blur(15.2px);
+  -webkit-backdrop-filter: blur(15.2px);
+  color: #ffffff;
+}
+
+.why-surgeons-card > * {
+  flex-shrink: 0;
 }
 
 .why-surgeons-title {
   font-family: var(--font-main);
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.25;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  max-width: 499px;
   margin: 0;
 }
 
-.why-surgeons-stats-grid {
+.why-stats {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 36px 24px;
-  margin: 40px 0;
+  grid-template-columns: 235.3px 235.3px;
+  column-gap: 61.4px;
+  row-gap: 32px;
 }
 
-.why-stat-box {
+.why-stat {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
-.why-stat-val {
+.why-stat-value {
   font-family: var(--font-main);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.1;
-  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -0.02em;
 }
 
 .why-stat-desc {
   font-family: var(--font-main);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.45;
-  color: rgba(255, 255, 255, 0.85);
+  line-height: 24px;
 }
 
-.why-surgeons-quote {
+.why-surgeons-text {
   font-family: var(--font-main);
-  font-size: 16px;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
-  margin: 0 0 30px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 499px;
+  padding-top: 40px;
+  margin: 0;
 }
 
 .why-surgeons-btn {
-  height: 60px;
-  padding: 0 36px;
-  border-radius: 9999px;
+  align-self: flex-start;
+  height: 52px;
+  margin-top: 28px;
+  padding: 0 24px;
+  border-radius: 999px;
   background: #ffffff;
-  color: var(--color-secondary);
+  color: #159ec1;
   font-family: var(--font-main);
   font-size: 15px;
   font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-start;
-  transition: transform 0.15s ease;
+  text-decoration: none;
 }
-
 /* ==========================================================================
    SECTION 4: SURGICAL VIDEOS (Figma Node 50:4032 Frame 104)
    margin-top: 130px
