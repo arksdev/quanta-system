@@ -6,10 +6,7 @@
 
 | Element | Node ID | Dimensions (px) | Position (px) | Radius | Fill / Stroke | Typography / Details |
 |---|---|---|---|---|---|---|
-| Section Canvas | `47:3579` | 1440×810 | x0, y0..810 | 0 | `linear-gradient(180deg, #139ec1 0%, #dcf5fb 100%)` | relative, overflow: hidden |
-| Content Container | — | 1360×810 | x40, y0 | — | — | max-width: 1360px, margin: 0 auto, relative |
-| Header Nav | `47:3604` | 1360×43 | x40, y34 | — | — | flex row, justify-content: space-between, align-items: center |
-| Header Logo | `47:3605` | 162×43 | inside header | — | — | flex col, gap: 10px |
+| Section Canvas | `47:3579` | 1440×810 | x0, y0..810 | 0 | `linear-gradient(180deg, #139ec1 0%, #139ec1 30%, #dcf5fb 100%)` | relative, overflow: hidden, gradient starts at y=243px (30%) |
 | Logo Title | `47:3606` | 162×23 | inside logo | — | `#ffffff` | Manrope Medium 24px, lh 96%, ls -4% |
 | Logo Subtitle | `47:3607` | 162×10 | inside logo | — | `#ffffff` | Manrope Medium 10px, lh 96%, ls 19%, UPPERCASE |
 | Header Menu | `47:3609` | 633×42 | inside header | — | — | flex row, gap: 5px |
