@@ -65,7 +65,8 @@ void main() {
   float depth = distance / uReach;
 
   float source = exp(-depth * depth * 9.0) * 0.9 + exp(-depth * 3.2) * 0.25;
-  float glowLight = uGlow * source * smoothstep(-0.2, 0.6, cosAngle);
+  float pulse = 0.78 + 0.22 * sin(uTime * 0.9);
+  float glowLight = uGlow * source * smoothstep(-0.2, 0.6, cosAngle) * pulse;
   float spread = pow(max(cosAngle, 0.0), 1.0 / uSpread);
   float lengthFalloff = clamp(1.0 - distance / (uReach * uLength), 0.0, 1.0);
   float fadeFalloff = clamp(1.0 - distance / (uReach * uFade), 0.5, 1.0);
@@ -83,7 +84,7 @@ void main() {
   float rayLight = envelope * (0.5 * shape(strengthA, widthA) + 0.4 * shape(strengthB, widthB));
 
   float around = atan(uAim.x * dir.y - uAim.y * dir.x, cosAngle);
-  vec2 drift = vec2(around * 2.2 + uTime * 0.035, depth * 2.6 - uTime * 0.11);
+  vec2 drift = vec2(around * 2.2 + uTime * 0.22, depth * 2.6 - uTime * 0.5);
   float fog = 0.65 * valueNoise(drift * vec2(3.0, 1.0)) + 0.35 * valueNoise(drift * vec2(7.0, 2.3) + 4.1);
   rayLight *= mix(1.0, 0.25 + 1.2 * fog, uHaze);
 
@@ -102,12 +103,12 @@ void main() {
 
   const RAYS = {
     color: [0.93, 0.98, 1.0],
-    speed: 0.4,
-    spread: 2,
+    speed: 3,
+    spread: 1.2,
     length: 2.5,
     fade: 1,
-    density: 1,
-    sharpness: 0.75,
+    density: 1.8,
+    sharpness: 1,
     glow: 0.5,
     haze: 0.3,
     saturation: 1,
@@ -200,8 +201,13 @@ void main() {
       gl.uniform2f(u.uResolution, canvas.width, canvas.height);
       gl.uniform1f(u.uScale, ratio);
       gl.uniform1f(u.uTime, time);
-      gl.uniform2f(u.uSource, width * 0.5, -height * 0.2);
-      gl.uniform2f(u.uAim, 0, 1);
+      // the source drifts so the whole fan breathes instead of flickering in place
+      const drift = Math.sin(time * 0.35);
+      gl.uniform2f(u.uSource, width * (0.5 + 0.03 * drift), -height * (0.2 + 0.05 * drift));
+      // the shafts sweep instead of following a cursor
+      const sway = Math.sin(time * 0.55) * 0.26;
+      const aimLength = Math.hypot(sway, 1);
+      gl.uniform2f(u.uAim, sway / aimLength, 1 / aimLength);
       gl.uniform1f(u.uReach, Math.max(width, height));
       gl.uniform3f(u.uColor, RAYS.color[0], RAYS.color[1], RAYS.color[2]);
       gl.uniform1f(u.uSpread, RAYS.spread);
