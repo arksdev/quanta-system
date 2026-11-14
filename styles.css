@@ -516,7 +516,7 @@ img {
   border-radius: 51px;
   background: #ffffff;
   box-shadow: none;
-  padding: 92px 68px 68px;
+  padding: 75px 68px 42px;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -543,17 +543,34 @@ img {
   margin: 0 auto;
 }
 
+/* Right Specs Column: Figma Frame 95 (533x1057px, itemSpacing 39px) */
 .model-specs-col {
   width: 533px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 39px;
+}
+
+/* Frame 93: wraps header and specs body with itemSpacing 46px */
+.model-specs-top {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+/* Frame 86: title + badges with itemSpacing 27px */
+.model-specs-header {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
 }
 
 .model-name {
   font-family: var(--font-main);
   font-size: 36px;
   font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
   color: var(--color-text-dark);
   margin: 0;
 }
@@ -561,7 +578,6 @@ img {
 .model-badges-row {
   display: flex;
   gap: 10px;
-  margin-top: 4px;
 }
 
 .model-badge {
@@ -577,24 +593,32 @@ img {
   align-items: center;
 }
 
+/* Frame 92: lead + body + features box with itemSpacing 22px */
+.model-specs-body {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
 .model-lead-text {
   font-family: var(--font-main);
   font-size: 18px;
-  font-weight: 600;
-  line-height: 1.44;
+  font-weight: 500;
+  line-height: 26px;
   color: var(--color-text-dark);
   margin: 0;
 }
 
 .model-body-text {
   font-family: var(--font-main);
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--color-text-muted);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--color-text-dark);
   margin: 0;
 }
 
+/* Frame 91: features box (padding 35px 30px, gap 22px) */
 .model-features-box {
   border-radius: 34px;
   background: #f8faf9;
@@ -602,7 +626,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 22px;
-  margin: 8px 0;
+  margin: 0;
 }
 
 .model-feature-item {
@@ -620,12 +644,13 @@ img {
 
 .model-feature-text {
   font-family: var(--font-main);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 25px;
   color: var(--color-text-dark);
 }
 
+/* Frame 94 / Link: CTA Button (203.4x62.3px, radius 9999px) */
 .model-cta-btn {
   width: 203.4px;
   height: 62.3px;
@@ -637,7 +662,7 @@ img {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin: 0;
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
@@ -1440,40 +1465,4 @@ img {
 }
 
 .mega-footer-legal-links a {
-  font-family: var(--font-main);
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.65);
-}
-
-.mega-footer-legal-links a:hover {
-  color: #ffffff;
-}
-
-.mega-footer-copy-text {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  font-family: var(--font-main);
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.mega-footer-partners img {
-  width: 93px;
-  height: 37px;
-  display: block;
-}
-
-.mega-footer-watermark {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  opacity: 0.35;
-  margin-top: 20px;
-}
-
-.mega-footer-watermark img {
-  width: 100%;
-  max-width: 1360px;
-  height: auto;
-}
+  font-family: va
