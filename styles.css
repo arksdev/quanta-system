@@ -2089,7 +2089,7 @@ img {
   /* on one column the directions block lands far below the 688px where the
      desktop frame starts the band, so the band now runs to the section end */
   .sec3-bg {
-    top: 25%;
+    top: 340px;
     bottom: 0;
     height: auto;
   }
@@ -2111,9 +2111,15 @@ img {
       "phone"
       "laser";
     justify-items: start;
+    padding-bottom: 0;
   }
 
-  .cta-laser-img { max-width: 520px; justify-self: center; }
+  .cta-laser-img {
+    max-width: 520px;
+    justify-self: center;
+    margin-bottom: 0;
+    display: block;
+  }
 
   .mega-footer-nav { grid-template-columns: repeat(3, max-content); }
   .mega-footer-meta { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
