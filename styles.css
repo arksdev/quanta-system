@@ -1039,7 +1039,7 @@ img {
 }
 /* ==========================================================================
    SECTION 4: SURGICAL VIDEOS (Figma Node 50:4032 Frame 104)
-   margin-top: 130px
+   1360x507 — header 86 + 46 gap + cards row 375
    ========================================================================== */
 
 .section-videos {
@@ -1054,33 +1054,50 @@ img {
   margin: 0 auto;
 }
 
+/* Frame 103: 1336 wide, title block left, link right, bottom-aligned */
 .videos-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 40px;
+  width: 1336px;
+  margin-bottom: 46px;
+}
+
+.videos-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .videos-title {
   font-family: var(--font-main);
-  font-size: 36px;
-  font-weight: 600;
-  color: var(--color-text-dark);
-  margin: 0 0 10px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  color: #1e1e1e;
+  margin: 0;
 }
 
 .videos-subtitle {
   font-family: var(--font-main);
-  font-size: 16px;
-  color: var(--color-text-muted);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #1e1e1e;
   margin: 0;
 }
 
+/* Link: plain 15px Bold text, UPPERCASE, 1px tracking — no pill */
 .videos-all-link {
   font-family: var(--font-main);
   font-size: 15px;
-  font-weight: 600;
-  color: var(--color-secondary);
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #159ec1;
+  text-decoration: none;
   transition: opacity 0.15s ease;
 }
 
@@ -1090,99 +1107,62 @@ img {
 
 .videos-cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 428px);
   gap: 38px;
+  align-items: start;
 }
 
+/* Frame 63–65: thumb 428x225 + 19px gap + text block */
 .video-card {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 19px;
   cursor: pointer;
-  transition: transform 0.15s ease;
-}
-
-.video-card:hover {
-  transform: translateY(-2px);
-}
-
-.video-thumb-wrap {
-  position: relative;
-  width: 100%;
-  height: 225px;
-  border-radius: 20px;
-  overflow: hidden;
 }
 
 .video-thumb-img {
-  width: 100%;
-  height: 100%;
+  display: block;
+  width: 428px;
+  height: 225px;
+  border-radius: 34px;
   object-fit: cover;
-}
-
-.video-duration-badge {
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
-  height: 27px;
-  padding: 0 10px;
-  border-radius: 6px;
-  background: rgba(12, 18, 16, 0.85);
-  color: #ffffff;
-  font-family: var(--font-main);
-  font-size: 12px;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-}
-
-.video-play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 51px;
-  height: 51px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 3px;
-  box-sizing: border-box;
 }
 
 .video-info {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 }
 
 .video-tag {
   font-family: var(--font-main);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  line-height: 15px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--color-secondary);
+  color: #149ec1;
 }
 
 .video-card-title {
   font-family: var(--font-main);
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 1.35;
-  color: var(--color-text-dark);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: 0;
+  color: #1e1e1e;
+  max-width: 360px;
   margin: 0;
 }
 
 .video-author {
   font-family: var(--font-main);
   font-size: 14px;
-  color: var(--color-text-muted);
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #4a5450;
 }
+
 
 /* ==========================================================================
    SECTION 5: NEWS & EVENTS (Figma Node 50:4027 Frame 100)

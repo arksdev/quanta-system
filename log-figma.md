@@ -63,8 +63,13 @@
 
 | Element | Node ID | Dimensions (px) | Position (px) | Radius | Fill / Stroke | Typography / Details |
 |---|---|---|---|---|---|---|
-| Section Wrapper | `50:4032` | 1360×507 | y5673 | — | — | margin-top: 130px |
-| Video Cards (3) | `47:3765..`| 428×375 | inside grid | 20px | `#ffffff` | thumbs `assets/video-thumb-1..3.webp`, play icon, duration badge |
+| Section Wrapper | `50:4032` (Frame 104) | 1360×507 | y5673 | — | — | header 86 + 46 gap + cards 375 |
+| Header row | `47:3761` (Frame 103) | 1336×86 | x40 | — | — | title block left, link right, bottom-aligned |
+| Title / subtitle | `47:3762` / `47:3763` | 502×46 / 502×26 | header | — | `#1e1e1e` | 48px Regular, lh 96%, ls −2%; subtitle 18px/26, gap 14 |
+| «Вся видеотека» | `47:3764` | 134×20 | x1241 | — | `#159ec1` | **plain text link**: 15px Bold, ls 1px, UPPERCASE, no pill/arrow |
+| Video card | `47:3765..` | 428×352 (375 for 3-line title) | gap 38 | — | — | thumb 225 + 19 gap + info (12 gaps) |
+| Thumb | `47:3766` | 428×225 | top | 34 | `assets/video-thumb-N.webp` | play ring + timecode are baked into the export |
+| Tag / title / author | `47:3779` etc. | — | info | — | tag `#149ec1`, rest `#1e1e1e` / `#4a5450` | tag 11px Bold ls 3 UPPER; title 24px Regular lh 96% max-w 360; author 14px/22.4 |
 
 ## Section 5 — News & Events (Figma Node `50:4027` Frame 100)
 
