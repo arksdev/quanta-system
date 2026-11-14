@@ -84,100 +84,10 @@ img {
   position: relative;
   width: 100%;
   height: 810px;
-  background: linear-gradient(180deg, #139ec1 0%, #139ec1 30%, #dcf5fb 100%);
+  background: linear-gradient(180deg, #169dc5 0%, #149ec3 20%, #28a6c7 40%, #62bfd7 60%, #95d7e8 80%, #cdedf8 100%);
   overflow: hidden;
 }
 
-/* Light rays over the gradient — Magic UI "Light Rays" port (blurred beams,
-   screen blend, each pulsing on its own period). */
-.hero-rays {
-  /* keep it low: the rays are atmosphere, the copy has to stay the hero */
-  --light-rays-color: rgba(255, 255, 255, 0.45);
-  --light-rays-blur: 30px;
-  --light-rays-length: 100%;
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-  mix-blend-mode: screen;
-}
-
-.hero-rays__layer {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-
-.hero-rays__glow {
-  position: absolute;
-  inset: 0;
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.hero-rays__glow--a {
-  background: radial-gradient(
-    circle at 20% 15%,
-    color-mix(in srgb, var(--light-rays-color) 45%, transparent),
-    transparent 70%
-  );
-}
-
-.hero-rays__glow--b {
-  background: radial-gradient(
-    circle at 80% 10%,
-    color-mix(in srgb, var(--light-rays-color) 35%, transparent),
-    transparent 75%
-  );
-}
-
-.hero-rays__ray {
-  position: absolute;
-  top: -12%;
-  left: var(--ray-left, 50%);
-  width: var(--ray-width, 200px);
-  height: var(--light-rays-length);
-  border-radius: 9999px;
-  /* holds its brightness halfway down, then fades: on our light hero a plain
-     linear fade reads as a blob at the top edge */
-  background: linear-gradient(
-    to bottom,
-    var(--light-rays-color) 0%,
-    color-mix(in srgb, var(--light-rays-color) 55%, transparent) 50%,
-    transparent 100%
-  );
-  filter: blur(var(--light-rays-blur));
-  mix-blend-mode: screen;
-  opacity: 0;
-  translate: -50% 0;
-  transform-origin: top center;
-  pointer-events: none;
-  animation: hero-ray-pulse var(--ray-duration, 14s) ease-in-out var(--ray-delay, 0s) infinite;
-}
-
-@keyframes hero-ray-pulse {
-  0% {
-    opacity: 0;
-    transform: rotate(calc(var(--ray-rotate, 0deg) - var(--ray-swing, 1deg)));
-  }
-  50% {
-    opacity: var(--ray-intensity, 0.7);
-    transform: rotate(calc(var(--ray-rotate, 0deg) + var(--ray-swing, 1deg)));
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(calc(var(--ray-rotate, 0deg) - var(--ray-swing, 1deg)));
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-rays__ray {
-    animation: none;
-    opacity: 0.25;
-    transform: rotate(var(--ray-rotate, 0deg));
-  }
-}
 
 .hero-container {
   position: relative;
@@ -392,7 +302,7 @@ img {
   transform: translateY(-1px);
 }
 
-/* Laser Graphic */
+/* Laser Video Graphic */
 .hero-laser-wrap {
   position: absolute;
   left: 721px;
@@ -403,35 +313,23 @@ img {
   z-index: 2;
 }
 
-.hero-laser-img {
+.hero-laser-video,
+.hero-laser-canvas {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: calc(100% * 1.196);
+  width: auto;
+  max-width: none;
+  pointer-events: none;
   object-fit: contain;
-  display: block;
-  opacity: 0;
-}
-
-.hero-laser-img.is-current {
-  opacity: 1;
-}
-
-/* Mosaic swap: the canvas shows the pixelated blend, the images step aside */
-.hero-laser-fx {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-
-.hero-laser-wrap.is-swapping .hero-laser-img {
-  opacity: 0;
-}
-
-.hero-laser-wrap.is-swapping .hero-laser-fx {
-  display: block;
+  mask-image:
+    linear-gradient(to right, transparent 0%, black 28%, black 72%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 14%, black 75%, transparent 96%);
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, black 28%, black 72%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 14%, black 75%, transparent 96%);
 }
 
 /* Metrics Cards */

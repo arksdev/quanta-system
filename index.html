@@ -15,7 +15,6 @@
        SECTION 1: HERO & HEADER (Figma Node 47:3579 Frame 8)
        ======================================================================== -->
   <section class="section-hero" id="hero">
-    <div class="hero-rays" aria-hidden="true"></div>
     <div class="hero-container">
 
       <!-- HEADER NAVIGATION (Figma 47:3604 Frame 24) -->
@@ -61,10 +60,9 @@
 
       <!-- CENTER LASER MACHINE COMPOSITION (Figma 47:3581 Frame 7) -->
       <div class="hero-laser-wrap">
-        <img src="assets/hero-laser.webp" alt="Лазерная система Quanta System Cyber TM" class="hero-laser-img is-current" width="516" height="677">
-        <img src="assets/hero-laser-litho.webp" alt="Лазерная система Quanta System Litho" class="hero-laser-img" width="510" height="677">
-        <img src="assets/hero-laser-quanta.webp" alt="Лазерная система Quanta System" class="hero-laser-img" width="425" height="677">
-        <canvas class="hero-laser-fx" aria-hidden="true"></canvas>
+        <video class="hero-laser-video" autoplay loop muted playsinline aria-hidden="true">
+          <source src="assets/rotation.mp4" type="video/mp4">
+        </video>
       </div>
 
       <!-- RIGHT METRICS CARDS (Figma 47:3589 Frame 3) -->
@@ -565,7 +563,7 @@
     </footer>
   </section>
 
-  <script src="assets/hero-fx.js" defer></script>
+  <script src="assets/hero-video.js" defer></script>
   <script src="assets/equipment.js" defer></script>
   <script src="assets/nav.js" defer></script>
 </body>
