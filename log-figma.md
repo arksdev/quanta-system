@@ -85,7 +85,12 @@
 
 | Element | Node ID | Dimensions (px) | Position (px) | Radius | Fill / Stroke | Typography / Details |
 |---|---|---|---|---|---|---|
-| CTA Proposal | `50:4024` | 1440×540 | top banner | 40px | gradient `#1b93b1` / `#9b5094` | laser photo `assets/cta-laser.webp`, phone, CTA button |
+| CTA Proposal (Frame 97) | `50:4024` | 1440×540, full-bleed | top banner | 0 | `assets/cta-bg.svg` (`#1B93B1` + two radial `#29A0BD` @30% + purple `#9B5094` overlay), `preserveAspectRatio="none"` so the gradient stretches past 1440 | children absolutely positioned in a 1440 inner layer, so nothing moves with the viewport |
+| · Laser | `47:3569` | 631×476 | x421 y64 | — | `assets/cta-laser.webp` (2× export) | — |
+| · Heading | `47:3852` | 544 wide, Manrope 48/400, lh 96%, ls −2% | x40 y77 | — | `#ffffff` | «Коммерческое предложение», two lines |
+| · Subheading | `47:3853` | 348 wide, 20/25 | x40 y203 | — | `#ffffff` | trailing period |
+| · Button «Запросить КП» | `47:3899` | 199×42 | x40 y431 | 999 | `#ffffff`, text `#149ec1` | Manrope Bold 11px, ls 1.54 |
+| · Phone pill | `47:3854` | 421×75.67 | x979 y409 | pill | `rgba(255,255,255,.04)` + `backdrop-filter: blur(24.94px)` | 46.058/400, ls −4% |
 | Mega Footer | `50:4023` | 1440×556 | bottom footer | 40px 40px 0 0 | `#135b6e` | 5 navigation columns, disclaimer, legal links |
 | Outline Watermark | `57:4108` | 1360×136 | bottom | — | `assets/footer-watermark.svg` | Quanta System large outline vector |
 | Partner Logos | `47:3906` | 93×37 | bottom | — | `assets/footer-partner.svg` | gasfort & partners SVG |
