@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хирургические лазеры Quanta System — Официальный дистрибьютор в России</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       SECTION 1: HERO & HEADER (Figma Node 47:3579 Frame 8)
+       ======================================================================== -->
+  <section class="section-hero" id="hero">
+    <div class="hero-container">
+
+      <!-- HEADER NAVIGATION (Figma 47:3604 Frame 24) -->
+      <header class="header">
+        <a href="#" class="header-logo" aria-label="Quanta System">
+          <span class="header-logo-title">Quanta System</span>
+          <span class="header-logo-sub">Хирургические лазеры</span>
+        </a>
+
+        <nav class="header-nav" aria-label="Основное меню">
+          <ul class="header-menu" id="header-menu">
+            <li><a href="#equipment" class="header-menu-link">Оборудование</a></li>
+            <li><a href="#clinics" class="header-menu-link">Клиникам</a></li>
+            <li><a href="#dealers" class="header-menu-link">Дилерам</a></li>
+            <li><a href="#video" class="header-menu-link">Видео</a></li>
+            <li><a href="#news" class="header-menu-link">Новости</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <a href="tel:+74951099060" class="header-phone">+7 495 109-90-60</a>
+          <button type="button" class="header-cta-btn" onclick="alert('Заявка на КП: выберите оборудование или свяжитесь с нами.');">Запросить КП</button>
+          <button type="button" class="header-burger" aria-label="Меню" aria-expanded="false" aria-controls="header-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- HERO MAIN TEXT BLOCK (Figma 47:3584 Frame 5) -->
+      <div class="hero-text-block">
+        <div class="hero-title-group">
+          <p class="hero-distributor-badge">Официальный дистрибьютор Quanta System S.p.A. в России</p>
+          <h1 class="hero-title">Хирургические лазеры Quanta System</h1>
+        </div>
+        <p class="hero-desc">Тулиевые и гольмиевые системы для урологии, нейрохирургии и общей хирургии. Поставка, обучение операционной команды и сервис из Москвы.</p>
+      </div>
+
+      <!-- SEGMENTED SWITCHER (Figma 47:3599 Frame 9) -->
+      <div class="hero-switcher">
+        <a href="#equipment" class="hero-switch-btn active">Оборудование</a>
+        <a href="#patients" class="hero-switch-btn secondary">Пациентам</a>
+      </div>
+
+      <!-- CENTER LASER MACHINE COMPOSITION (Figma 47:3581 Frame 7) -->
+      <div class="hero-laser-wrap">
+        <video class="hero-laser-video" autoplay loop muted playsinline aria-hidden="true">
+          <source src="assets/rotation.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- RIGHT METRICS CARDS (Figma 47:3589 Frame 3) -->
+      <div class="hero-metrics-list">
+        <div class="hero-metric-card">
+          <span class="hero-metric-val">40+</span>
+          <span class="hero-metric-label">клиник в России</span>
+        </div>
+        <div class="hero-metric-card">
+          <span class="hero-metric-val">24 ч</span>
+          <span class="hero-metric-label">выезд инженера</span>
+        </div>
+        <div class="hero-metric-card">
+          <span class="hero-metric-val">с 1985</span>
+          <span class="hero-metric-label">Quanta System, Милан</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2: EQUIPMENT CATALOG & SWITCHER (Figma Node 50:4045 Frame 116)
+       ======================================================================== -->
+  <section class="section-equipment" id="equipment">
+    <div class="equipment-container">
+
+      <!-- Section Header (Frame 115: title + subtitle, gap 351) -->
+      <div class="equipment-header">
+        <h2 class="equipment-title">Оборудование</h2>
+        <p class="equipment-subtitle">Четыре системы под разные задачи операционной. Выберите направление для работы</p>
+      </div>
+
+      <!-- Showcase Card (Rectangle 20: 1360x1192, 9px stroke #E8F2F4, radius 51) -->
+      <div class="equipment-showcase-card">
+        <!-- Model photo: one 361x642 slot, three systems crossfading in place -->
+        <div class="model-photos">
+          <img src="assets/model-cyber-tm-large.webp" alt="Cyber TM 200" class="model-large-img is-active" width="361" height="642">
+          <img src="assets/model-litho-large.webp" alt="Litho 35 / EVO" class="model-large-img" width="361" height="642">
+          <img src="assets/model-fiber-dust-large.webp" alt="Fiber Dust PRO" class="model-large-img" width="361" height="642">
+        </div>
+
+        <!-- Right specs column (Frame 95) — Cyber TM 200 -->
+        <div class="model-specs-col is-active">
+          <!-- Frame 93: itemSpacing 46px -->
+          <div class="model-specs-top">
+            <!-- Frame 86: title + badges, itemSpacing 27px -->
+            <div class="model-specs-header">
+              <h3 class="model-name">Cyber TM 200</h3>
+              <div class="model-badges-row">
+                <span class="model-badge">Твердотельный</span>
+                <span class="model-badge">2010 нм</span>
+                <span class="model-badge">200 Вт</span>
+              </div>
+            </div>
+
+            <!-- Frame 92: lead + body + features box, itemSpacing 22px -->
+            <div class="model-specs-body">
+              <p class="model-lead-text">Тулиевые лазеры Cyber (150–200 Вт): прецизионная хирургия мягких тканей</p>
+              <p class="model-body-text">Лазерные системы Cyber со специальным тулиевым излучением объединяют ювелирную точность воздействия и мгновенный гемостаз. Глубина термического повреждения окружающих тканей составляет всего 0,1–0,2 мм, что исключает побочные эффекты и ускоряет реабилитацию.</p>
+
+              <!-- Features Box (Frame 91: padding 35px 30px, itemSpacing 22px) -->
+              <div class="model-features-box">
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Универсальность режимов: от деликатной резекции до высокоскоростной вапоризации.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Любой хирургический доступ: одинаково высокая эффективность при эндоскопических, лапароскопических и открытых операциях.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Широкий спектр применения: урология, общая и торакальная хирургия, гастроэнтерология и другие направления.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">РУ Росздравнадзора: бессрочное</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="model-body-text">Вапорезекция не требует морцеллятора: аденома удаляется за один этап, а стоимость комплекса — около 32–33 млн ₽.</p>
+
+          <!-- Frame 94 / Link -->
+          <button type="button" class="model-cta-btn" onclick="alert('Заявка на Cyber TM 200 принята.');">ЗАПРОСИТЬ КП</button>
+        </div>
+
+        <!-- Right specs column (Frame 95) — Litho 35 / EVO -->
+        <div class="model-specs-col">
+          <div class="model-specs-top">
+            <div class="model-specs-header">
+              <h3 class="model-name">Litho 35 / EVO</h3>
+              <div class="model-badges-row">
+                <span class="model-badge">Гольмиевый</span>
+                <span class="model-badge">2100 нм</span>
+                <span class="model-badge">35 Вт</span>
+              </div>
+            </div>
+
+            <div class="model-specs-body">
+              <p class="model-lead-text">Гольмиевые лазеры Litho (30–35 Вт): литотрипсия сверхплотных камней без ретропульсии</p>
+              <p class="model-body-text">Гольмиевый комплекс Litho 35 / EVO работает на длине волны 2100 нм: длительность импульса до 1500 мкс и пиковая мощность до 10 кВт. Технология Zero Retropulsion удерживает камень в фокусе волокна, поэтому сверхплотные конкременты дробятся на месте, без отдачи и лишних проходов.</p>
+
+              <div class="model-features-box">
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Zero Retropulsion: камень остаётся в фокусе волокна, ретроградное смещение исключено.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Импульс до 1500 мкс и пиковая мощность до 10 кВт: дробит конкременты плотностью выше 1200 HU.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Режимы dusting и фрагментации: от микропыли до фрагментов под извлечение щипцами.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">РУ Росздравнадзора: бессрочное</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="model-body-text">Один аппарат закрывает всю литотрипсию клиники: длинный импульс снижает расход волокон и время операции.</p>
+
+          <button type="button" class="model-cta-btn" onclick="alert('Заявка на Litho 35 / EVO принята.');">ЗАПРОСИТЬ КП</button>
+        </div>
+
+        <!-- Right specs column (Frame 95) — Fiber Dust PRO -->
+        <div class="model-specs-col">
+          <div class="model-specs-top">
+            <div class="model-specs-header">
+              <h3 class="model-name">Fiber Dust PRO</h3>
+              <div class="model-badges-row">
+                <span class="model-badge">Волоконный</span>
+                <span class="model-badge">1940 нм</span>
+                <span class="model-badge">2500 Гц</span>
+              </div>
+            </div>
+
+            <div class="model-specs-body">
+              <p class="model-lead-text">Тулиевый волоконный Fiber Dust PRO (1940 нм): ультра-пыль камней и гибкая RIRS</p>
+              <p class="model-body-text">Fiber Dust PRO — тулиевый волоконный лазер (TFL) с длиной волны 1940 нм, мощностью до 60 Вт и частотой до 2500 Гц. Сверхтонкие световоды от 150 мкм доходят до нижних чашечек почки, а высокочастотный режим распыляет камень в микропыль, которая выводится с мочой.</p>
+
+              <div class="model-features-box">
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Частота до 2500 Гц: камень распыляется в микропыль, а не раскалывается на острые осколки.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">Световоды от 150 мкм: доступ к нижним чашечкам почки при гибкой уретерореноскопии.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">1940 нм — пик поглощения водой: минимальная зона повреждения и предсказуемый гемостаз.</span>
+                </div>
+                <div class="model-feature-item">
+                  <img src="assets/feature-diamond.svg" alt="" width="28" height="27" class="model-feature-icon">
+                  <span class="model-feature-text">РУ Росздравнадзора: бессрочное</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="model-body-text">Работает с существующей гибкой оптикой: волокна от 150 мкм не требуют замены эндоскопической стойки.</p>
+
+          <button type="button" class="model-cta-btn" onclick="alert('Заявка на Fiber Dust PRO принята.');">ЗАПРОСИТЬ КП</button>
+        </div>
+
+        <!-- Model switcher (Frame 81: 509x226.94, three 162.1px cards) -->
+        <div class="equipment-models-grid">
+          <button type="button" class="model-thumb-card active" data-model="0" aria-pressed="true">
+            <img src="assets/thumb-cyber-tm.webp" alt="Cyber TM 200" class="model-thumb-img" width="60" height="106">
+            <div class="model-thumb-info">
+              <span class="model-thumb-title">Cyber TM 200</span>
+              <span class="model-thumb-price">~32–33 млн ₽</span>
+            </div>
+          </button>
+          <button type="button" class="model-thumb-card" data-model="1" aria-pressed="false">
+            <img src="assets/thumb-litho-35.webp" alt="Litho 35 / EVO" class="model-thumb-img" width="60" height="106">
+            <div class="model-thumb-info">
+              <span class="model-thumb-title">Litho 35 / EVO</span>
+              <span class="model-thumb-price">цена в КП</span>
+            </div>
+          </button>
+          <button type="button" class="model-thumb-card" data-model="2" aria-pressed="false">
+            <img src="assets/thumb-fiber-dust.webp" alt="Fiber Dust PRO" class="model-thumb-img" width="60" height="106">
+            <div class="model-thumb-info">
+              <span class="model-thumb-title">Fiber Dust PRO</span>
+              <span class="model-thumb-price">цена в КП</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 3: BENTO COMPARISON + DIRECTIONS + WHY SURGEONS
+       (Figma Node 50:4040 Frame 112)
+       ======================================================================== -->
+  <section class="section-applications" id="clinics">
+    <div class="sec3-bg" aria-hidden="true"></div>
+
+    <div class="applications-container">
+
+      <!-- Bento: Клиникам (left, y=181) + Пациентам (right, y=0) -->
+      <div class="bento-comparison-grid">
+        <!-- Frame 108: Клиникам (white card, 10px gradient stroke) -->
+        <div class="bento-card bento-card-clinics">
+          <div class="bento-header">
+            <h2 class="bento-title">Клиникам</h2>
+            <p class="bento-desc">Сопровождаем от выбора модели до первой самостоятельной операции и дальше.</p>
+          </div>
+          <div class="bento-steps">
+            <div class="bento-item">
+              <h3 class="bento-item-title">Демонстрация</h3>
+              <p class="bento-item-desc">Аппликант приезжает с лазером в вашу операционную на тестовый день.</p>
+            </div>
+            <div class="bento-item">
+              <h3 class="bento-item-title">Закупка</h3>
+              <p class="bento-item-desc">КП на бланке, проект ТЗ по 44-ФЗ и 223-ФЗ, регистрационные удостоверения.</p>
+            </div>
+            <div class="bento-item">
+              <h3 class="bento-item-title">Обучение</h3>
+              <p class="bento-item-desc">Стажировка хирургов и сестёр в референтных центрах и в вашей клинике.</p>
+            </div>
+            <div class="bento-item">
+              <h3 class="bento-item-title">Сервис</h3>
+              <p class="bento-item-desc">Склад запчастей в Москве, выезд инженера до 24 часов, подменный аппарат.</p>
+            </div>
+          </div>
+          <a href="#equipment" class="bento-cta bento-cta-purple">подробнее для клиник</a>
+        </div>
+
+        <!-- Frame 109: Пациентам (gradient card) -->
+        <div class="bento-card bento-card-patients">
+          <div class="bento-header">
+            <h2 class="bento-title">Пациентам</h2>
+            <p class="bento-desc">Мы не лечим сами, а поставляем оборудование. Но можем рассказать, как проходит лазерная операция, и подсказать клиники, где на нём работают.</p>
+          </div>
+          <div class="bento-features">
+            <div class="bento-item">
+              <h3 class="bento-item-title">Без разрезов на коже</h3>
+              <p class="bento-item-desc">Хирург работает через естественные пути тонким эндоскопом.</p>
+            </div>
+            <div class="bento-item">
+              <h3 class="bento-item-title">Меньше крови и нагрева</h3>
+              <p class="bento-item-desc">Луч прогревает ткань на десятые доли миллиметра и сразу запечатывает сосуды.</p>
+            </div>
+            <div class="bento-item">
+              <h3 class="bento-item-title">Домой обычно через 1–2 дня</h3>
+              <p class="bento-item-desc">Сроки назначает лечащий врач после осмотра.</p>
+            </div>
+          </div>
+          <a href="#dealers" class="bento-cta bento-cta-white">Где сделать операцию</a>
+        </div>
+      </div>
+
+      <!-- Frame 57: Клинические направления -->
+      <div class="directions-block">
+        <div class="directions-header">
+          <h2 class="directions-title">Клинические направления</h2>
+          <p class="directions-subtitle">Методики, протоколы и опыт российских клиник по каждому направлению.</p>
+        </div>
+        <div class="directions-list">
+          <a href="#equipment" class="direction-row">
+            <span class="direction-name">Урология</span>
+            <span class="direction-desc">Вапорезекция и энуклеация простаты, литотрипсия, резекция почки, опухоли мочевого пузыря.</span>
+            <span class="direction-arrow">→</span>
+          </a>
+          <a href="#equipment" class="direction-row">
+            <span class="direction-name">Нейрохирургия</span>
+            <span class="direction-desc">Эндоскопическая резекция внутрижелудочковых опухолей, бесконтактный гемостаз.</span>
+            <span class="direction-arrow">→</span>
+          </a>
+          <a href="#equipment" class="direction-row">
+            <span class="direction-name">Торакальная хирургия</span>
+            <span class="direction-desc">Аэро- и гемостаз лёгкого при открытом и торакоскопическом доступе.</span>
+            <span class="direction-arrow">→</span>
+          </a>
+          <a href="#equipment" class="direction-row">
+            <span class="direction-name">Онкология и гастроэнтерология</span>
+            <span class="direction-desc">Абляция опухолей, альтернатива аргоноплазменной коагуляции.</span>
+            <span class="direction-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Frame 105: Почему хирурги выбирают Quanta System -->
+    <div class="why-surgeons">
+      <img src="assets/why-surgeons-bg.webp" alt="Операционная Quanta System" class="why-surgeons-photo" width="1440" height="808">
+      <div class="why-surgeons-card">
+        <h2 class="why-surgeons-title">Почему хирурги выбирают Quanta System</h2>
+        <div class="why-stats">
+          <div class="why-stat">
+            <span class="why-stat-value">0,1–0,2 мм</span>
+            <span class="why-stat-desc">глубина термического воздействия, 2010 нм</span>
+          </div>
+          <div class="why-stat">
+            <span class="why-stat-value">4 г/мин</span>
+            <span class="why-stat-desc">скорость вапорезекции на Cyber TM 200</span>
+          </div>
+          <div class="why-stat">
+            <span class="why-stat-value">1500 мкс</span>
+            <span class="why-stat-desc">длинный импульс Litho против ретропульсии</span>
+          </div>
+          <div class="why-stat">
+            <span class="why-stat-value">150 мкм</span>
+            <span class="why-stat-desc">волокно Fiber Dust для нижних чашечек</span>
+          </div>
+        </div>
+        <p class="why-surgeons-text">Итальянская разработка с 1985 года, сотни публикаций и обучение в референтных центрах России.</p>
+        <a href="#video" class="why-surgeons-btn">Смотреть операции</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 4: SURGICAL VIDEOS (Figma Node 50:4032 Frame 104)
+       ======================================================================== -->
+  <section class="section-videos" id="video">
+    <div class="videos-container">
+      <div class="videos-header">
+        <div class="videos-title-group">
+          <h2 class="videos-title">Видео операций</h2>
+          <p class="videos-subtitle">Записи с комментариями хирургов и параметрами лазера.</p>
+        </div>
+        <a href="#video" class="videos-all-link">ВСЯ ВИДЕОТЕКА</a>
+      </div>
+
+      <div class="videos-cards-grid">
+        <!-- Frame 63: Литотрипсия -->
+        <article class="video-card">
+          <img src="assets/video-thumb-1.webp" alt="Распыление камня нижней чашечки на Fiber Dust PRO"
+               class="video-thumb-img" width="428" height="225">
+          <div class="video-info">
+            <span class="video-tag">Литотрипсия</span>
+            <h3 class="video-card-title">Распыление камня нижней чашечки на Fiber Dust PRO</h3>
+            <span class="video-author">А.Г. Мартов · Fiber Dust PRO</span>
+          </div>
+        </article>
+
+        <!-- Frame 64: Аденома простаты -->
+        <article class="video-card">
+          <img src="assets/video-thumb-2.webp" alt="Тулиевая вапорезекция железы 110 см³ без морцеллятора"
+               class="video-thumb-img" width="428" height="225">
+          <div class="video-info">
+            <span class="video-tag">Аденома простаты</span>
+            <h3 class="video-card-title">Тулиевая вапорезекция железы 110 см³ без морцеллятора</h3>
+            <span class="video-author">Московский урологический центр · Cyber TM 200</span>
+          </div>
+        </article>
+
+        <!-- Frame 65: Мастер-класс -->
+        <article class="video-card">
+          <img src="assets/video-thumb-3.webp" alt="Живая хирургия: энуклеация ThuLEP, разбор техники"
+               class="video-thumb-img" width="428" height="225">
+          <div class="video-info">
+            <span class="video-tag">Мастер-класс</span>
+            <h3 class="video-card-title">Живая хирургия: энуклеация ThuLEP, разбор техники</h3>
+            <span class="video-author">Трансляция для РОУ · Cyber TM 200</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5: NEWS & EVENTS (Figma Node 50:4027 Frame 100)
+       ======================================================================== -->
+  <section class="section-news" id="news">
+    <div class="news-container">
+      <div class="news-header">
+        <h2 class="news-main-title">Новости и события</h2>
+        <a href="#news" class="news-all-btn">ВСЕ НОВОСТИ</a>
+      </div>
+
+      <div class="news-layout-grid">
+        <!-- Left Featured Article -->
+        <article class="news-featured-card">
+          <img src="assets/news-featured.webp" alt="Конгресс РОУ" class="news-featured-img" width="680" height="390">
+          <div class="news-featured-info">
+            <span class="news-item-category">Конгресс · 14 октября 2026</span>
+            <h3 class="news-featured-title">Опыт стационара одного дня на тулиевом лазере представили на конгрессе РОУ</h3>
+          </div>
+        </article>
+
+        <!-- Right News List -->
+        <div class="news-list-side">
+          <article class="news-list-item">
+            <span class="news-item-category">Мастер-класс · 28 ноября 2026</span>
+            <h3 class="news-item-title">Живая хирургия ThuLEP в Московском урологическом центре: открыта регистрация</h3>
+          </article>
+          <article class="news-list-item">
+            <span class="news-item-category">Поставка · 2 ноября 2026</span>
+            <h3 class="news-item-title">Cyber TM 200 запущен в региональной больнице Казани</h3>
+          </article>
+          <article class="news-list-item">
+            <span class="news-item-category">Публикация · 20 октября 2026</span>
+            <h3 class="news-item-title">Сравнение вапорезекции и HoLEP: обзор новых данных на русском языке</h3>
+          </article>
+          <article class="news-list-item">
+            <span class="news-item-category">СМИ · 6 октября 2026</span>
+            <h3 class="news-item-title">Эфир «О самом главном»: как изменилось лечение аденомы простаты</h3>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 6: CTA PROPOSAL + MEGA FOOTER (Figma Node 50:4046 Frame 117)
+       ======================================================================== -->
+  <section class="section-cta-footer" id="dealers">
+    <!-- Commercial Proposal (Frame 97: 1440x540, full-bleed) -->
+    <div class="cta-proposal-banner">
+      <div class="cta-proposal-inner">
+        <img src="assets/cta-laser.webp" alt="Лазерная система Quanta System" class="cta-laser-img" width="631" height="476">
+        <h2 class="cta-proposal-title">Коммерческое предложение</h2>
+        <p class="cta-proposal-desc">КП на бланке, комплектация и проект ТЗ в течение рабочего дня.</p>
+        <a href="tel:+74951099060" class="cta-proposal-phone">+7 495 109-90-60</a>
+        <button type="button" class="cta-proposal-btn" onclick="alert('Спасибо! Менеджер подготовит КП в течение рабочего дня.');">Запросить КП</button>
+      </div>
+    </div>
+
+    <!-- Mega Footer (Frame 96: 1440x556) -->
+    <footer class="mega-footer">
+      <div class="mega-footer-inner">
+        <img class="mega-footer-watermark" src="assets/footer-watermark.svg" alt="" width="1360" height="136">
+
+        <nav class="mega-footer-nav" aria-label="Навигация в подвале">
+          <div class="mega-col">
+            <span class="mega-col-heading">Оборудование</span>
+            <ul class="mega-col-list">
+              <li><a href="#equipment">Cyber TM 200</a></li>
+              <li><a href="#equipment">Litho 35 / EVO</a></li>
+              <li><a href="#equipment">Fiber Dust PRO</a></li>
+              <li><a href="#equipment">Litho DK</a></li>
+            </ul>
+          </div>
+          <div class="mega-col">
+            <span class="mega-col-heading">Направления</span>
+            <ul class="mega-col-list">
+              <li><a href="#clinics">Урология</a></li>
+              <li><a href="#clinics">Нейрохирургия</a></li>
+              <li><a href="#clinics">Хирургия</a></li>
+            </ul>
+          </div>
+          <div class="mega-col">
+            <span class="mega-col-heading">Клиникам</span>
+            <ul class="mega-col-list">
+              <li><a href="#clinics">Закупка и документы</a></li>
+              <li><a href="#clinics">Сервис и обучение</a></li>
+              <li><a href="#clinics">Демонстрация</a></li>
+            </ul>
+          </div>
+          <div class="mega-col">
+            <span class="mega-col-heading">Пациентам</span>
+            <ul class="mega-col-list">
+              <li><a href="#clinics">Где сделать операцию</a></li>
+              <li><a href="#faq">Частые вопросы</a></li>
+              <li><a href="#video">Видео операций</a></li>
+              <li><a href="#news">Новости и события</a></li>
+            </ul>
+          </div>
+          <div class="mega-col">
+            <span class="mega-col-heading">Контакты</span>
+            <ul class="mega-col-list">
+              <li><a href="tel:+74951099060">+7 495 109-90-60</a></li>
+              <li><a href="mailto:contact@quantasystem.ru">contact@quantasystem.ru</a></li>
+              <li><span>Москва, БЦ «Ирис»</span></li>
+              <li><a href="#dealers">Дилерам</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="mega-footer-meta">
+          <div class="mega-footer-company">
+            <p>ООО Кванта Систем AHI © 2020</p>
+            <p>официальный дистрибьютор Quanta System S.p.A. (El.En. Group)</p>
+          </div>
+          <ul class="mega-footer-legal">
+            <li><a href="#privacy">Политика конфиденциальности и обработки данных</a></li>
+            <li><a href="#consent">Форма заявки на изменение обработки персональных данных</a></li>
+          </ul>
+          <img class="mega-footer-partner" src="assets/footer-partner.svg" alt="gasfort &amp; partners" width="93" height="37">
+        </div>
+
+        <p class="mega-footer-disclaimer">Имеются противопоказания. Необходимо ознакомиться с инструкцией по применению или получить консультацию специалиста. Материалы о медицинских изделиях предназначены для медицинских работников.</p>
+      </div>
+    </footer>
+  </section>
+
+  <script src="assets/hero-video.js" defer></script>
+  <script src="assets/equipment.js" defer></script>
+  <script src="assets/nav.js" defer></script>
+</body>
+</html>

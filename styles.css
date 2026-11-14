@@ -84,7 +84,7 @@ img {
   position: relative;
   width: 100%;
   height: 810px;
-  background: linear-gradient(180deg, #139ec1 0%, #139ec1 30%, #dcf5fb 100%);
+  background: linear-gradient(180deg, #169dc5 0%, #149ec3 20%, #28a6c7 40%, #62bfd7 60%, #95d7e8 80%, #cdedf8 100%);
   overflow: hidden;
 }
 
@@ -432,6 +432,25 @@ img {
 
 .hero-laser-wrap.is-swapping .hero-laser-fx {
   display: block;
+}
+
+.hero-laser-video,
+.hero-laser-canvas {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: calc(100% * 1.196);
+  width: auto;
+  max-width: none;
+  pointer-events: none;
+  object-fit: contain;
+  mask-image:
+    linear-gradient(to right, transparent 0%, black 28%, black 72%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 14%, black 75%, transparent 96%);
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, black 28%, black 72%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, black 14%, black 75%, transparent 96%);
 }
 
 /* Metrics Cards */
@@ -2191,7 +2210,7 @@ img {
   /* on one column the directions block lands far below the 688px where the
      desktop frame starts the band, so the band now runs to the section end */
   .sec3-bg {
-    top: 25%;
+    top: 340px;
     bottom: 0;
     height: auto;
   }
@@ -2213,9 +2232,15 @@ img {
       "phone"
       "laser";
     justify-items: start;
+    padding-bottom: 0;
   }
 
-  .cta-laser-img { max-width: 520px; justify-self: center; }
+  .cta-laser-img {
+    max-width: 520px;
+    justify-self: center;
+    margin-bottom: 0;
+    display: block;
+  }
 
   .mega-footer-nav { grid-template-columns: repeat(3, max-content); }
   .mega-footer-meta { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
