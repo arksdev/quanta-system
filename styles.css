@@ -19,6 +19,14 @@
   src: url("assets/fonts/Onest-Variable.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
 :root {
   --color-primary: #4adafc;
   --color-secondary: #149ec1;
@@ -32,6 +40,7 @@
 
   --font-main: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-onest: "Onest", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-bebas: "Bebas Neue", "Manrope", sans-serif;
 }
 
 *, *::before, *::after {
@@ -1398,88 +1407,145 @@ img {
   text-decoration: none;
 }
 
-/* Mega Footer */
+/* ==========================================================================
+   MEGA FOOTER (Figma Frame 96: 1440x556)
+   Vertical gradient #135B6E → #2FC1E6, children at frame coordinates
+   ========================================================================== */
+
 .mega-footer {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  background: #135b6e;
-  border-radius: 40px 40px 0 0;
-  padding: 60px 40px 40px;
-  color: #ffffff;
-  box-sizing: border-box;
   position: relative;
-}
-
-.mega-footer-container {
   width: 100%;
-  max-width: 1360px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #135b6e 0%, #2fc1e6 100%);
+  color: #ffffff;
 }
 
-.mega-footer-cols {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
+.mega-footer-inner {
+  position: relative;
+  width: 1440px;
+  height: 556px;
+  margin: 0 auto;
+}
+
+/* Frame 118 — the 198px vector clipped to the 136px frame */
+.mega-footer-watermark {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  width: 1360px;
+  height: 136px;
+  pointer-events: none;
+}
+
+.mega-footer-nav {
+  position: absolute;
+  left: 40px;
+  top: 212px;
 }
 
 .mega-col {
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 17px;
+  white-space: nowrap;
 }
+
+.mega-col:nth-child(1) { left: 0; }
+
+/* Figma wraps this column's heading in a 4px taller frame */
+.mega-col:nth-child(1) .mega-col-list { margin-top: 4px; }
+.mega-col:nth-child(2) { left: 306px; }
+.mega-col:nth-child(3) { left: 586px; }
+.mega-col:nth-child(4) { left: 877px; }
+.mega-col:nth-child(5) { left: 1171px; }
 
 .mega-col-heading {
   font-family: var(--font-main);
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
   color: #eef2ef;
 }
 
 .mega-col-list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  font-size: 14px;
+  line-height: 22.4px;
 }
 
-.mega-col-list a,
-.mega-col-list span {
-  font-family: var(--font-main);
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.85);
+.mega-col-list li {
+  height: 23px;
+}
+
+.mega-col-list a {
   transition: color 0.15s ease;
 }
 
 .mega-col-list a:hover {
-  color: #ffffff;
+  color: #d8f6ff;
 }
 
+.mega-footer-meta {
+  position: absolute;
+  left: 40px;
+  top: 406px;
+  width: 1360px;
+}
+
+.mega-footer-company {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 223px;
+  font-size: 12px;
+  line-height: 22.4px;
+}
+
+.mega-footer-company p + p {
+  margin-top: 3px;
+  line-height: 15px;
+}
+
+.mega-footer-legal {
+  position: absolute;
+  left: 680px;
+  top: 0;
+  width: 389px;
+  list-style: none;
+  font-size: 12px;
+  line-height: 22.4px;
+}
+
+.mega-footer-legal a {
+  transition: color 0.15s ease;
+}
+
+.mega-footer-legal a:hover {
+  color: #d8f6ff;
+}
+
+.mega-footer-partner {
+  position: absolute;
+  left: 1267px;
+  top: 4px;
+  width: 93px;
+  height: 37px;
+  display: block;
+}
+
+/* Bebas Neue, 25% white; the second line runs past the frame and is clipped */
 .mega-footer-disclaimer {
-  font-family: var(--font-main);
-  font-size: 13px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.65);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  padding-top: 24px;
-  margin: 0;
+  position: absolute;
+  left: 40px;
+  top: 500px;
+  width: 1360px;
+  font-family: var(--font-bebas);
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.26px;
+  text-align: justify;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.25);
 }
-
-.mega-footer-bottom-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.mega-footer-legal-links {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.mega-footer-legal-links a {
-  font-family: va

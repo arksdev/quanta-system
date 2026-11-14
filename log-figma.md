@@ -91,6 +91,18 @@
 | · Subheading | `47:3853` | 348 wide, 20/25 | x40 y203 | — | `#ffffff` | trailing period |
 | · Button «Запросить КП» | `47:3899` | 199×42 | x40 y431 | 999 | `#ffffff`, text `#149ec1` | Manrope Bold 11px, ls 1.54 |
 | · Phone pill | `47:3854` | 421×75.67 | x979 y409 | pill | `rgba(255,255,255,.04)` + `backdrop-filter: blur(24.94px)` | 46.058/400, ls −4% |
-| Mega Footer | `50:4023` | 1440×556 | bottom footer | 40px 40px 0 0 | `#135b6e` | 5 navigation columns, disclaimer, legal links |
-| Outline Watermark | `57:4108` | 1360×136 | bottom | — | `assets/footer-watermark.svg` | Quanta System large outline vector |
-| Partner Logos | `47:3906` | 93×37 | bottom | — | `assets/footer-partner.svg` | gasfort & partners SVG |
+| Mega Footer (Frame 96) | `50:4023` | 1440×556 | bottom, y540 | 0 | vertical gradient `#135B6E` → `#2FC1E6` (Figma stacks two fills; the top one is hidden and the visible ramp is this one) | children on frame coordinates inside a 1440 inner layer |
+| · Watermark | `57:4108` | 1360×136 (198px vector clipped by the frame) | x40 y0 | — | `assets/footer-watermark.svg` | top edge, letters cut by the frame |
+| · Nav columns | `47:3856`…`47:3885` | 209.6 / 209.6 / 141 / 152 / 174 | x40 / 346 / 626 / 917 / 1211, headings ink y216 | — | headings `#eef2ef`, links `#ffffff` | 16 SemiBold + 14 Regular, lh 22.4, 23px line pitch, 16px heading gap, column 1 carries 4px extra |
+| · Company | `47:3896` | 223×56 | x40 y406 | — | `#ffffff` | 12/22.4 then 12/15, 3px between paragraphs |
+| · Legal links | `47:3893` | 389×46 | x720 y406 | — | `#ffffff` | 12/22.4, two lines |
+| · Partner logos | `47:3906` | 93×37 | x1307 y410 | — | `assets/footer-partner.svg` | gasfort & partners |
+| · Disclaimer | `47:3892` | 1360×64 | x40 y500 | — | `rgba(255,255,255,.25)` | Bebas Neue 32/32, ls 0.26, UPPER, justified; the second line is clipped by the frame |
+
+## Fonts
+
+| Family | File | Notes |
+|---|---|---|
+| Manrope | `assets/fonts/Manrope-Variable.ttf` | variable 100–900, `--font-main` |
+| Onest | `assets/fonts/Onest-Variable.ttf` | variable, arrow glyphs, `--font-onest` |
+| Bebas Neue | `assets/fonts/BebasNeue-Regular.ttf` | 2014 cut by Fontfabric: the Google Fonts 2019 file has no Cyrillic and silently falls back to Manrope |
